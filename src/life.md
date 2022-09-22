@@ -7,8 +7,9 @@ title: Life Experience
 ### Sports 
 - 🏃‍♂️
 - 💪
-- ⚽️ 
 - 🧘‍♂️
+- ⚽️ 
+- 🧗‍♂️
 - 🏊‍♂️
 - 🤿
 
