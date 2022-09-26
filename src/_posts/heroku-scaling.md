@@ -4,6 +4,7 @@ layout: post
 title:  "Scaling Rails with Puma and Sidekiq on Heroku"
 categories: personal
 ---
+
 Blog Post Scaling Rails and Sidekiq on Heroku
 Heroku Postgres
 Current Provision IOPs
@@ -51,6 +52,3 @@ Read only job queues
 One method I’ve found effective is read only jobs. You can hear Kelly Sutton speak on his experience with this on Sidekiq in Practice episode 2. The idea is taking jobs which only need to read from the database and performing them on secondary databases. This is great for jobs that generate reporting dataset CSV files or index to a third party data store like elastic search. 
 
 Consider file processing and storing thumbnails. Your paths can be constructed so there isn’t anything that needs persisting.  Often times you’ll also perform notification jobs after_commit, so weather you’re broadcasting. The problem can be idempotent considerations. Your file processing could safely be performed twice without consequence or check your bucket before processing a thumbnail, then you could enqueue a job to write back to the database once complete. For broadcasting to ActionCable you probably don’t want to send double notifications and while you could add some complexity with de duplication logic in your frontend code, it might be safer to persist checkpoints for SQL readonly jobs to a separate Redis configured for LRU key eviction or another LRU cache service. Do not do this with Redis side locking, if you find yourself needing to lock records lock on the SQL primary to ensure jobs are performed only once. 
-
-
-

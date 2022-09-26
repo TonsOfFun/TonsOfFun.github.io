@@ -34,3 +34,5 @@ yarn-debug.log*
 
 # Yarn Integrity file
 .yarn-integrity
+
+frontend/styles/jit-refresh.css

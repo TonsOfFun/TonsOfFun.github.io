@@ -4,11 +4,18 @@ title: Career Experiences
 ---
 ### Silicon Valley Software Group
 #### CTO Consultant
-Sep 2021 - Present • 1 yr 1 mo
+##### Sep 2021 - Present • 1 yr 1 mo
 
 San Francisco Bay Area
 
 Silicon Valley Software Group is a management consulting firm specializing in helping companies innovate with emerging technologies. With over 200 years of combined CTO and VPE experience, we are uniquely positioned to provide unmatched business value and intelligence to our clients in areas such as machine learning, high-performance computing, cyber security, growth engineering, team building and scaling. Featured in Inc Magazine as the #1 technology consulting firm to modernize companies for 2018, Silicon Valley Software Group helps some of the fasting growing startups, Fortune 500 brands, and governments around the world.
+
+### Sea Foam Media
+#### CTO Consultant
+##### Remote
+
+Jan 2018 - Present · 4 yrs
+
 ### nSight Surgical
 #### Director Of Engineering
 Dec 2021 - Present • 10 mos

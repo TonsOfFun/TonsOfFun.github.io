@@ -1,0 +1,27 @@
+navbar:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Blog
+    url: /blog
+  - title: Career
+    url: /career
+  - title: Consulting
+    url: /consulting
+  - title: Life
+    url: /life
+  - title: Skills
+    url: /skills
+  - title: Speaking
+    url: /speaking
+footer:
+  - title: Home
+    url: /
+social:
+  - title: github
+    url: https://github.com/tonsoffun
+  - title: twitter
+    url: https://twitter.com/tonsoffun111
+  - title: linkedin
+    url: https://linkedin.com/in/tonsoffun111
