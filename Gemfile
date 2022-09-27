@@ -34,5 +34,5 @@ gem "puma", "~> 5.6"
 
 group :bridgetown_plugins do
     gem "bridgetown-view-component", "~> 1.0"
-    gem "bridgetown-svg-inliner", "~> 1.0
+    gem "bridgetown-svg-inliner", "~> 1.0"
 end
