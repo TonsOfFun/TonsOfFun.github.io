@@ -11,6 +11,8 @@ navbar:
     url: /consulting
   - title: Life
     url: /life
+  - title: Projects
+    url: /projects
   - title: Skills
     url: /skills
   - title: Speaking
