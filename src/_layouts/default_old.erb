@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.metadata, title: resource.data.title %>
+  </head>
+  <body class="h-full font-sans bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50  <%= resource.data.layout %> <%= resource.data.page_class %>">
+    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource, data: site.data) %>
+
+    <div class="space-y-16 flex flex-col min-h-full mt-16">
+      <main class="space-y-4 md:space-y-8 flex flex-col grow mt-16 px-4" tabindex="-1">
+        <%= yield %>
+      </main>
+    </div>
+
+    <%= render "footer", metadata: site.metadata %>
+  </body>
+</html>

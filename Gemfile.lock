@@ -60,6 +60,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    erb-formatter (0.3.0)
     erubi (1.11.0)
     faraday (1.10.2)
       faraday-em_http (~> 1.0)
@@ -158,6 +159,7 @@ DEPENDENCIES
   bridgetown (~> 1.1.0)
   bridgetown-svg-inliner (~> 1.0)
   bridgetown-view-component (~> 1.0)
+  erb-formatter
   puma (~> 5.6)
 
 BUNDLED WITH

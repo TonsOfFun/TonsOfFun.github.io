@@ -1,20 +1,4 @@
-<footer>
-  
-  <%= markdownify do %>
-    # Justin Bowen is TonsOfFun 
-    ## (TonsOfFun111 in most places)
-    ### Connect with me!
-    - [Bitbucket.org/tonsoffun](Bitbucket.org/tonsoffun)
-    - [Instagram.com/tonsoffun111](Instagram.com/tonsoffun111)
-    - [GitHub.com/tonsoffun](GitHub.com/tonsoffun)
-    - [GitLab.com/tonsoffun](GitLab.com/tonsoffun)
-    - [LinkedIn.com/in/tonsoffun111](LinkedIn.com/in/tonsoffun111)
-    - [Twitch.tv/tonsoffun111](Twitch.tv/tonsoffun111)
-    - [Twitter.com/tonsoffun111](Twitter.com/tonsoffun111)
-    - Contact me at <a href="mailto:<%= metadata.email %>"><%= metadata.email %></a>
-    
-  <% end %>
-
+<footer class="my-4">
   <div class="flex justify-center space-x-6">
     <% site.data.links.social.each do |social| %>
       <a class="text-teal-500 dark:text-teal-400 font-semibold" href="<%= social.url %>" class_names="text-zinc-700 dark:text-zinc-300" target="_blank" rel="noopener noreferrer">
