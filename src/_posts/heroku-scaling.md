@@ -2,7 +2,10 @@
 draft: true
 layout: post
 title:  "Scaling Rails with Puma and Sidekiq on Heroku"
-categories: personal
+categories: 
+    - performance 
+    - scaling
+    - deployment
 ---
 
 Blog Post Scaling Rails and Sidekiq on Heroku
