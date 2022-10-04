@@ -1,4 +1,4 @@
-class ArticleSamllCard < BaseComponent
+class ArticleSmallCard < BaseComponent
     renders_one :icon
 
     def initialize(article:, **opts)

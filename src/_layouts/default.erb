@@ -1,60 +1,61 @@
 <!doctype html>
 <html lang="<%= site.locale %>">
 
-<head>
-  <%= render "head" , metadata: site.metadata, title: resource.data.title %>
-</head>
+    <head>
+    <%= render "head", metadata: site.metadata, title: resource.data.title %>
+    </head>
 
-<body
-  class="h-full font-sans bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50  <%= resource.data.layout %> <%= resource.data.page_class %>">
-<div id="__next">
-    <div class="fixed inset-0 flex justify-center sm:px-8">
-        <div class="flex w-full max-w-7xl lg:px-8">
-            <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
-        </div>
-    </div>
-    <div class="relative">
-        <%= render Shared::Header.new(metadata: site.metadata, resource: resource, data: site.data) %>
-        <div style="height: var(--content-offset);"></div>
-        <main>
-            <div class="sm:px-8 mt-16 sm:mt-32">
-                <div class="mx-auto max-w-7xl lg:px-8">
-                    <div class="relative px-4 sm:px-8 lg:px-12">
-                        <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                            <%= yield %>
-                        </div>
-                    </div>
+    <body
+        class="h-full font-sans bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50  <%= resource.data.layout %> <%= resource.data.page_class %>">
+        <div id="__next">
+            <div class="fixed inset-0 flex justify-center sm:px-8">
+                <div class="flex w-full max-w-7xl lg:px-8">
+                    <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
                 </div>
             </div>
-        </main>
-        <footer class="mt-32">
-            <div class="sm:px-8">
-                <div class="mx-auto max-w-7xl lg:px-8">
-                    <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
-                        <div class="relative px-4 sm:px-8 lg:px-12">
-                            <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                                <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                                    <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200"><a
-                                            class="transition hover:text-teal-500 dark:hover:text-teal-400"
-                                            href="/about">About</a><a
-                                            class="transition hover:text-teal-500 dark:hover:text-teal-400"
-                                            href="/projects">Projects</a><a
-                                            class="transition hover:text-teal-500 dark:hover:text-teal-400"
-                                            href="/speaking">Speaking</a><a
-                                            class="transition hover:text-teal-500 dark:hover:text-teal-400"
-                                            href="/uses">Uses</a></div>
-                                    <p class="text-sm text-zinc-400 dark:text-zinc-500">©
-                                        <!-- --><%= Time.new.year %>
-                                        <!-- --> Justin Bowen. All rights reserved.
-                                    </p>
+            <div class="relative">
+                <%= render Shared::Header.new(metadata: site.metadata, resource: resource, data: site.data) %>
+                <div style="height: var(--content-offset);"></div>
+                <main>
+                    <div class="sm:px-8 mt-16 sm:mt-32">
+                        <div class="mx-auto max-w-7xl lg:px-8">
+                            <div class="relative px-4 sm:px-8 lg:px-12">
+                                <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                                    <%= yield %>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </main>
+                <footer class="mt-32">
+                    <div class="sm:px-8">
+                        <div class="mx-auto max-w-7xl lg:px-8">
+                            <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+                                <div class="relative px-4 sm:px-8 lg:px-12">
+                                    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                                        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+                                            <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200"><a
+                                                    class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                    href="/about">About</a><a
+                                                    class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                    href="/projects">Projects</a><a
+                                                    class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                    href="/speaking">Speaking</a><a
+                                                    class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                    href="/uses">Uses</a></div>
+                                            <p class="text-sm text-zinc-400 dark:text-zinc-500">©
+                                                <!-- --><%= Time.new.year %>
+                                                <!-- --> Justin Bowen. All rights reserved.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </footer>
-    </div>
-</div>
-  </body>
-  </html>
+        </div>
+        <%= render "footer" %>
+    </body>
+</html>
