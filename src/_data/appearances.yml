@@ -26,5 +26,5 @@ podcasts:
   - event: "Coming soon?"
     title: "I haven't been on a podcast yet"
     description:  Connect with me on twitter and DM me if you're interested
-    url: 
-    embed: 
+    url: /connect/
+    embed: [connect with me](/connect/)
