@@ -1,123 +1,123 @@
 jobs:
-  - company: 'Silicon Valley Software Group',
+  - company: 'Silicon Valley Software Group'
     roles: 
-      - title: 'CTO Consultant',
-        description: 'Tech due dilligence for VC, PE, and acquisitions.',
-        start: '2021',
+      - title: 'CTO Consultant'
+        description: 'Tech due dilligence for VC, PE, and acquisitions.'
+        start: '2021'
         end: 'present'
-    logo: /images/logos/svsg.svg,
-    url: 'https://svsg.co/',
-    location: 'Remote from San Francisco, California',
+    logo: /images/logos/svsg.svg
+    url: 'https://svsg.co/'
+    location: 'Remote from San Francisco, California'
     description: 'Silicon Valley Software Group is a management consulting firm specializing in helping companies innovate with emerging technologies. With over 200 years of combined CTO and VPE experience, we are uniquely positioned to provide unmatched business value and intelligence to our clients in areas such as machine learning, high-performance computing, cyber security, growth engineering, team building and scaling. Featured in Inc Magazine as the #1 technology consulting firm to modernize companies for 2018, Silicon Valley Software Group helps some of the fasting growing startups, Fortune 500 brands, and governments around the world.'
-  - company: 'Sea Foam Media & Technology',    
+  - company: 'Sea Foam Media & Technology'
     roles: 
-      - title: 'CTO Consultant',
-        description: 'Providing startups with business advice, marketing, design, and development services to bring product ideation to market.',
-        start: '2018',
+      - title: 'CTO Consultant'
+        description: 'Providing startups with business advice, marketing, design, and development services to bring product ideation to market.'
+        start: '2018'
         end: 'present'
-    logo: /images/logos/seafoammedia.svg,
-    url: 'https://seafoam.media/tech/',
-    location: 'Remote',
+    logo: /images/logos/seafoammedia.svg
+    url: 'https://seafoam.media/tech/'
+    location: 'Remote'
     description: 'Sea Foam Media & Technology is a consulting agency specializing in providing tech and business guidence for growth stage startups gearing up to raise a new round of funding...'
-  - company: 'nSight Surgical AI',
-    roles: 
-      - title: 'Director of Engineering',
-        description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.',
-        start: '2021',
+  - company: 'nSight Surgical AI'
+    roles:
+      - title: 'Director of Engineering'
+        description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.'
+        start: '2021'
         end: 'present'
-    logo: /images/logos/nsightsurgical.svg,
+    logo: /images/logos/nsightsurgical.svg
     url: 'https://nsightsurgical.ai/'
-    location: 'Remote',
+    location: 'Remote'
     description: 'nSightSurgical AI provides intellegent insights and tracking of surgical objects in context.'
-  - company: 'GreenThumb IO',
-    roles: 
-      - title: 'Founder',
-        description: 'Combining smart cameras, AI, and IoT technology to fundamentally transform the cannabis industry from seed to sale.',
-        start: '2016',
+  - company: 'GreenThumb IO'
+    roles:
+      - title: 'Founder'
+        description: 'Combining smart cameras, AI, and IoT technology to fundamentally transform the cannabis industry from seed to sale.'
+        start: '2016'
         end: '2020'
-    logo: /images/logos/greenthumbio.svg,
+    logo: /images/logos/greenthumbio.svg
     url: 'https://greenthumb.io/'
-    location: 'Remote',
+    location: 'Remote'
     description: 'Providing growers and cultivators meaningful data about their crops, pinpointing problems in real time. Analyzing camera data and turns it into actionable insights, digitizing characteristics of the plants into trackable assets.'
-  - company: 'Cainthus',
+  - company: 'Cainthus'
     roles: 
       - title: 'CTO'
-        description: 'Directly interfaced with Cargill VC to close on Series B fund raising efforts tech due dilligence. Coordinated an international team of scientists and engineers to deliver on the installation and management of international on farm deployment sites that used our edge based GPU acceleerated AI to process hundreds of cameras and report events to the cloud platform in real time.',
-        start: '2017',
+        description: 'Directly interfaced with Cargill VC to close on Series B fund raising efforts tech due dilligence. Coordinated an international team of scientists and engineers to deliver on the installation and management of international on farm deployment sites that used our edge based GPU acceleerated AI to process hundreds of cameras and report events to the cloud platform in real time.'
+        start: '2017'
         end: '2018'
       - title: 'Director of Engineering'
         description: 'Grew a Series A team to deliver a drone mappping and analytics platform to market and Lead the product design, R&D, engineering, and testing of the Dairy cow computer vision platform.'
-        start: '2016',
+        start: '2016'
         end: '2017'
       - title: 'Lead Data Engineer and Platform Architecture Consultant'
         description: 'Worked with a small team to optimize and scale a drone analytics and real-time geo search to close Series A funding'
-        start: '2016',
+        start: '2016'
         end: '2016'
-    logo: /images/logos/cainthus.svg,
+    logo: /images/logos/cainthus.svg
     url: 'https://cainthus.com/'
-    location: 'Remote, San Francisco, California and Dublin, Ireland',
+    location: 'Remote, San Francisco, California and Dublin, Ireland'
     description: 'Cargill funded Agricultural computer vision and technology company, providing AI managements services to field crop and livestock farmers globally.'
-  - company: 'PINSTOP',
+  - company: 'PINSTOP'
     roles: 
-      - title: 'Cofounder, Director of Engineering',
-        description: 'I built a full stack web application to manage client-concierge interactions for 5 star international hotels in collaboration with the Ritz Carlton and Grand Hyatt in Tokyo.',
-        start: '2016',
+      - title: 'Cofounder, Director of Engineering'
+        description: 'I built a full stack web application to manage client-concierge interactions for 5 star international hotels in collaboration with the Ritz Carlton and Grand Hyatt in Tokyo.'
+        start: '2016'
         end: '2017'
-    logo: /images/logos/pinstop.svg,
+    logo: /images/logos/pinstop.svg
     url: 'https://pinstop.jp/'
-    location: 'Remote, San Francisco, California and Tokyo, Japan',
+    location: 'Remote, San Francisco, California and Tokyo, Japan'
     description: 'Bespoke concierge software for 5 star hospitality personel to provide custom guided experiences with localized translations of maps, addresses, and notes.'
-  - company: 'ZALA',
+  - company: 'ZALA'
     roles: 
-      - title: 'Lead Software Engineer, CTO',
-        description: 'Lead the design and development of the MVP web, iOS, and Android apps.',
-        start: '2015',
+      - title: 'Lead Software Engineer, CTO'
+        description: 'Lead the design and development of the MVP web, iOS, and Android apps.'
+        start: '2015'
         end: '2016'
-    logo: /images/logos/zala.svg,
+    logo: /images/logos/zala.svg
     url: 'https://tonsof.fun/zala/'
-    location: 'Remote',
+    location: 'Remote'
     description: 'Locals guidebook for quality travel experiences and location based recommendations.'
-  - company: 'Momentage',
+  - company: 'Momentage'
     roles: 
-      - title: 'Lead Software Engineer, CTO',
-        description: 'I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high throughput media uploading service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads to S3.',
-        start: '2014',
+      - title: 'Lead Software Engineer, CTO'
+        description: 'I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high throughput media uploading service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads to S3.'
+        start: '2014'
         end: '2016'
-    logo: /images/logos/momentage.svg,
+    logo: /images/logos/momentage.svg
     url: 'https://tonsof.fun/momentage/'
-    location: 'Remote',
+    location: 'Remote'
     description: 'Short-form multimedia sharing platform for creatives.'
-  - company: 'Banjo',
+  - company: 'Banjo'
     roles: 
-      - title: 'Lead Senior Software Engineer',
-        description: 'Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.',
-        start: '2012',
+      - title: 'Lead Senior Software Engineer'
+        description: 'Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.'
+        start: '2012'
         end: '2014'
-    logo: /images/logos/banjo.svg,
+    logo: /images/logos/banjo.svg
     url: 'https://tonsof.fun/banjo/'
-    location: 'San Francisco Bay Area',
+    location: 'San Francisco Bay Area'
     description: 'Location based social events discovery platform.'
-  - company: 'Focus Testing Services, inc.',
-    roles: 
-      - title: 'Lead Procuct Engineer',
-        description: 'Responsible for network security, services and systems reliability, software development, and support. Design, build, and maintain Rails web applications that compliment a software suite of Adobe Flex/Flash Builder Air desktop apps.',
-        start: '2010',
+  - company: 'Focus Testing Services, inc.'
+    roles:
+      - title: 'Lead Procuct Engineer'
+        description: 'Responsible for network security, services and systems reliability, software development, and support. Design, build, and maintain Rails web applications that compliment a software suite of Adobe Flex/Flash Builder Air desktop apps.'
+        start: '2010'
         end: '2012'
-    logo: /images/logos/banjo.svg,
+    logo: /images/logos/banjo.svg
     url: 'https://tonsof.fun/focus/'
-    location: 'San Francisco Bay Area',
+    location: 'San Francisco Bay Area'
     description: 'Certification testing software as a service.'
-  - company: 'Computer Assisted Testing Service (CATS) ',
-    roles: 
-      - title: 'Software Engineer',
-        description: 'Maintained the registration and reporting application using Java and MS SQL, while handling mass emails to sites. Used Ruby on Rails and MySQL to develop new web interfaces designed to increase efficiency by improving the user experience. Continued advanced responsibilities of Technical Support and system administration.',
-        start: '2008',
+  - company: 'Computer Assisted Testing Service (CATS) '
+    roles:
+      - title: 'Software Engineer'
+        description: 'Maintained the registration and reporting application using Java and MS SQL, while handling mass emails to sites. Used Ruby on Rails and MySQL to develop new web interfaces designed to increase efficiency by improving the user experience. Continued advanced responsibilities of Technical Support and system administration.'
+        start: '2008'
         end: '2010'
-      - title: 'IT Technical Support, Windows Systems Administrator ',
-        description: 'Assured the availability of the testing service to over 300 globally distributed testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and administrate Microsoft SQL and Windows Server environmentss.',
-        start: '2005',
+      - title: 'IT Technical Support, Windows Systems Administrator '
+        description: 'Assured the availability of the testing service to over 300 globally distributed testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and administrate Microsoft SQL and Windows Server environmentss.'
+        start: '2005'
         end: '2008'
-    logo: /images/logos/banjo.svg,
+    logo: /images/logos/banjo.svg
     url: 'https://tonsof.fun/focus/'
-    location: 'San Francisco Bay Area',
+    location: 'San Francisco Bay Area'
     description: 'Computer Assisted Testing Service (CATS) is a full service testing company for licensure, certification, assessment, and educational testing programs. CATS offers end‐to‐end examination services, including fixed and remote computer‐based testing, test development and research, and construction of new test item types for a wide range of professions. More information is available at'
