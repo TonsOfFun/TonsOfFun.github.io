@@ -5,11 +5,18 @@
 
 <meta name="description" content="<%= metadata.description %>" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-<link rel="manifest" href="/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/system/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/system/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/system/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/system/site.webmanifest">
 <link rel="stylesheet" href="<%= webpack_path :css %>" />
 <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 <script src="<%= webpack_path :js %>" defer></script>
+<script>
+  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+</script>
 <%= live_reload_dev_js %>
