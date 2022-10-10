@@ -22,8 +22,30 @@ footer:
     url: /
 social:
   - title: github
-    url: https://github.com/tonsoffun
+    label: Follow me on GitHub
+    url: https://github.com/TonsOfFun
+    color: "#181717"
   - title: twitter
-    url: https://twitter.com/tonsoffun111
+    label: Follow me on Twitter
+    url: https://twitter.com/TonsOfFun111
+    color: "#1DA1F2"
+  - title: twitch
+    label: Follow me on Twitch
+    url: https://twitch.tv/TonsOfFun111]
+    color: "#9146FF"
   - title: linkedin
-    url: https://linkedin.com/in/tonsoffun111
+    label: Connect with me on LinkedIn
+    url: https://linkedin.com/in/TonsOfFun111
+    color: "#0A66C2"
+  - title: instagram
+    label: Follow me on Instagram
+    url: https://Instagram.com/TonsOfFun111]
+    color: "#E4405F"
+  - title: gitlab
+    label: Follow me on GitLab
+    url: https://gitlab.com/TonsOfFun
+    color: "#FC6D26"
+  - title: bitbucket
+    label: TonsOfFun Bitbucket
+    url: https://Bitbucket.org/TonsOfFun
+    color: "#0052CC"

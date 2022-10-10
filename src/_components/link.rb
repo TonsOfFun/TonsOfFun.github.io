@@ -5,9 +5,9 @@ class Link < BoxComponent
   
     def classes
       class_list = []
-      class_list << opts.fetch(:hover, "hover:text-pink-500 dark:hover:text-sky-400")
+      class_list << opts.fetch(:hover, "hover:text-zinc-500 dark:hover:text-teal-400/10")
       class_list << opts.fetch(:weight, "font-semibold")
-      class_list << "!text-pink-500 dark:!text-sky-400" if opts[:active]
+      class_list << "!text-zinc-500 dark:!text-teal-400/10" if opts[:active]
   
       list = button_link? ? BUTTON_LINK_CLASSES : class_list
       list = [] if variant == :none
