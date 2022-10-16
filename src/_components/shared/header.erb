@@ -2,9 +2,14 @@
       open: false,
       get isOpen() { return this.open },
       toggleMenu() { this.open = ! this.open },
-    }" class="pointer-events-none relative z-50 flex flex-col"
+    }" 
+    class="pointer-events-none relative z-50 flex flex-col"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
-    <div class="top-0 z-10 h-16 pt-6" style="position:var(--header-position)">
+    <div x-data="scrollToShow()" 
+        x-on:scroll.window.passive="scroll()"
+        class="top-0 z-10 h-16 pt-6"
+        x-ref="navbar"
+        style="position:var(--header-position)">
         <div class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full"
             style="position:var(--header-inner-position)">
             <div class="mx-auto max-w-7xl lg:px-4">
@@ -12,12 +17,12 @@
                     <div class="mx-auto max-w-3xl lg:max-w-5xl">
                         <div class="relative flex gap-4 ml-[18px]" style="">
                             <div class="flex flex-1">
-                                <div
-                                    class="m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
+                                <div class="m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
                                     <a aria-label="Home" class="mx-18 pointer-events-auto" href="/">
                                         <img alt=""
                                             sizes="2.25rem"
                                             srcset=""
+                                            x-ref="avatar"
                                             src="/images/avatar.jpg"
                                             width="512" height="512" decoding="async" data-nimg="future"
                                             class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"
@@ -40,11 +45,9 @@
                                             </div>
                                             <nav class="mt-6">
                                                 <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                                                    <li><a class="block py-2" href="/about">About</a></li>
-                                                    <li><a class="block py-2" href="/articles">Articles</a></li>
-                                                    <li><a class="block py-2" href="/projects">Projects</a></li>
-                                                    <li><a class="block py-2" href="/speaking">Speaking</a></li>
-                                                    <li><a class="block py-2" href="/uses">Uses</a></li>
+                                                    <% @data.links.navbar.each do |link| %> 
+                                                        <%= render NavLink.new(link: link, resource: @resource) %>
+                                                    <% end %>
                                                 </ul>
                                             </nav>
                                         </div>
