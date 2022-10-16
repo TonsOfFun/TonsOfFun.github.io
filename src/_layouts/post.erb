@@ -1,9 +1,27 @@
 ---
 layout: default
 ---
-<article class="w-full mx-auto max-w-prose space-y-8">
-    <div class="after:prose-code:content-[''] before:prose-code:content-[''] dark:prose-invert prose prose-code:bg-zinc-800 prose-code:font-medium prose-code:p-1 prose-code:rounded prose-code:text-zinc-100 prose-pre:bg-zinc-800 prose-pre:px-2 prose-zinc prose-a:text-pink-500 dark:prose-a:text-sky-400 prose-a:no-underline hover:prose-a:underline hover:prose-a:underline-offset-2 prose-blockquote:border-pink-500 dark:prose-blockquote:border-sky-400 prose-blockquote:bg-pink-100/20 dark:prose-blockquote:bg-sky-900/10 prose-blockquote:not-italic">
-        <h1><%= resource.data.title %></h1>
-        <%= yield %>
+<div class="sm:px-8 mt-16 lg:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                <div class="xl:relative">
+                    <div class="mx-auto max-w-2xl">
+                        <article class="[&>p]:mt-6 [&>p]:space-y-7 [&>p]:text-base [&>p]:text-zinc-600 [&>p]:dark:text-zinc-400">
+                            <header class="flex flex-col">
+                                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                                    <%= resource.data.title %>
+                                </h1>
+                                <time datetime="<%= resource.data.datetime %>" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+                                    <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                    <span class="ml-3"><%= resource.data.datetime %></span>
+                                </time>
+                            </header>
+                            <%= yield %>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</article>
+</div>
