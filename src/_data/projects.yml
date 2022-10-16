@@ -1,0 +1,35 @@
+opensource:
+  - name: GreenThumb IO
+    description: GreenThumb IO is an OSS organization that came out of a series of AgTech hackathons in the central valley California.
+    url: https://greenthumb.io
+    domain: greenthumb.io
+    logo_url: /images/logos/greenthumbio.jpeg
+    github_url: https://github.com/greenthumbio
+    instagram_url: https://instagram.com/greenthumbio
+    twitter_url: https://twitter.com/greenthumbdotio
+  - name: AsyncSaves
+    description: 
+    website_url: https://asyncsaves.com
+    url: https://github.com/asyncsaves
+    domain: github.com
+    logo_url: /images/logos/greenthumbio.jpeg
+    github_url: https://github.com/asyncsaves
+    instagram_url: https://instagram.com/greenthumbio
+    twitter_url: https://twitter.com/asyncsaves
+  - name: PetsCam IO
+    description: 
+    website_url: https://petscam.io
+    domain: github.com
+    url: https://github.com/petscamio
+    logo_url: /images/logos/greenthumbio.jpeg
+    github_url: https://github.com/petscamio
+    instagram_url: https://instagram.com/petscamio
+    twitter_url: https://twitter.com/petscamio
+volunteer:
+  - name: GhamPower
+    description: Gham Power is a Solar company based in Kathmandu, Nepal. Established in 2010, we have carried out over 2,000 projects with a cumulative installed capacity of over 2.5 MW.
+    website_url: https://ghampower.com
+    domain: ghampower.com
+    url: https://ghampower.com
+    logo_url: /images/logos/ghampower.jpeg
+    twitter_url: https://twitter.com/ghampower
