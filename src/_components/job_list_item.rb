@@ -1,7 +1,7 @@
 class JobListItem < BaseComponent
-    def initialize(job:, **opts)
-        @job, @opts = job, opts
+    def initialize(company:, **opts)
+        @company, @opts = company, opts
     end
 
-    attr_reader :job, :opts
+    attr_reader :company, :opts
 end
