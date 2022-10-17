@@ -22,11 +22,10 @@
   function updateMode() {
     let isSystemDarkMode = darkModeMediaQuery.matches
     let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && isSystemDarkMode)
-    console.log("isDarkMode", isDarkMode)
+    
     if (isDarkMode) {
       document.documentElement.classList.add('dark')
     } else {
-      console.log("isDarkMode", isDarkMode)
       document.documentElement.classList.remove('dark')
     }
 
@@ -76,8 +75,6 @@
       downDelay: 0,
       upDelay: 64,
       scroll() {
-        // this.sticky = window.scrollY > this.$refs.navbar.offsetHeight && this.lastPos > window.scrollY;
-        // this.lastPos = window.scrollY;
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
         let upDelay = this.upDelay;
@@ -87,11 +84,6 @@
           document.body.scrollHeight - window.innerHeight
         )
         
-        console.log("scrollY", scrollY);
-        console.log("this.downDelay", downDelay);
-        console.log("top", top);
-        console.log("height", height);
-        console.log("top + height", top + height);
         if (this.sticky) {
           setProperty('--header-position', 'sticky')
         }
@@ -102,12 +94,7 @@
           setProperty('--header-height', `${downDelay + height}px`)
           setProperty('--header-mb', `${-downDelay}px`)
         } else if (top + height < -upDelay) {
-          console.log("top + height < -this.upDelay", top + height < -upDelay);
-          console.log("scrollY", scrollY);
-          console.log("this.upDelay", upDelay);
-          console.log("scrollY - this.upDelay", scrollY - upDelay);
           let offset = Math.max(height, scrollY - upDelay);
-          console.log("offset", offset);
           setProperty('--header-height', `${offset}px`)
           setProperty('--header-mb', `${height - offset}px`)
         } else if (top === 0) {
