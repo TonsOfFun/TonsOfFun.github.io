@@ -1,14 +1,138 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<html lang="en"
+    class="h-full antialiased"
+    style="--header-position:sticky; --content-offset:0px; --header-height:64px; --header-mb:0px; --header-top:0px; --avatar-top:0px;">
+    <head>
+        <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Posts | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
-<link rel="stylesheet" href="/_bridgetown/static/index.T2O5Y3JB.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/system/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/system/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/system/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/system/site.webmanifest">
+<link rel="stylesheet" href="/_bridgetown/static/index.3A6NTJY2.css" />
+<script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 <script src="/_bridgetown/static/index.RARUY3ZT.js" defer></script>
+<script>
+  let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+
+  updateMode()
+  darkModeMediaQuery.addEventListener('change', updateModeWithoutTransitions)
+  window.addEventListener('storage', updateModeWithoutTransitions)
+
+  function updateMode() {
+    let isSystemDarkMode = darkModeMediaQuery.matches
+    let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && isSystemDarkMode)
+    
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode
+    }
+  }
+
+  function disableTransitionsTemporarily() {
+    document.documentElement.classList.add('[&_*]:!transition-none')
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('[&_*]:!transition-none')
+    }, 0)
+  }
+
+  function updateModeWithoutTransitions() {
+    disableTransitionsTemporarily()
+    updateMode()
+  }
+
+  function toggleMode() {
+    disableTransitionsTemporarily()
+
+    let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    let isSystemDarkMode = darkModeMediaQuery.matches
+    let isDarkMode = document.documentElement.classList.toggle('dark')
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode
+    } else {
+      window.localStorage.isDarkMode = isDarkMode
+    }
+  }
+
+  function toggleDarkMode() {
+    return {
+      updateLightDarkMode() {
+        toggleMode()
+      }
+    }
+  }
+  
+  function scrollToShow() {
+    return {
+      sticky: false,
+      lastPos: window.scrollY + 0,
+      downDelay: 0,
+      upDelay: 64,
+      scroll() {
+        let downDelay = this.downDelay;
+        let { top, height } = this.$refs.navbar.getBoundingClientRect()
+        let upDelay = this.upDelay;
+        let scrollY = clamp(
+          window.scrollY,
+          0,
+          document.body.scrollHeight - window.innerHeight
+        )
+        
+        if (this.sticky) {
+          setProperty('--header-position', 'sticky')
+        }
+
+        setProperty('--content-offset', `${downDelay}px`)
+
+        if (this.sticky || scrollY < downDelay) {
+          setProperty('--header-height', `${downDelay + height}px`)
+          setProperty('--header-mb', `${-downDelay}px`)
+        } else if (top + height < -upDelay) {
+          let offset = Math.max(height, scrollY - upDelay);
+          setProperty('--header-height', `${offset}px`)
+          setProperty('--header-mb', `${height - offset}px`)
+        } else if (top === 0) {
+          setProperty('--header-height', `${scrollY + height}px`)
+          setProperty('--header-mb', `${-scrollY}px`)
+        }
+
+        if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
+          setProperty('--header-inner-position', 'fixed')
+          removeProperty('--header-top')
+          removeProperty('--avatar-top')
+        } else {
+          removeProperty('--header-inner-position')
+          setProperty('--header-top', '0px')
+          setProperty('--avatar-top', '0px')
+        }
+      }
+    }
+  }
+
+  function clamp(number, a, b) {
+    let min = Math.min(a, b)
+    let max = Math.max(a, b)
+    return Math.min(Math.max(number, min), max)
+  }
+
+  function setProperty(property, value) {
+    document.documentElement.style.setProperty(property, value)
+  }
+
+  function removeProperty(property) {
+    document.documentElement.style.removeProperty(property)
+  }
+</script>
 <script type="module">let lastmod = 0
 function startReloadConnection() {
   const evtSource = new EventSource("/_bridgetown/live_reload")
@@ -39,55 +163,381 @@ setTimeout(() => {
 }, 500)
 </script>
 
-  </head>
-  <body class="page ">
-    <header>
-  
+    </head>
+
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  blog ">
+        <div id="__next">
+            <div class="fixed inset-0 flex justify-center sm:px-8">
+                <div class="flex w-full max-w-7xl lg:px-8">
+                    <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
+                </div>
+            </div>
+            <div class="relative">
+                <header x-data="{
+      open: false,
+      get isOpen() { return this.open },
+      toggleMenu() { this.open = ! this.open },
+    }" 
+    class="pointer-events-none relative z-50 flex flex-col"
+    style="height:var(--header-height);margin-bottom:var(--header-mb)">
+    <div x-data="scrollToShow()" 
+        x-on:scroll.window.passive="scroll()"
+        class="top-0 z-10 h-16 pt-6"
+        x-ref="navbar"
+        style="position:var(--header-position)">
+        <div class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full"
+            style="position:var(--header-inner-position)">
+            <div class="mx-auto max-w-7xl lg:px-4">
+                <div class="relative px-2 sm:px-4 lg:px-6 mx-18">
+                    <div class="mx-auto max-w-3xl lg:max-w-5xl">
+                        <div class="relative flex gap-4 ml-[18px]" style="">
+                            <div class="flex flex-1">
+                                <div class="m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
+                                    <a aria-label="Home" class="mx-18 pointer-events-auto" href="/">
+                                        <img alt=""
+                                            sizes="2.25rem"
+                                            srcset=""
+                                            x-ref="avatar"
+                                            src="/images/avatar.jpg"
+                                            width="512" height="512" decoding="async" data-nimg="future"
+                                            class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"
+                                            style="color: transparent;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 justify-end md:justify-center">
+                                <div @click="toggleMenu" class="pointer-events-auto md:hidden">
+                                    <div x-show="isOpen">
+                                        <div class="fixed z-50 inset-0 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100" aria-hidden="true"></div>
+                                        <div class="fixed z-50 inset-x-4 top-8 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 opacity-100 scale-100" tabindex="-1">
+                                            <div class="flex flex-row-reverse items-center justify-between">
+                                                <button aria-label="Close menu" class="-m-1 p-1" type="button" tabindex="0">
+                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 text-zinc-500 dark:text-zinc-400">
+                                                        <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                                <h2 class="text-sm font-medium text-zinc-600 dark:text-zinc-400">Navigation</h2>
+                                            </div>
+                                            <nav class="mt-6">
+                                                <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/">
+            Home
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/about/">
+            About
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+            href="/blog/">
+            Blog
+            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/career/">
+            Career
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/consulting/">
+            Consulting
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/life/">
+            Life
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/projects/">
+            Projects
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/skills/">
+            Skills
+        </a>
+</li>
+
+                                                        <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/speaking/">
+            Speaking
+        </a>
+</li>
+
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <button aria-controls="mobile-menu" aria-expanded="false"
+                                        class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+                                        type="button">Menu
+                                        <svg viewBox="0 0 8 6" aria-hidden="true"
+                                            class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                                            <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <nav class="pointer-events-auto hidden md:block">
+                                    <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/">
+            Home
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/about/">
+            About
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+            href="/blog/">
+            Blog
+            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/career/">
+            Career
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/consulting/">
+            Consulting
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/life/">
+            Life
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/projects/">
+            Projects
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/skills/">
+            Skills
+        </a>
+</li>
+
+                                            <li>
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+            href="/speaking/">
+            Speaking
+        </a>
+</li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="flex justify-end md:flex-1">
+                                <div class="pointer-events-auto">
+                                    <button type="button" aria-label="Toggle dark mode"
+                                        class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+                                         x-data="toggleDarkMode()" @click="updateLightDarkMode" aria-label="Toggle Darkmode">
+                                        <svg
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true"
+                                            class="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600">
+                                            <path
+                                                d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z">
+                                            </path>
+                                            <path
+                                                d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
+                                                fill="none"></path>
+                                        </svg>
+                                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                                            class="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
+                                            <path
+                                                d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+                <div style="height: var(--content-offset);"></div>
+                <main>
+                    <div class="sm:px-8 mt-16 sm:mt-32">
+  <div class="mx-auto max-w-7xl lg:px-8">
+    <div class="relative px-4 sm:px-8 lg:px-12">
+      <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <header class="max-w-2xl">
+          <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">Writing on
+            software design, company building, and the aerospace industry.</h1>
+          <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">All of my long-form thoughts on
+            programming, leadership, product design, and more, collected in chronological order.</p>
+        </header>
+        <div class="mt-16 sm:mt-20">
+          <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+            <div class="flex max-w-3xl flex-col space-y-16">
+                  <article class="md:grid md:grid-cols-4 md:items-baseline">
+    <div class="relative flex flex-col items-start md:col-span-3 group">
+        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+    <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+    </div>
+    <a href="/personal/2022/10/17/about/">
+        <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+        <span class="relative z-10">Justin Bowen is TonsOfFun</span>
+    </a>
+</h2>
+<time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" datetime="September 2, 2022">
+    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+        <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+    </span>
+    September 2, 2022
+</time>
+<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Born and raise on the peninsula in the San Francisco, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad&#39;s office with the tech support crew at the end of the work day.</p>
+<div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
+    Read article
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-4 h-4 ml-1 stroke-current">
+        <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+</div>
+    </div>
+    <time class="relative z-10 flex items-center order-first hidden mt-1 mb-3 text-sm md:block text-zinc-400 dark:text-zinc-500" datetime="2022-09-05">
+        September 2, 2022
+    </time>
+</article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                </main>
+                <footer class="mt-32">
+    <div class="sm:px-8">
+        <div class="mx-auto max-w-7xl lg:px-8">
+            <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+                <div class="flex justify-center space-x-6 mb-4">
+                        <a class="font-semibold group -m-1 p-1" href="https://github.com/TonsOfFun" aria-label="Follow me on GitHub" target="_blank" rel="noopener noreferrer">    
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.2-.7 0-.7 0-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"/>
+</svg>            
 
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/career">Career</a></li>
-    <li><a href="/consulting">Consulting</a></li>
-    <li><a href="/life">Life</a></li>
-    <li><a href="/skills">Skills</a></li>
-    <li><a href="/speaking">Speaking</a></li>
-  </ul>
-</nav>
+                <span class="sr-only">Follow me on GitHub</span>
 
+</a>    <a class="font-semibold group -m-1 p-1" href="https://twitter.com/TonsOfFun111" aria-label="Follow me on Twitter" target="_blank" rel="noopener noreferrer">    
+                <svg class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4.6c-.9.4-1.8.7-2.8.8 1-.6 1.8-1.6 2.2-2.7-1 .6-2 1-3.1 1.2-.9-1-2.2-1.6-3.6-1.6-2.7 0-4.9 2.2-4.9 4.9 0 .4 0 .8.1 1.1-4.2-.2-7.8-2.2-10.2-5.2-.5.8-.7 1.6-.7 2.5 0 1.7.9 3.2 2.2 4.1-.8 0-1.6-.2-2.2-.6v.1c0 2.4 1.7 4.4 3.9 4.8-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 2 2.4 3.4 4.6 3.4-1.7 1.3-3.8 2.1-6.1 2.1-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.5 2.2 9.1 0 14-7.5 14-14v-.6c1-.7 1.8-1.6 2.5-2.5z"/>
+</svg>            
 
-    <main>
-      <h1>Posts</h1>
+                <span class="sr-only">Follow me on Twitter</span>
 
-<ul>
-      <li>
-        <a href="/personal/2022/09/22/who-am-i/">Who Am I?</a>
-      </li>
-</ul>
+</a>    <a class="font-semibold group -m-1 p-1" href="https://twitch.tv/TonsOfFun111]" aria-label="Follow me on Twitch" target="_blank" rel="noopener noreferrer">    
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+  <path d="M2.149 0 .537 4.119V21H6v3h3.493l3.044-3H17l6.463-6.313V0Zm19.164 13.612L18 17h-6l-3 3v-3H4V2h17.313Z" fill-rule="evenodd" clip-rule="evenodd"/>
+  <path d="M16 6h2v6h-2zM10 6h2v6h-2z"/>
+</svg>            
 
-<!-- If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)! -->
+                <span class="sr-only">Follow me on Twitch</span>
 
+</a>    <a class="font-semibold group -m-1 p-1" href="https://linkedin.com/in/TonsOfFun111" aria-label="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">    
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M23,0H1C0.4,0,0,0.4,0,1v22c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V1C24,0.4,23.6,0,23,0z M7.1,20.5H3.6V9h3.6 V20.5z M5.3,7.4c-1.1,0-2.1-0.9-2.1-2.1c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1C7.4,6.5,6.5,7.4,5.3,7.4z M20.5,20.5h-3.6 v-5.6c0-1.3,0-3-1.8-3c-1.9,0-2.1,1.4-2.1,2.9v5.7H9.4V9h3.4v1.6h0c0.5-0.9,1.6-1.8,3.4-1.8c3.6,0,4.3,2.4,4.3,5.5V20.5z"/>
+</svg>            
 
-    </main>
+                <span class="sr-only">Connect with me on LinkedIn</span>
 
-    <footer>
-  
-  <h1 id="justin-bowen-is-tonsoffun">Justin Bowen is TonsOfFun</h1>
-<h2 id="tonsoffun111-in-most-places">(TonsOfFun111 in most places)</h2>
-<h3 id="connect-with-me">Connect with me!</h3>
-<ul>
-  <li><a href="Bitbucket.org/tonsoffun">Bitbucket.org/tonsoffun</a></li>
-  <li><a href="Instagram.com/tonsoffun111">Instagram.com/tonsoffun111</a></li>
-  <li><a href="GitHub.com/tonsoffun">GitHub.com/tonsoffun</a></li>
-  <li><a href="GitLab.com/tonsoffun">GitLab.com/tonsoffun</a></li>
-  <li><a href="LinkedIn.com/in/tonsoffun111">LinkedIn.com/in/tonsoffun111</a></li>
-  <li><a href="Twitch.tv/tonsoffun111">Twitch.tv/tonsoffun111</a></li>
-  <li><a href="Twitter.com/tonsoffun111">Twitter.com/tonsoffun111</a></li>
-  <li>Contact me at <a href="mailto:Justin@seafoam.media">Justin@seafoam.media</a></li>
-</ul></footer>
+</a>    <a class="font-semibold group -m-1 p-1" href="https://Instagram.com/TonsOfFun111]" aria-label="Follow me on Instagram" target="_blank" rel="noopener noreferrer">    
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" aria-hidden="true">
+  <title>Instagram</title>
+  <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+</svg>            
 
-  </body>
+                <span class="sr-only">Follow me on Instagram</span>
+
+</a>    <a class="font-semibold group -m-1 p-1" href="https://gitlab.com/TonsOfFun" aria-label="Follow me on GitLab" target="_blank" rel="noopener noreferrer">    
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" aria-hidden="true">
+  <title>GitLab</title>
+  <path d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z"/>
+</svg>            
+
+                <span class="sr-only">Follow me on GitLab</span>
+
+</a>    <a class="font-semibold group -m-1 p-1" href="https://Bitbucket.org/TonsOfFun" aria-label="TonsOfFun Bitbucket" target="_blank" rel="noopener noreferrer">    
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" aria-hidden="true">
+  <title>Bitbucket</title>
+  <path d="M.778 1.213a.768.768 0 00-.768.892l3.263 19.81c.084.5.515.868 1.022.873H19.95a.772.772 0 00.77-.646l3.27-20.03a.768.768 0 00-.768-.891zM14.52 15.53H9.522L8.17 8.466h7.561z"/>
+</svg>            
+
+                <span class="sr-only">TonsOfFun Bitbucket</span>
+
+</a>
+                </div>
+                <div class="relative px-4 sm:px-8 lg:px-12">
+                    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+                            <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                              <a class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                href="/about">About</a>
+                              <a class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                href="/projects">Projects</a>
+                              <a class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                href="/speaking">Speaking</a>
+                              <a class="transition hover:text-teal-500 dark:hover:text-teal-400"
+                                href="/skills">Skills</a>
+                            </div>
+
+                            <p class="text-sm text-zinc-400 dark:text-zinc-500">©
+                                <!-- -->2022
+                                <!-- --> Justin Bowen. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            </div>
+        </div>
+    </body>
 </html>
