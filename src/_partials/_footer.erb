@@ -23,6 +23,10 @@
                                 <!-- --><%= Time.new.year %>
                                 <!-- --> Justin Bowen. All rights reserved.
                             </p>
+
+                            <p class="text-sm text-center">
+                            <%= render Link.new(href: github_edit_url(resource), classes: "after:content-['_↗']").with_content("Edit on GitHub") %>
+                            </p>
                         </div>
                     </div>
                 </div>
