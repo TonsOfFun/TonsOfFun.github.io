@@ -1,0 +1,51 @@
+navbar:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
+  - title: Career
+    url: /career/
+  - title: Consulting
+    url: /consulting/
+  - title: Life
+    url: /life/
+  - title: Projects
+    url: /projects/
+  - title: Skills
+    url: /skills/
+  - title: Speaking
+    url: /speaking/
+footer:
+  - title: Home
+    url: /
+social:
+  - title: github
+    label: Follow me on GitHub
+    url: https://github.com/TonsOfFun
+    color: "#181717"
+  - title: twitter
+    label: Follow me on Twitter
+    url: https://twitter.com/TonsOfFun111
+    color: "#1DA1F2"
+  - title: twitch
+    label: Follow me on Twitch
+    url: https://twitch.tv/TonsOfFun111]
+    color: "#9146FF"
+  - title: linkedin
+    label: Connect with me on LinkedIn
+    url: https://linkedin.com/in/TonsOfFun111
+    color: "#0A66C2"
+  - title: instagram
+    label: Follow me on Instagram
+    url: https://Instagram.com/TonsOfFun111]
+    color: "#E4405F"
+  - title: gitlab
+    label: Follow me on GitLab
+    url: https://gitlab.com/TonsOfFun
+    color: "#FC6D26"
+  - title: bitbucket
+    label: TonsOfFun Bitbucket
+    url: https://Bitbucket.org/TonsOfFun
+    color: "#0052CC"

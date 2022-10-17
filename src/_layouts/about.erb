@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="sm:px-8 mt-16 sm:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+                    <div class="lg:pl-20">
+                        <div class="max-w-xs px-2.5 lg:max-w-none"><img alt="" sizes="(min-width: 1024px) 32rem, 20rem"
+                                srcset=""
+                                src="/images/about.jpeg"
+                                width="800" height="800" decoding="async" data-nimg="future"
+                                class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                                loading="lazy" style="color:transparent"></div>
+                    </div>
+                    <div class="lg:order-first lg:row-span-2 [&>p]:mt-6 [&>p]:space-y-7 [&>p]:text-base [&>p]:text-zinc-600 [&>p]:dark:text-zinc-400">
+                        <%= yield %>
+                    </div>
+                    <%= render "list_social_links" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

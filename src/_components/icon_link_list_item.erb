@@ -1,0 +1,11 @@
+<li class="mt-4 flex">
+    <%= render IconLink.new(href: social.url, alt: social.label, classes: "group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200", hover: "hover:text-teal-500 dark:hover:text-teal-500") do |icon_link| %>
+        <% icon_link.icon do %>
+            <%= svg "/images/icons/social/#{social.title}.svg", class: "h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500", "aria-hidden": true %>
+        <% end %>
+
+        <% icon_link.label do %>
+            <span class="ml-4"><%= social.label %></span>
+        <% end %>
+    <% end %>
+</li>

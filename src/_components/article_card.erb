@@ -1,0 +1,8 @@
+<article class="md:grid md:grid-cols-4 md:items-baseline">
+    <div class="relative flex flex-col items-start md:col-span-3 group">
+        <%= render ArticlePreview.new(article: @article, hide_time: true) %>
+    </div>
+    <time class="relative z-10 flex items-center order-first hidden mt-1 mb-3 text-sm md:block text-zinc-400 dark:text-zinc-500" datetime="2022-09-05">
+        <%= @article.data.datetime %>
+    </time>
+</article>

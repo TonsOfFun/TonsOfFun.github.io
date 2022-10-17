@@ -1,15 +1,26 @@
 <!doctype html>
-<html lang="<%= site.locale %>">
-  <head>
-    <%= render "head", metadata: site.metadata, title: resource.data.title %>
-  </head>
-  <body class="<%= resource.data.layout %> <%= resource.data.page_class %>">
-    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+<html lang="<%= site.locale %>"
+    class="h-full antialiased"
+    style="--header-position:sticky; --content-offset:0px; --header-height:64px; --header-mb:0px; --header-top:0px; --avatar-top:0px;">
+    <head>
+        <%= render "head", metadata: site.metadata, title: resource.data.title %>
+    </head>
 
-    <main>
-      <%= yield %>
-    </main>
-
-    <%= render "footer", metadata: site.metadata %>
-  </body>
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  <%= resource.data.layout %> <%= resource.data.page_class %>">
+        <div id="__next">
+            <div class="fixed inset-0 flex justify-center sm:px-8">
+                <div class="flex w-full max-w-7xl lg:px-8">
+                    <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
+                </div>
+            </div>
+            <div class="relative">
+                <%= render Shared::Header.new(metadata: site.metadata, resource: resource, data: site.data) %>
+                <div style="height: var(--content-offset);"></div>
+                <main>
+                    <%= yield %>
+                </main>
+                <%= render "footer" %>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,49 @@
+conferences:
+  - event: 
+      name: "RubyConf 2022"
+      date: "November"
+      location: "Houston, Texas, USA"
+    title: "Discover Machine Learning in Ruby"
+    description: We can use Ruby to do anything we as a community want. Today we’ll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn’t accessible until the last decade or so.
+    url: https://rubyconf.org/schedule
+    embed_url: ""
+    action: Check the schedule
+  - event: 
+      name: "RailsConf 2022"
+      date: "May"
+      location: "Portland, Oregon, USA"
+    title: "Applied Queueing Theory"
+    description: We can use Ruby to do anything we as a community want. Today we’ll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn’t accessible until the last decade or so.
+    url: https://www.youtube.com/watch?v=GY4AT2z7mcI
+    embed_url: https://www.youtube.com/embed/eG9_ngMwYGk
+    thumbnail_url: https://i.ytimg.com/vi/eG9_ngMwYGk/hqdefault.jpg
+    action: Watch the video
+  - event: 
+      name: "Remote Connect 2022"
+      date: "April"
+      location: "Virtual"
+    title: "Top 5 tips for hiring abroad from the United States"
+    description:  San Francisco-based host Rhiannon Payne invites us to hear from industry-leaders Sean Page and Justin Bowen. They will discuss where to hire the best talent in the world, how to manage benefits and salaries on a global scale, and navigating cultural differences. You’ll leave with a foundation of how to scale your business through hiring remotely from the United States.
+    url: https://remote.com/events/on-demand/top-5-tips-for-hiring-abroad-from-the-united-states
+    embed_url: https://storage.googleapis.com/dex-remote-977794-p.appspot.com/assets/dex365/vod/thumb/CH-CNT-1-V1_9f70.png
+    action: Watch the video
+  - event: 
+      name: "RailsConf 2021"
+      date: "April"
+      location: "Virtual"
+    title: "Computer Vision on Rails"
+    description:  Learn about combining Rails and Python for Computer Vision. We'll be analyzing images of cannabis plants in real-time and deriving insights from changes in leaf area & bud site areas. We'll explore when to use traditional statistical analysis versus ML approaches, as well as other ways CV has been deployed. We’ll cover integrating OpenCV with ActionCable & Sidekiq for broadcasting camera analysis to Rails and creating time-lapse style renderings with graphs. You will gain an understanding of what tools to use and where to start if you’re interested in using ML or CV with your Rails project!
+    url: https://www.youtube.com/watch?v=eG9_ngMwYGk
+    embed_url: https://www.youtube.com/embed/eG9_ngMwYGk
+    thumbnail_url: https://i.ytimg.com/vi/eG9_ngMwYGk/hqdefault.jpg
+    action: Watch the video
+podcasts:
+  - event: 
+      name: 'Your Podcast'
+      date: 'coming soon'
+      location: 'whereever you get your podcasts'
+    title: "I haven't been on a podcast yet!"
+    description: "Connect with me on twitter and DM me if you're interested in having me on your show!"
+    url: /connect/
+    embed_url: ""
+    action: Listen to the podcast
