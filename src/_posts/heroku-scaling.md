@@ -1,5 +1,5 @@
 ---
-draft: true
+published: true
 layout: post
 title:  "Scaling Rails with Puma and Sidekiq on Heroku"
 categories: 
