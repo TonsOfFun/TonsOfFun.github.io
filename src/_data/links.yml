@@ -39,12 +39,20 @@ social:
     color: "#0A66C2"
   - title: instagram
     label: Follow me on Instagram
-    url: https://Instagram.com/TonsOfFun111]
+    url: https://Instagram.com/TonsOfFun111
     color: "#E4405F"
   - title: gitlab
     label: Follow me on GitLab
     url: https://gitlab.com/TonsOfFun
     color: "#FC6D26"
+  - title: pypi
+    label: PyPI
+    url: https://pypi.org/user/TonsOfFun
+    color: "#3775A9"
+  - title: rubygems
+    label: RubyGems
+    url: https://rubygems.org/profiles/TonsOfFun
+    color: "#E9573F"
   - title: bitbucket
     label: TonsOfFun Bitbucket
     url: https://Bitbucket.org/TonsOfFun
