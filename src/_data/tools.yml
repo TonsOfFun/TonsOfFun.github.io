@@ -1,10 +1,12 @@
-skills:
-  - name: 
-    label: 
-    description:
-    color:
-    experience:
-    years: 
+# skills:
+#   - name: 
+#     label: 
+#     description:
+#     color:
+#     experience:
+#     years: 
+#     url:
+#     website_url:
 development:
   - name: visualstudiocode
     label: VSCode
@@ -12,16 +14,61 @@ development:
     color: "#007ACC"
     experience:
     years: 
+    url:
+    website_url:
   - name: googlecolab
     label: Google Colab
     description:
     color: "#F9AB00"
     experience:
     years: 
+    url:
+    website_url:
 project:
+  - name: markdown
+    label: Markdown
+    description:
+    color: "#000000"
+    experience:
+    years: 
+    url:
+    website_url:
+productivity: 
+  - name: markdown
+    label: Markdown
+    description:
+    color: "#000000"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: loom
+    label: Loom
+    description:
+    color: "#625DF5"
+    experience:
+    years:
+    url:
+    website_url:
+  - name: notion
+    label: Notion
+    description:
+    color: "#000000"
+    experience:
+    years:
+    url:
+    website_url:
+  - name: slack
+    label: Slack
+    description:
+    color: "#4A154B"
+    experience:
+    years:
+    url:
+    website_url:
 deploy:
-  - name: googleactions
-    label: Google Actions
+  - name: githubactions
+    label: GitHub Actions
     description:
     color: "#2088FF"
     experience:
@@ -61,6 +108,13 @@ datastore:
     years: 
     logo_url: 
 background:
+  - name: celery
+    label: Celery
+    description:
+    color: "#37814A"
+    experience:
+    years: 
+    logo_url: 
   - name: sidekiq
     label: Sidekiq
     description:
@@ -75,11 +129,40 @@ background:
     experience:
     years: 
     logo_url: 
-messaging:
-  - name: zeromq
-    label: ZeroMQ
+payment:
+  - name: stripe
+    label: Stripe
     description:
-    color: "#DF0000"
+    color: "#008CDD"
+    experience:
+    years: 
+    logo_url: 
+messaging:
+  - name: twilio
+    label: Twilio
+    description:
+    color: "#F22F46"
+    experience:
+    years: 
+    logo_url: 
+  - name: telegram
+    label: Telegram
+    description:
+    color: "#26A5E4"
+    experience:
+    years: 
+    logo_url: 
+  - name: mailchimp
+    label: MailChimp
+    description:
+    color: "#FFE01B"
+    experience:
+    years: 
+    logo_url: 
+  - name: mailgun
+    label: MailGun
+    description:
+    color: "#F06B66"
     experience:
     years: 
     logo_url: 
@@ -90,6 +173,13 @@ messaging:
     experience:
     years: 
     logo_url: 
+  - name: zeromq
+    label: ZeroMQ
+    description:
+    color: "#DF0000"
+    experience:
+    years: 
+    logo_url: 
 ai:
   - name: pytorch
     label: PyTorch
@@ -97,21 +187,24 @@ ai:
     color: "#EE4C2C"
     experience:
     years: 
-    logo_url:
+    url:
+    website_url:
   - name: pytorchlightning
     label: PyTorch Lightning
     description:
     color: "#792EE5"
     experience:
     years: 
-    logo_url:
+    url:
+    website_url:
   - name: tensorflow
     label: Tensor Flow
     description:
     color: "#FF6F00"
     experience:
     years: 
-    logo_url:
+    url:
+    website_url:
 language:
   - name: ruby
     label: Ruby
@@ -119,21 +212,49 @@ language:
     color: "#CC342D"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: php
     label: PHP
     description:
     color: "#777BB4"
     experience:
     years: 
-    logo_url:
+    url:
+    website_url:
+  - name: javascript
+    label: JavaScript
+    description:
+    color: "#F7DF1E"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: typescript
+    label: TypeScript
+    description:
+    color: "#3178C6"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: python
     label: Python
     description:
     color: "#3776AB"
     experience:
     years: 
-    logo_url:
+    url:
+    website_url:
+frontend:
+  - name: react
+    label: React
+    description:
+    color: "#61DAFB"
+    experience:
+    years: 
+    url:
+    website_url:
 web: 
   - name: rubyonrails
     label: Rails
@@ -141,21 +262,48 @@ web:
     color: "#CC0000"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
+  - name: stimulus
+    label: Stimulus
+    description:
+    color: "#77E8B9"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: rubysinatra
     label: Sinatra
     description:
     color: "#000000"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: flask
     label: Flask
     description:
     color: "#000000"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
+  - name: django
+    label: Django
+    description:
+    color: "#092E20"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: laravel
+    label: Laravel
+    description:
+    color: "#FF2D20"
+    experience:
+    years: 
+    url:
+    website_url:
 css:
   - name: tailwindcss
     label: Tailwind CSS
@@ -163,7 +311,8 @@ css:
     color: "#06B6D4"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
 database:
   - name: postgresql
     label: PostgreSQL
@@ -171,21 +320,24 @@ database:
     color: "#4169E1"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: mongodb
     label: MongoDB
     description:
     color: "#47A248"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: mysql
-    label:
+    label: MySQL
     description:
     color: "#4479A1"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
 map:
   - name: googlemaps
     label: Google Maps
@@ -193,28 +345,32 @@ map:
     color: "#4285F4"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: leaflet
     label: Leaflet
     description:
     color: "#199900"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: mapbox
     label: Mapbox
     description:
     color: "#000000"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: openstreetmap
     label: OpenStreetMap
     description:
     color: "#7EBC6F"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
 vision:
   - name: ffmpeg
     label: FFmpeg
@@ -222,37 +378,50 @@ vision:
     color: "#4479A1"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
   - name: opencv
     label: OpenCV
     description:
     color: "#5C3EE8"
     experience:
     years: 
-    logo_url: 
+    url:
+    website_url:
 hardware:
-  - name: raspberrypi
-    label: 
-    description:
-    color:
-    logo_url:
-    experience:
-    years: 
   - name: arduino
-    label: 
+    label: Arduino
     description:
-    color:
-    logo_url:
+    color: "#00979D"
     experience:
-    years: 
+    years:
+    url:
+    website_url: 
+  - name: nvidia
+    label: NVIDIA
+    description:
+    color: "#76B900"
+    experience:
+    years:
+    url:
+    website_url: 
+  - name: raspberrypi
+    label: Raspberry Pi
+    description:
+    color: "#A22846"
+    experience:
+    years:
+    url:
+    website_url: 
 async: 
   - name: slack
     label: Slack
     description:
     color: "#4A154B"
-    logo_url:
     experience:
     years:
+    url:
+    website_url:
 cloud:
   - name: amazonaws
     label: Amazon AWS
@@ -260,27 +429,31 @@ cloud:
     color: "#4285F4"
     experience:
     years: 
-    logo_url:  
+    url:
+    website_url:
   - name: googlecloud
     label: Google Cloud
     description:
     color: "#4285F4"
     experience:
     years: 
-    logo_url:  
-marketplace:
-  - name: 
-    label: 
-    description:
-    color:
-    experience:
-    years: 
-    logo_url: 
-workstation:
-  - name: 
-    label: 
-    description:
-    color:
-    experience:
-    years: 
-    logo_url: 
+    url:
+    website_url:
+# marketplace:
+#   - name: 
+#     label: 
+#     description:
+#     color:
+#     experience:
+#     years: 
+#     url:
+#     website_url:
+# workstation:
+#   - name: 
+#     label: 
+#     description:
+#     color:
+#     experience:
+#     years: 
+#     url:
+#     website_url:

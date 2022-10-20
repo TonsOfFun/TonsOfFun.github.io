@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Skills
+layout: post
+title: Method
 ---
 ## Leadership
 - Early pre-seed to growth stage series C startup product team builder

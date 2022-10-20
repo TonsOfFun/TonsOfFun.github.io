@@ -1,2 +1,106 @@
 audit:
+  - name: Tech Due Dilligence
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Tech Debt
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Performance
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Testing
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: CI/CD
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Scaling
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Developer Experience
+    description: 
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Product Process
+    description: 
+    icon:
+business:
+  - name: Lean Startup Workshop
+    description:
+    icon:
+design:
+  - name: Product Design
+    description:
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: User Stories
+    description:
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Workflow Diagrams
+    description:
+    icon:
+    url: 
+    domain: 
+    logo_url: 
+  - name: Architecture Diagrams
+    description:
+    icon:
+    url: 
+    domain: 
+    logo_url: 
 development:
+  - name: Product Development
+    description:
+    icon: 
+    url: 
+    domain: 
+    logo_url: 
+  - name: Development Experience Improvement
+    description:
+    icon: 
+    url: 
+    domain: 
+    logo_url: 
+  - name: Performance Enhancements
+    description:
+    icon: 
+    url: 
+    domain: 
+    logo_url: 
+  - name: Infrastructure Automations
+    description:
+    icon: 
+    url: 
+    domain: 
+    logo_url: 
+  - name: Software Upgrades
+    description:
+    icon: 
+    url: 
+    domain: 
+    logo_url: 
