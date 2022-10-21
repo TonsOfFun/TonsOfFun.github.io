@@ -280,7 +280,7 @@ language:
     website_url:
   - name: javascript
     label: JavaScript
-    description:
+    description: I use JavaScript mostly for browser based applications, but have also made React Native mobile and Electron desktop applications
     color: "#F7DF1E"
     experience:
     years: 
@@ -288,7 +288,7 @@ language:
     website_url:
   - name: typescript
     label: TypeScript
-    description:
+    description: 
     color: "#3178C6"
     experience:
     years: 
@@ -296,13 +296,21 @@ language:
     website_url:
   - name: python
     label: Python
-    description:
+    description: I mostly use Python for Computer Vision and other Machine Learning tasks.
     color: "#3776AB"
     experience:
     years: 
     url:
     website_url:
 frontend:
+  - name: electron
+    label: Electron
+    description: 
+    color: "#47848F"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: react
     label: React
     description:
@@ -311,19 +319,27 @@ frontend:
     years: 
     url:
     website_url:
-web: 
-  - name: rubyonrails
-    label: Rails
-    description: I've been using Rails to create Web applications and APIs since Rails 2. I've launch dozens of products 
-    color: "#CC0000"
+  - name: redux
+    label: Redux
+    description:
+    color: "#764ABC"
     experience:
     years: 
     url:
-    website_url:
+    website_url:  
   - name: stimulus
     label: Stimulus
     description:
     color: "#77E8B9"
+    experience:
+    years: 
+    url:
+    website_url:
+web:
+  - name: rubyonrails
+    label: Rails
+    description: I've been using Rails to create Web applications and APIs since Rails 2. I've launch dozens of products 
+    color: "#CC0000"
     experience:
     years: 
     url:
@@ -368,7 +384,6 @@ web:
     years: 
     url:
     website_url:
-css:
   - name: tailwindcss
     label: Tailwind CSS
     description:
