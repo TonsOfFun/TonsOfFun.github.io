@@ -146,7 +146,7 @@ datastore:
 background:
   - name: celery
     label: Celery
-    description:
+    description: I've used Celery for background job processing in drone mapping and real-time Computer Vision applications
     color: "#37814A"
     experience:
     years: 
@@ -155,7 +155,7 @@ background:
     website_url:
   - name: sidekiq
     label: Sidekiq
-    description:
+    description: I started using Sidekiq at Banjo in 2012 as one at one of the first paying Sidekiq Pro customers. I've used it to processing billions of jobs the perform anywhere from geocoding and image processing to email and push notifications.
     color: "#B1003E"
     experience:
     years: 
@@ -164,7 +164,7 @@ background:
     website_url:
   - name: faktory
     label: Faktory
-    description:
+    description: More recently I'ved started using Faktory for my background processing needs. With its simple API and flexible language agnotstic abilities it's proven to be a stable and reliable way to enqueue and process jobs in JavaScript, Python, and Ruby, with community support for job producers and consumers written in Crystal, Go, Elixer, PHP, Rust, and Swift and more!
     color: "#EAC248"
     experience:
     years: 
