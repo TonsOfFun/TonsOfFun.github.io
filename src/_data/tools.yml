@@ -8,19 +8,35 @@
 #     url:
 #     website_url:
 development:
+  - name: docker
+    label: Docker
+    description: Docker makes development and deployment dependencies repeatable and consistent. Using images to lock in requirements for things like OpenCV, TensorFlow, PyTorch, all with NVIDIA's Docker Engine for CUDA support make onboarding, developing, and deploying with remote containers a breeze. I've used Docker Hub for private organizations and even host a few of my own images there.
+    color: "#2496ED"
+    experience: Expert
+    years: 
+    url:
+    website_url:
   - name: visualstudiocode
     label: VSCode
-    description:
+    description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
     color: "#007ACC"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
   - name: googlecolab
     label: Google Colab
-    description:
+    description: I've been using Google Colab since before it was released publicly in 2017. It's been a great tool for sharing and pairing on machine learning projects like computer vision for Cainthus, GreenThumb IO, and nSightSurgical.
     color: "#F9AB00"
-    experience:
+    experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: jupyter
+    label: Jupyter
+    description: I used to use plain old Jupyter notebooks, but mostly use Google Colab these days. Sometimes I will run notebooks on remote containers with the VSCode extension.
+    color: "#F37626"
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -46,7 +62,7 @@ productivity:
     label: Loom
     description:
     color: "#625DF5"
-    experience:
+    experience: Proficient
     years:
     url:
     website_url:
@@ -67,18 +83,30 @@ productivity:
     url:
     website_url:
 deploy:
+  - name: terraform
+    label: Terraform
+    description:
+    color: "#7B42BC"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: githubactions
     label: GitHub Actions
     description:
     color: "#2088FF"
     experience:
     years: 
+    url:
+    website_url:
   - name: circleci
     label: CircleCI
     description:
     color: "#343434"
     experience:
     years: 
+    url:
+    website_url:
 design:
   - name: figma
     label: Figma
@@ -86,12 +114,16 @@ design:
     color: "#F24E1E"
     experience:
     years: 
+    url:
+    website_url:
   - name: miro
     label: Miro
     description:
     color: "#050038"
     experience:
     years: 
+    url:
+    website_url:
 datastore:
   - name: redis
     label: Redis
@@ -100,6 +132,8 @@ datastore:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: elasticsearch
     label: Elasticsearch
     description:
@@ -107,6 +141,8 @@ datastore:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
 background:
   - name: celery
     label: Celery
@@ -115,6 +151,8 @@ background:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: sidekiq
     label: Sidekiq
     description:
@@ -122,6 +160,8 @@ background:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: faktory
     label: Faktory
     description:
@@ -129,6 +169,8 @@ background:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
 payment:
   - name: stripe
     label: Stripe
@@ -137,6 +179,8 @@ payment:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
 messaging:
   - name: twilio
     label: Twilio
@@ -145,6 +189,8 @@ messaging:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: telegram
     label: Telegram
     description:
@@ -152,6 +198,8 @@ messaging:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: mailchimp
     label: MailChimp
     description:
@@ -159,6 +207,8 @@ messaging:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: mailgun
     label: MailGun
     description:
@@ -166,6 +216,8 @@ messaging:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: rabbitmq
     label: RabbitMQ
     description:
@@ -173,6 +225,8 @@ messaging:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
   - name: zeromq
     label: ZeroMQ
     description:
@@ -180,6 +234,8 @@ messaging:
     experience:
     years: 
     logo_url: 
+    url:
+    website_url:
 ai:
   - name: pytorch
     label: PyTorch
@@ -258,7 +314,7 @@ frontend:
 web: 
   - name: rubyonrails
     label: Rails
-    description:
+    description: I've been using Rails to create Web applications and APIs since Rails 2. I've launch dozens of products 
     color: "#CC0000"
     experience:
     years: 
@@ -274,7 +330,7 @@ web:
     website_url:
   - name: rubysinatra
     label: Sinatra
-    description:
+    description: I've build a few microservices with Sinatra to expose APIs with Ruby. One of the most interesting examples that made it to production was a geocoding service that took coordinates and returned location names using OSM, PostGIS, and Redis for a caching layer. It could handle batches of coordinates with a custom stored proceedure and serviced tens of millions of requests a day.
     color: "#000000"
     experience:
     years: 
@@ -282,7 +338,15 @@ web:
     website_url:
   - name: flask
     label: Flask
-    description:
+    description: At Cainthus we served our APIs with Flask for our React apps that rendered data derived from Computer Vision
+    color: "#000000"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: express
+    label: Express.js
+    description: At Momentage we created a simple file upload service with Express JS and MongoDB's GridFS for resumable file uploads with S3 and CloudFront serving the uploaded assets.
     color: "#000000"
     experience:
     years: 

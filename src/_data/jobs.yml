@@ -5,6 +5,7 @@ companies:
         description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.'
         start: '2022'
         end: 'present'
+        url: 
     logo_url: /images/logos/nsightsurgical.jpeg
     website_url: 'https://nsightsurgical.ai/'
     location: 'Remote'
@@ -15,6 +16,7 @@ companies:
         description: 'Tech due dilligence for VC, PE, and acquisitions.'
         start: '2021'
         end: 'present'
+        url: 
     logo_url: /images/logos/svsg.png
     website_url: 'https://svsg.co/'
     location: 'Remote from San Francisco, California'
@@ -25,6 +27,7 @@ companies:
         description: 'Providing startups with business advice, marketing, design, and development services to bring product ideation to market.'
         start: '2018'
         end: 'present'
+        url: 
     logo_url: /images/logos/seafoammedia.png
     website_url: 'https://seafoam.media/tech/'
     location: 'Remote'
@@ -35,6 +38,7 @@ companies:
         description: 'Combining smart cameras, AI, and IoT technology to fundamentally transform the cannabis industry from seed to sale.'
         start: '2016'
         end: '2020'
+        url: 
     logo_url: /images/logos/greenthumbio.jpeg
     website_url: 'https://greenthumb.io/'
     location: 'Remote'
@@ -45,15 +49,19 @@ companies:
         description: 'Directly interfaced with Cargill VC to close on Series B fund raising efforts tech due dilligence. Coordinated an international team of scientists and engineers to deliver on the installation and management of international on farm deployment sites that used our edge based GPU acceleerated AI to process hundreds of cameras and report events to the cloud platform in real time.'
         start: '2017'
         end: '2018'
+        url: 
       - title: 'Director of Engineering'
         description: 'Grew a Series A team to deliver a drone mappping and analytics platform to market and Lead the product design, R&D, engineering, and testing of the Dairy cow computer vision platform.'
         start: '2016'
-        end: '2017'
+        end: '2017'  
+        url: 
       - title: 'Lead Data Engineer and Platform Architecture Consultant'
         description: 'Worked with a small team to optimize and scale a drone analytics and real-time geo search to close Series A funding'
         start: '2016'
         end: '2016'
+        url: 
     logo_url: /images/logos/cainthus.png
+    url: 
     website_url: 'https://cainthus.com/'
     location: 'Remote, San Francisco, California and Dublin, Ireland'
     description: 'Cargill funded Agricultural computer vision and technology company, providing AI managements services to field crop and livestock farmers globally.'
@@ -63,7 +71,9 @@ companies:
         description: 'I built a full stack web application to manage client-concierge interactions for 5 star international hotels in collaboration with the Ritz Carlton and Grand Hyatt in Tokyo.'
         start: '2016'
         end: '2017'
+        url: 
     logo_url: /images/logos/pinstop.png
+    url: 
     website_url: 'https://pinstop.jp/'
     location: 'Remote, San Francisco, California and Tokyo, Japan'
     description: 'Bespoke concierge software for 5 star hospitality personel to provide custom guided experiences with localized translations of maps, addresses, and notes.'
@@ -73,6 +83,7 @@ companies:
         description: 'Lead the design and development of the MVP web, iOS, and Android apps.'
         start: '2015'
         end: '2016'
+        url: 
     logo_url: /images/logos/zala.png
     website_url: 'https://tonsof.fun/zala/'
     location: 'Remote'
@@ -83,6 +94,7 @@ companies:
         description: 'I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high throughput media uploading service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads to S3.'
         start: '2014'
         end: '2016'
+        url: 
     logo_url: /images/logos/momentage.png
     website_url: 'https://tonsof.fun/momentage/'
     location: 'Remote'
@@ -93,6 +105,7 @@ companies:
         description: 'Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.'
         start: '2012'
         end: '2014'
+        url: 
     logo_url: /images/logos/banjo.webp
     website_url: 'https://tonsof.fun/banjo/'
     location: 'San Francisco Bay Area'
@@ -103,6 +116,7 @@ companies:
         description: 'Responsible for network security, services and systems reliability, software development, and support. Design, build, and maintain Rails web applications that compliment a software suite of Adobe Flex/Flash Builder Air desktop apps.'
         start: '2010'
         end: '2012'
+        url: 
     logo_url: /images/logos/focustesting.png
     website_url: 'https://tonsof.fun/focus/'
     location: 'San Francisco Bay Area'
@@ -113,10 +127,12 @@ companies:
         description: 'Maintained the registration and reporting application using Java and MS SQL, while handling mass emails to sites. Used Ruby on Rails and MySQL to develop new web interfaces designed to increase efficiency by improving the user experience. Continued advanced responsibilities of Technical Support and system administration.'
         start: '2008'
         end: '2010'
+        url: 
       - title: 'IT Technical Support, Windows Systems Administrator '
-        description: 'Assured the availability of the testing service to over 300 globally distributed testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and administrate Microsoft SQL and Windows Server environmentss.'
+        description: 'Assured the availability of the testing service to over 300 globally distributed testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and administrate Microsoft SQL and Windows Server environments.'
         start: '2005'
         end: '2008'
+        url: 
     logo_url: /images/logos/cats.png
     website_url: 'https://tonsof.fun/focus/'
     location: 'San Francisco Bay Area'

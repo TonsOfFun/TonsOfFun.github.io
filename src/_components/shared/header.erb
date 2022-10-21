@@ -3,7 +3,7 @@
       get isOpen() { return this.open },
       toggleMenu() { this.open = ! this.open },
     }" 
-    class="pointer-events-none relative z-50 flex flex-col"
+    class="relative z-50 flex flex-col pointer-events-none print:hidden"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
     <div x-data="scrollToShow()" 
         x-on:scroll.window.passive="scroll()"
@@ -14,37 +14,37 @@
             style="position:var(--header-inner-position)">
             <div class="mx-auto max-w-7xl lg:px-4">
                 <div class="relative px-2 sm:px-4 lg:px-6 mx-18">
-                    <div class="mx-auto max-w-3xl lg:max-w-5xl">
+                    <div class="max-w-3xl mx-auto lg:max-w-5xl">
                         <div class="relative flex gap-4 ml-[18px]" style="">
                             <div class="flex flex-1">
                                 <div class="m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
-                                    <a aria-label="Home" class="mx-18 pointer-events-auto" href="/">
+                                    <a aria-label="Home" class="pointer-events-auto mx-18" href="/">
                                         <img alt=""
                                             sizes="2.25rem"
                                             srcset=""
                                             x-ref="avatar"
                                             src="/images/avatar.jpg"
                                             width="512" height="512" decoding="async" data-nimg="future"
-                                            class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"
+                                            class="object-cover rounded-full bg-zinc-100 dark:bg-zinc-800 h-9 w-9"
                                             style="color: transparent;">
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex flex-1 justify-end md:justify-center">
+                            <div class="flex justify-end flex-1 md:justify-center">
                                 <div @click="toggleMenu" class="pointer-events-auto md:hidden">
                                     <div x-show="isOpen">
-                                        <div class="fixed z-50 inset-0 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100" aria-hidden="true"></div>
-                                        <div class="fixed z-50 inset-x-4 top-8 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 opacity-100 scale-100" tabindex="-1">
+                                        <div class="fixed inset-0 z-50 opacity-100 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80" aria-hidden="true"></div>
+                                        <div class="fixed z-50 p-8 origin-top scale-100 bg-white opacity-100 inset-x-4 top-8 rounded-3xl ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800" tabindex="-1">
                                             <div class="flex flex-row-reverse items-center justify-between">
-                                                <button aria-label="Close menu" class="-m-1 p-1" type="button" tabindex="0">
-                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 text-zinc-500 dark:text-zinc-400">
+                                                <button aria-label="Close menu" class="p-1 -m-1" type="button" tabindex="0">
+                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6 text-zinc-500 dark:text-zinc-400">
                                                         <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </svg>
                                                 </button>
                                                 <h2 class="text-sm font-medium text-zinc-600 dark:text-zinc-400">Navigation</h2>
                                             </div>
                                             <nav class="mt-6">
-                                                <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                                                <ul class="-my-2 text-base divide-y divide-zinc-100 text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                                                     <% @data.links.navbar.each do |link| %> 
                                                         <%= render NavLink.new(link: link, resource: @resource) %>
                                                     <% end %>
@@ -53,17 +53,17 @@
                                         </div>
                                     </div>
                                     <button aria-controls="mobile-menu" aria-expanded="false"
-                                        class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+                                        class="flex items-center px-4 py-2 text-sm font-medium rounded-full shadow-lg group bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
                                         type="button">Menu
                                         <svg viewBox="0 0 8 6" aria-hidden="true"
-                                            class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                                            class="w-2 h-auto ml-3 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
                                             <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5"
                                                 stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                     </button>
                                 </div>
-                                <nav class="pointer-events-auto hidden md:block">
-                                    <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                                <nav class="hidden pointer-events-auto md:block">
+                                    <ul class="flex px-3 text-sm font-medium rounded-full shadow-lg bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                                         <% @data.links.navbar.each do |link| %> 
                                             <%= render NavLink.new(link: link, resource: @resource) %>
                                         <% end %>
@@ -73,7 +73,7 @@
                             <div class="flex justify-end md:flex-1">
                                 <div class="pointer-events-auto">
                                     <button type="button" aria-label="Toggle dark mode"
-                                        class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+                                        class="px-3 py-2 transition rounded-full shadow-lg group bg-white/90 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
                                          x-data="toggleDarkMode()" @click="updateLightDarkMode" aria-label="Toggle Darkmode">
                                         <svg
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round"
