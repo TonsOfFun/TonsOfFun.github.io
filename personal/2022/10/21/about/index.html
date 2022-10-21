@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Method | Justin Bowen is TonsOfFun</title>
+<title>Justin Bowen is TonsOfFun | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/system/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/system/favicon-16x16.png">
 <link rel="manifest" href="/images/icons/system/site.webmanifest">
-<link rel="stylesheet" href="/_bridgetown/static/index.IOHEU7DO.css" />
+<link rel="stylesheet" href="/_bridgetown/static/index.PAIIIC3V.css" />
 <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 <script src="/_bridgetown/static/index.RARUY3ZT.js" defer></script>
 <script>
@@ -178,7 +178,7 @@ setTimeout(() => {
       get isOpen() { return this.open },
       toggleMenu() { this.open = ! this.open },
     }" 
-    class="pointer-events-none relative z-50 flex flex-col"
+    class="relative z-50 flex flex-col pointer-events-none print:hidden"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
     <div x-data="scrollToShow()" 
         x-on:scroll.window.passive="scroll()"
@@ -189,37 +189,37 @@ setTimeout(() => {
             style="position:var(--header-inner-position)">
             <div class="mx-auto max-w-7xl lg:px-4">
                 <div class="relative px-2 sm:px-4 lg:px-6 mx-18">
-                    <div class="mx-auto max-w-3xl lg:max-w-5xl">
+                    <div class="max-w-3xl mx-auto lg:max-w-5xl">
                         <div class="relative flex gap-4 ml-[18px]" style="">
                             <div class="flex flex-1">
                                 <div class="m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
-                                    <a aria-label="Home" class="mx-18 pointer-events-auto" href="/">
+                                    <a aria-label="Home" class="pointer-events-auto mx-18" href="/">
                                         <img alt=""
                                             sizes="2.25rem"
                                             srcset=""
                                             x-ref="avatar"
                                             src="/images/avatar.jpg"
                                             width="512" height="512" decoding="async" data-nimg="future"
-                                            class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"
+                                            class="object-cover rounded-full bg-zinc-100 dark:bg-zinc-800 h-9 w-9"
                                             style="color: transparent;">
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex flex-1 justify-end md:justify-center">
+                            <div class="flex justify-end flex-1 md:justify-center">
                                 <div @click="toggleMenu" class="pointer-events-auto md:hidden">
                                     <div x-show="isOpen">
-                                        <div class="fixed z-50 inset-0 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80 opacity-100" aria-hidden="true"></div>
-                                        <div class="fixed z-50 inset-x-4 top-8 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 opacity-100 scale-100" tabindex="-1">
+                                        <div class="fixed inset-0 z-50 opacity-100 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80" aria-hidden="true"></div>
+                                        <div class="fixed z-50 p-8 origin-top scale-100 bg-white opacity-100 inset-x-4 top-8 rounded-3xl ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800" tabindex="-1">
                                             <div class="flex flex-row-reverse items-center justify-between">
-                                                <button aria-label="Close menu" class="-m-1 p-1" type="button" tabindex="0">
-                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 text-zinc-500 dark:text-zinc-400">
+                                                <button aria-label="Close menu" class="p-1 -m-1" type="button" tabindex="0">
+                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6 text-zinc-500 dark:text-zinc-400">
                                                         <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </svg>
                                                 </button>
                                                 <h2 class="text-sm font-medium text-zinc-600 dark:text-zinc-400">Navigation</h2>
                                             </div>
                                             <nav class="mt-6">
-                                                <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                                                <ul class="-my-2 text-base divide-y divide-zinc-100 text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                                                         <li>
         <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/">
@@ -288,17 +288,17 @@ setTimeout(() => {
                                         </div>
                                     </div>
                                     <button aria-controls="mobile-menu" aria-expanded="false"
-                                        class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+                                        class="flex items-center px-4 py-2 text-sm font-medium rounded-full shadow-lg group bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
                                         type="button">Menu
                                         <svg viewBox="0 0 8 6" aria-hidden="true"
-                                            class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
+                                            class="w-2 h-auto ml-3 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
                                             <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5"
                                                 stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                     </button>
                                 </div>
-                                <nav class="pointer-events-auto hidden md:block">
-                                    <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                                <nav class="hidden pointer-events-auto md:block">
+                                    <ul class="flex px-3 text-sm font-medium rounded-full shadow-lg bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                                             <li>
         <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/">
@@ -368,7 +368,7 @@ setTimeout(() => {
                             <div class="flex justify-end md:flex-1">
                                 <div class="pointer-events-auto">
                                     <button type="button" aria-label="Toggle dark mode"
-                                        class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+                                        class="px-3 py-2 transition rounded-full shadow-lg group bg-white/90 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
                                          x-data="toggleDarkMode()" @click="updateLightDarkMode" aria-label="Toggle Darkmode">
                                         <svg
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round"
@@ -409,110 +409,20 @@ setTimeout(() => {
                         <article class="[&>p]:mt-6 [&>p]:space-y-7 [&>p]:text-base [&>p]:text-zinc-600 [&>p]:dark:text-zinc-400">
                             <header class="flex flex-col">
                                 <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                                    Method
+                                    Justin Bowen is TonsOfFun
                                 </h1>
-                                <time datetime="" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+                                <time datetime="September 2, 2022" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
                                     <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                                    <span class="ml-3"></span>
+                                    <span class="ml-3">September 2, 2022</span>
                                 </time>
                             </header>
-                            <h2 id="leadership">Leadership</h2>
-<ul>
-  <li>Early pre-seed to growth stage series C startup product team builder</li>
-  <li>Lead teams from senior, staff, director, and C level positions</li>
-  <li>Not afraid to hire and mentor juniors into lead contributors</li>
-</ul>
+                            <p>Born and raised on the peninsula in the San Francisco Bay Area, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad’s office with the tech support crew at the end of the work day.</p>
 
-<h2 id="software-engineering">Software Engineering</h2>
-<h3 id="3rd-part-apis">3rd Part APIs</h3>
-<ul>
-  <li>OAuth (Facebook, Twitter, etc)</li>
-  <li>Twilio (Email, Messaging, Video, and Voice)</li>
-</ul>
+<p>My dad was a huge role model and positive influence throughout my childhood, education, and career. He was my first soccer coach and my first boss. When I was 8 or 9 my first personal computer had an Intel Pentium III with 512MB of RAM. My dad had me install all of the components and upgrade my graphics card (to play newer games like Half-Life) with an ATI Rage 32MB GPU and a huge (for the time) 80GB IDE HDD. We continued playing video games like Halo, Call of Duty, and PUBG.</p>
 
-<h3 id="gis">GIS</h3>
-<ul>
-  <li>PostGIS geoindexes and geoqueries</li>
-  <li>Redis geocaching queries</li>
-  <li>Google Places API</li>
-</ul>
-<iframe src="https://player.vimeo.com/video/314084708?h=269c9d19b2" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
-<p><a href="https://vimeo.com/314084708">5 Star Hotel Web App&mdash;Japan (Sea Foam Media &amp; Technology)</a> from <a href="https://vimeo.com/seafoammediatech">Rhiannon Payne</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>At 15 I tested out of high school, started college, and started my career working tech support. While simultaneously enrolled in college Java programming methods and data structures classes, tech support gave me an opportunity to learn from the user experience. Working customer facing phone support gave me exposure to people across the country with varying degrees of technical literacy and cultural backgrounds. I was able provide end to end support software bugs from documenting them on the phone to resolving them with the developers.</p>
 
-<h3 id="artifical-intelligence">Artifical Intelligence</h3>
-<ul>
-  <li>OpenCV
-    <ul>
-      <li>Streaming video processing</li>
-      <li>Deep neural network inference</li>
-      <li>Computer Vision</li>
-    </ul>
-  </li>
-  <li>PyTorch
-    <ul>
-      <li>Machine Learning
-        <ul>
-          <li>Deep Learning
-            <ul>
-              <li>Training Neural Networks</li>
-              <li>Deep Neural Network inference</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>TorchVision
-        <ul>
-          <li>Computer Vision</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>TensorFlow
-    <ul>
-      <li>Machine Learning</li>
-      <li>Deep Learning</li>
-      <li>Deep Neural Network inference</li>
-    </ul>
-  </li>
-  <li>CUDA
-    <ul>
-      <li>GPU Accelerated Matrix &amp; Tensor processing</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="distributed-processing">Distributed Processing</h3>
-<ul>
-  <li>Sidekiq</li>
-  <li>Faktory</li>
-  <li>Celery</li>
-  <li>Redis</li>
-</ul>
-
-<h3 id="deployment">Deployment</h3>
-<ul>
-  <li>Cloud
-    <ul>
-      <li>AWS</li>
-      <li>GCP</li>
-      <li>Heroku</li>
-    </ul>
-  </li>
-  <li>On-premise
-    <ul>
-      <li>Ubuntu Landscape</li>
-      <li>AWS Hybrid Instances with SSM</li>
-    </ul>
-  </li>
-  <li>Edge
-    <ul>
-      <li>GreenHouses</li>
-      <li>Drones</li>
-      <li>Dairy Barns</li>
-      <li>Operating Rooms</li>
-    </ul>
-  </li>
-</ul>
+<p>Java and Microsoft SQL Server was the first tech stack I worked on, but I was intrigued by the OpenSource software community. I played with different Linux distros and found Ubuntu 8.04 (Hardy Heron) quickly came to love Ruby on Rails.</p>
 
                         </article>
                     </div>
@@ -522,11 +432,11 @@ setTimeout(() => {
     </div>
 </div>
                 </main>
-                <footer class="mt-32">
+                <footer class="mt-32 print:hidden">
     <div class="sm:px-8">
         <div class="mx-auto max-w-7xl lg:px-8">
-            <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
-                <div class="flex justify-center space-x-6 mb-4">
+            <div class="pt-10 pb-16 border-t border-zinc-100 dark:border-zinc-700/40">
+                <div class="flex justify-center mb-4 space-x-6">
                         <a class="font-semibold group -m-1 p-1" href="https://github.com/TonsOfFun" aria-label="Follow me on GitHub" target="_blank" rel="noopener noreferrer">    
                 <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.2-.7 0-.7 0-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"/>
@@ -599,7 +509,7 @@ setTimeout(() => {
 </a>
                 </div>
                 <div class="relative px-4 sm:px-8 lg:px-12">
-                    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                    <div class="max-w-2xl mx-auto lg:max-w-5xl">
                         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
                             <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                               <a class="transition hover:text-teal-500 dark:hover:text-teal-400"
@@ -618,7 +528,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/_posts/skills.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/_posts/about.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>
