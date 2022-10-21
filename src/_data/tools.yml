@@ -110,8 +110,16 @@ deploy:
 design:
   - name: figma
     label: Figma
-    description:
+    description: I enjoy the async collaborative approach design, feedback, and interating with Figma on product design.
     color: "#F24E1E"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: sketch
+    label: Sketch
+    description: I've had the opporunity to contribute to the design of a number of products with Figma
+    color: "#F7B500"
     experience:
     years: 
     url:
