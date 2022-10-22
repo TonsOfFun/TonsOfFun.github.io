@@ -32,6 +32,11 @@ gem "bridgetown", "~> 1.1.0"
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 5.6"
 
+group :development do
+    gem 'standard'
+    gem 'solargraph'
+end
+
 group :bridgetown_plugins do
     gem "bridgetown-view-component", "~> 1.0"
     gem "bridgetown-svg-inliner", "~> 1.0"
