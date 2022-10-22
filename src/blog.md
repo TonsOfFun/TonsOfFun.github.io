@@ -10,7 +10,7 @@ title: Posts
 </header>
 <div class="mt-16 sm:mt-20">
   <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-    <div class="flex max-w-3xl flex-col space-y-16">
+    <div class="flex flex-col max-w-3xl space-y-16">
       <% collections.posts.resources.each do |post| %>
         <% unless post.data.draft %>
           <%= render ArticleCard.new(article: post) %>

@@ -343,6 +343,22 @@ frontend:
     years: 
     url:
     website_url:
+  - name: tailwindcss
+    label: Tailwind CSS
+    description:
+    color: "#06B6D4"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: alpinedotjs
+    label: Alpine.js
+    description:
+    color: "#8BC0D0"
+    experience:
+    years: 
+    url:
+    website_url:
 web:
   - name: rubyonrails
     label: Rails
@@ -388,14 +404,6 @@ web:
     label: Laravel
     description:
     color: "#FF2D20"
-    experience:
-    years: 
-    url:
-    website_url:
-  - name: tailwindcss
-    label: Tailwind CSS
-    description:
-    color: "#06B6D4"
     experience:
     years: 
     url:
