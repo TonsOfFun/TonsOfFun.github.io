@@ -137,14 +137,14 @@ datastore:
     label: Redis
     description:
     color: "#DC382D"
-    experience:
+    experience: Redis is a high performance in-memory data store I've used for caching things like rendered views and geocoder look ups. It's a great jobs queue for Sidekiq and is the foundation for Faktory. It's also a powerful PubSub message broker that is used for things like WebSocket broadcasting with ActionCable for live updates pushed from the server to the users.
     years: 
     logo_url: 
     url:
     website_url:
   - name: elasticsearch
     label: Elasticsearch
-    description:
+    description: Elasticsearch provides a data store with advanced search engine functionality and analytics. I've used it for location based searches of places for PINSTOP JP and ZALA.
     color: "#005571"
     experience:
     years: 
@@ -154,7 +154,7 @@ datastore:
 background:
   - name: celery
     label: Celery
-    description:
+    description: 
     color: "#37814A"
     experience:
     years: 
