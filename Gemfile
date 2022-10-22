@@ -31,7 +31,12 @@ gem "bridgetown", "~> 1.1.0"
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 5.6"
-gem 'erb-formatter'
+
+group :development do
+    gem 'standard'
+    gem 'solargraph'
+end
+
 group :bridgetown_plugins do
     gem "bridgetown-view-component", "~> 1.0"
     gem "bridgetown-svg-inliner", "~> 1.0"
