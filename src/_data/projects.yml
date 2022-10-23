@@ -1,7 +1,7 @@
 opensource:
   - name: TonsOfFun.github.io
     label: TonsOfFun.github.io
-    description: This website is built with Bridgetown, TailwindCSS, and a bit of Alpine.js with 
+    description: This website is built with Bridgetown, TailwindCSS, and a bit of Alpine.js with a Tailwind UI template.
     website_url: https://tonsof.fun
     domain: github.com
     url: https://github.com/tonsoffun/tonsoffun.github.io
