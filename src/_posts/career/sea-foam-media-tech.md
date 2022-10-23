@@ -1,14 +1,18 @@
 ---
 layout: post
 published: false
-title: PINSTOP JP
-datetime: December 1, 2016
+title: Sea Foam Media & Technology
+datetime: January 1, 2018
 category:
     career
 tags:
     ruby
     rails
     sidekiq
+    python
+    celery
+    django
     mongodb
+    redis
 ---
 

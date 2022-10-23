@@ -8,6 +8,7 @@ category:
 tags:
     ruby
     rails
+    sidekiq
     ios
     android
     nodedotjs

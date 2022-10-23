@@ -434,6 +434,22 @@ web:
     years: 
     url:
     website_url:
+  - name: jsonwebtokens
+    label: JSON Web Tokens
+    description: 
+    color: "#000000"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: webrtc
+    label: WebRTC
+    description: 
+    color: "#333333"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: rubysinatra
     label: Sinatra
     description: I've build a few microservices with Sinatra to expose APIs with Ruby. One of the most interesting examples that made it to production was a geocoding service that took coordinates and returned location names using OSM, PostGIS, and Redis for a caching layer. It could handle batches of coordinates with a custom stored proceedure and serviced tens of millions of requests a day.

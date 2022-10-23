@@ -7,6 +7,8 @@ category:
     career
 tags:
     ruby
+    rails
+    sidekiq
     mongodb
     redis
     postgres
