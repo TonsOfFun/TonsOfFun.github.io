@@ -7,21 +7,20 @@ categories:
     - scaling
 ---
 
-Blog Post Scaling Rails and Sidekiq on Heroku
-Heroku Postgres
-Current Provision IOPs
+## Heroku Postgres
+### Current Provision IOPs
 https://devcenter.heroku.com/articles/heroku-postgres-production-tier-technical-characterization#performance-characteristics
 2000 read/write operations per second. Even with more than 500 connections we cannot exceed the PIOPS or CPU load of our current DB tier. We need to continually work to improve query execution time (increase IOPS throughout by decreasing IO time) and query count (fewer IOPS) per web/job requests/transactions.
-Current Connection Limit
+### Connection Limit
 500 connections; this is the maximum for all tiers of Heroku Postgres
-Current Dyno Scaling Limitations
+### Dyno Scaling Limitations
 1 Web dyno uses 10 connection (2 processes x 5 threads) (WEB_CONCURRENCY=2)
 1 Sidekiq dyno uses 5 connection (1 processes x 5 threads) (SIDEKIQ_COUNT=1)
 We can use up to 50 web dynos (if we have 0 sidekiq dynos)
 We can use up to 100 sidekiq dynos (if we have 0 web dynos)
 We could run 25 web dynos with 50 sidekiq dynos
-With PgBouncer Enabled
-Enabling PgBouncer
+## PgBouncer
+### Enabling PgBouncer
 Set DATABASE_CONNECTION_POOL_URL to the appropriate connection pool attachment for our current production DB
 Disabling PgBouncer
 Change DATABASE_CONNECTION_POOL_URL to NO_DATABASE_CONNECTION_POOL_URL or remove the ENV entirely
