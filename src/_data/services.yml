@@ -1,106 +1,167 @@
+
 audit:
   - name: Tech Due Dilligence
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Tech Debt
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Performance
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Testing
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: CI/CD
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Scaling
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Developer Experience
+    label: 
     description: 
-    icon:
-    url: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Product Process
+    label: 
     description: 
-    icon:
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
+    domain: 
 business:
   - name: Lean Startup Workshop
-    description:
-    icon:
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
+    domain: 
 design:
   - name: Product Design
-    description:
-    icon:
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: User Stories
-    description:
-    icon:
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Workflow Diagrams
-    description:
-    icon:
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Architecture Diagrams
-    description:
-    icon:
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
 development:
   - name: Product Development
-    description:
-    icon: 
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Development Experience Improvement
-    description:
-    icon: 
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Performance Enhancements
-    description:
-    icon: 
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Infrastructure Automations
-    description:
-    icon: 
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
   - name: Software Upgrades
-    description:
-    icon: 
-    url: 
+    label: 
+    description: 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
     domain: 
-    logo_url: 
