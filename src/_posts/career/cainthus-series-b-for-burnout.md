@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Cainthus Drone Mapping and Analytics
+title: Cainthus Series B - "B" is for Burnout
 datetime: March 1, 2016
 category:
     career
