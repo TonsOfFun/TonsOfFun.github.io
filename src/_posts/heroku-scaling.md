@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title:  Scaling Rails with Puma and Sidekiq on Heroku
 datetime: September 11, 2022
 description: Born and raise on the peninsula in the San Francisco Bay Area, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad's office with the tech support crew at the end of the work day. 

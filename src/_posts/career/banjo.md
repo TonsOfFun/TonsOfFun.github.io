@@ -1,7 +1,9 @@
 ---
 layout: post
+published: false
 title: Banjo Daze
-categories:
+datetime: June 1, 2012
+category:
     career
 tags:
     ruby
@@ -10,3 +12,4 @@ tags:
     postgres
     postgis
 ---
+cat
