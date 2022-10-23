@@ -41,19 +41,19 @@ os:
     url:
     website_url:
 development:
+  - name: atom
+    label: Atom
+    description: I used Atom for development for years
+    color: "#66595C"
+    experience: Expert
+    years: 
+    url:
+    website_url:
   - name: docker
     label: Docker
     description: Docker makes development and deployment dependencies repeatable and consistent. Using images to lock in requirements for things like OpenCV, TensorFlow, PyTorch, all with NVIDIA's Docker Engine for CUDA support make onboarding, developing, and deploying with remote containers a breeze. I've used Docker Hub for private organizations and even host a few of my own images there.
     color: "#2496ED"
     experience: Expert
-    years: 
-    url:
-    website_url:
-  - name: visualstudiocode
-    label: VSCode
-    description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
-    color: "#007ACC"
-    experience: Intermediate
     years: 
     url:
     website_url:
@@ -65,11 +65,44 @@ development:
     years: 
     url:
     website_url:
+  - name: iterm2
+    label: iTerm2
+    description: 
+    color: "#000000"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
   - name: jupyter
     label: Jupyter
     description: I used to use plain old Jupyter notebooks, but mostly use Google Colab these days. Sometimes I will run notebooks on remote containers with the VSCode extension.
     color: "#F37626"
     experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: solarized
+    label: Solarized
+    logo_url: /images/icons/skill/solarized.png
+    description: 
+    color: "#000000"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
+  - name: sublimetext
+    label: Sublime Text
+    description: I used Sublime Text way back in the day, but haven't used recent versions.
+    color: "#FF9800"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
+  - name: visualstudiocode
+    label: VSCode
+    description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
+    color: "#007ACC"
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -427,16 +460,40 @@ web:
     website_url:
   - name: django
     label: Django
-    description:
+    description: At Cainthus we used Django for our Drone mapping web app with Celery for background jobs to process map tile analysis and visualizations.
     color: "#092E20"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: cakephp
+    label: CakePHP
+    description: At Focus Testing Services we had a CakePHP JSON API serving our desktop app that was built with Flash FlexBuilder using ActionScript 3
+    color: "#D33C43"
     experience:
     years: 
     url:
     website_url:
   - name: laravel
     label: Laravel
-    description:
+    description: 
     color: "#FF2D20"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: graphql
+    label: GraphQL
+    description: 
+    color: "#E10098"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: apollographql
+    label: Apollo GraphQL
+    description: 
+    color: "#311C87"
     experience:
     years: 
     url:
@@ -470,6 +527,14 @@ database:
     label: MySQL
     description:
     color: "#4479A1"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: microsoftsqlserver
+    label: Microsoft SQL Server
+    description:
+    color: "#CC2927"
     experience:
     years: 
     url:
@@ -567,10 +632,34 @@ cloud:
     years: 
     url:
     website_url:
+  - name: digitalocean
+    label: DigitalOcean
+    description:
+    color: "#0080FF"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: googlecloud
     label: Google Cloud
     description:
     color: "#4285F4"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: heroku
+    label: Heroku
+    description:
+    color: "#430098"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: linode
+    label: Linode
+    description:
+    color: "#00A95C"
     experience:
     years: 
     url:

@@ -1,4 +1,14 @@
 opensource:
+  - name: TonsOfFun.github.io
+    label: TonsOfFun.github.io
+    description: This website is built with Bridgetown, TailwindCSS, and a bit of Alpine.js with a Tailwind UI template.
+    website_url: https://tonsof.fun
+    domain: github.com
+    url: https://github.com/tonsoffun/tonsoffun.github.io
+    logo_url: /images/avatar.jpg
+    github_url: https://github.com/tonsoffun/
+    instagram_url: https://instagram.com/tonsoffun111
+    twitter_url: https://twitter.com/tonsoffun111
   - name: GreenThumb IO
     label: GreenThumb IO
     description: GreenThumb IO is an OSS organization that came out of a series of AgTech hackathons in the central valley California.
