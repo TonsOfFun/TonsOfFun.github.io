@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: Method
 ---
 ## Leadership

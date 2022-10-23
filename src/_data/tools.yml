@@ -7,6 +7,39 @@
 #     years: 
 #     url:
 #     website_url:
+os:
+  - name: windows95
+    label: Windows 95
+    description: 
+    color: "#008080"
+    experience: Novice
+    years: 
+    url:
+    website_url:
+  - name: windowsxp
+    label: Windows XP
+    description: 
+    color: "#003399"
+    experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: windows11
+    label: Windows 11
+    description: 
+    color: "#0078D4"
+    experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: ubuntu
+    label: Ubuntu
+    description: 
+    color: "#008080"
+    experience: Novice
+    years: 
+    url:
+    website_url:
 development:
   - name: docker
     label: Docker
@@ -413,6 +446,14 @@ database:
     label: PostgreSQL
     description:
     color: "#4169E1"
+    experience:
+    years: 
+    url:
+    website_url:
+  - name: microsoftsqlserver
+    label: Microsoft SQL Server
+    description:
+    color: "#CC2927"
     experience:
     years: 
     url:
