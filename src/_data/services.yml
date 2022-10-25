@@ -1,7 +1,7 @@
 
 audit:
-  - name: Tech Due Dilligence
-    label: 
+  - name: currency-dollar
+    label: Tech Due Dilligence
     description: 
     color: 
     experience: 
@@ -9,8 +9,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: Tech Debt
-    label: 
+  - name: currency-dollar
+    label: Tech Debt
     description: 
     color: 
     experience: 
@@ -18,8 +18,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: Performance
-    label: 
+  - name: currency-dollar
+    label: Performance
     description: 
     color: 
     experience: 
@@ -27,8 +27,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: Testing
-    label: 
+  - name: currency-dollar
+    label: Testing
     description: 
     color: 
     experience: 
@@ -36,8 +36,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: CI/CD
-    label: 
+  - name: currency-dollar
+    label: CI/CD
     description: 
     color: 
     experience: 
@@ -45,8 +45,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: Scaling
-    label: 
+  - name: currency-dollar
+    label: Scaling
     description: 
     color: 
     experience: 
@@ -54,8 +54,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: Developer Experience
-    label: 
+  - name: currency-dollar
+    label: Developer Experience
     description: 
     color: 
     experience: 
@@ -63,8 +63,8 @@ audit:
     url:
     website_url:
     domain: 
-  - name: Product Process
-    label: 
+  - name: currency-dollar
+    label: Product Process
     description: 
     color: 
     experience: 
@@ -73,8 +73,8 @@ audit:
     website_url:
     domain: 
 business:
-  - name: Lean Startup Workshop
-    label: 
+  - name: currency-dollar
+    label: Lean Startup Workshop
     description: 
     color: 
     experience: 
@@ -83,8 +83,8 @@ business:
     website_url:
     domain: 
 design:
-  - name: Product Design
-    label: 
+  - name: currency-dollar
+    label: Product Design
     description: 
     color: 
     experience: 
@@ -92,8 +92,8 @@ design:
     url:
     website_url:
     domain: 
-  - name: User Stories
-    label: 
+  - name: currency-dollar
+    label: User Stories
     description: 
     color: 
     experience: 
@@ -101,8 +101,8 @@ design:
     url:
     website_url:
     domain: 
-  - name: Workflow Diagrams
-    label: 
+  - name: currency-dollar
+    label: Workflow Diagrams
     description: 
     color: 
     experience: 
@@ -110,8 +110,8 @@ design:
     url:
     website_url:
     domain: 
-  - name: Architecture Diagrams
-    label: 
+  - name: currency-dollar
+    label: Architecture Diagrams
     description: 
     color: 
     experience: 
@@ -120,8 +120,8 @@ design:
     website_url:
     domain: 
 development:
-  - name: Product Development
-    label: 
+  - name: currency-dollar
+    label: Product Development
     description: 
     color: 
     experience: 
@@ -129,8 +129,8 @@ development:
     url:
     website_url:
     domain: 
-  - name: Development Experience Improvement
-    label: 
+  - name: currency-dollar
+    label: Development Experience Improvement
     description: 
     color: 
     experience: 
@@ -138,8 +138,8 @@ development:
     url:
     website_url:
     domain: 
-  - name: Performance Enhancements
-    label: 
+  - name: currency-dollar
+    label: Performance Enhancements
     description: 
     color: 
     experience: 
@@ -147,8 +147,8 @@ development:
     url:
     website_url:
     domain: 
-  - name: Infrastructure Automations
-    label: 
+  - name: currency-dollar
+    label: Infrastructure Automations
     description: 
     color: 
     experience: 
@@ -156,8 +156,8 @@ development:
     url:
     website_url:
     domain: 
-  - name: Software Upgrades
-    label: 
+  - name: currency-dollar
+    label: Software Upgrades
     description: 
     color: 
     experience: 

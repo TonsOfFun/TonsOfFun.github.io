@@ -1,7 +1,7 @@
 <li class="relative flex flex-col items-start group">
     <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
         <% if @project.logo_url.nil? %>
-            <%= svg "/images/icons/skill/#{@project.name}.svg", style: "fill:#{@project.color}", class: "h-4 w-4 flex-none", "aria-hidden": true %>
+            <%= svg "/images/icons/#{@project_type}/#{@project.name}.svg", style: "fill:#{@project.color}", class: "h-4 w-4 flex-none", "aria-hidden": true %>
         <% else %>
             <img alt="" src="<%= @project.logo_url %>" width="32" height="32" decoding="async" data-nimg="future" class="w-10 h-10 rounded-full" loading="lazy" style="color: transparent;">
         <% end %>

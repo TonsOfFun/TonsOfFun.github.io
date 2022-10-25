@@ -1,7 +1,7 @@
 class ProjectCard < BaseComponent
-    def initialize(project:, **opts)
-        @project, @opts = project, opts
+    def initialize(project:, project_type:, **opts)
+        @project, @project_type, @opts = project, project_type, opts
     end
 
-    attr_reader :project, :opts
+    attr_reader :project, :project_type, :opts
 end

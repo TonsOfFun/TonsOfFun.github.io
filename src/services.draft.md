@@ -1,7 +1,3 @@
----
-layout: page
-title: Consulting Services
----
 ## CTO Consulting
 ### Tech Due Diligence for VCs and Founders
 - People, process, and tech evaluations
