@@ -72,9 +72,10 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: 0,
+      downDelay: ('<%= resource.data.layout %>' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      scroll() {
+      home: ('<%= resource.data.layout %>' == 'home'), 
+      scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
         let upDelay = this.upDelay;
@@ -111,9 +112,41 @@
           setProperty('--header-top', '0px')
           setProperty('--avatar-top', '0px')
         }
+      },
+      updateAvatarStyles() {
+        if (!this.home) {
+          return
+        }
+
+        let downDelay = this.downDelay;
+        let fromScale = 1
+        let toScale = 36 / 64
+        let fromX = 0
+        let toX = 2 / 16
+
+        let scrollY = downDelay - window.scrollY
+        console.log('scrollY', scrollY);
+
+        let scale = (scrollY * (fromScale - toScale)) / downDelay + toScale
+        scale = clamp(scale, fromScale, toScale)
+        console.log('scale', scale);
+
+        let x = (scrollY * (fromX - toX)) / downDelay + toX
+        x = clamp(x, fromX, toX)
+        console.log('x', x);
+
+        let borderScale = 1 / (toScale / scale)
+        let borderX = (-toX + x) * borderScale
+        let borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`
+
+        setProperty('--avatar-image-transform', `translate3d(${x}rem, 0, 0) scale(${scale})`)
+
+        setProperty('--avatar-border-transform', borderTransform)
+        setProperty('--avatar-border-opacity', scale === toScale ? 1 : 0)
       }
     }
   }
+
 
   function clamp(number, a, b) {
     let min = Math.min(a, b)

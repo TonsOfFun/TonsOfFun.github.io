@@ -15,7 +15,6 @@
             </div>
             <div class="relative">
                 <%= render Shared::Header.new(metadata: site.metadata, resource: resource, data: site.data) %>
-                <div style="height: var(--content-offset);"></div>
                 <main>
                     <%= yield %>
                 </main>
