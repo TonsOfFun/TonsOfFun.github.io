@@ -23,7 +23,7 @@
                                             sizes="2.25rem"
                                             srcset=""
                                             x-ref="avatar"
-                                            src="/images/avatar.jpg"
+                                            src="<%= cloudinary_url @metadata.avatar_id, :small %>"
                                             width="512" height="512" decoding="async" data-nimg="future"
                                             class="object-cover rounded-full bg-zinc-100 dark:bg-zinc-800 h-9 w-9"
                                             style="color: transparent;">
