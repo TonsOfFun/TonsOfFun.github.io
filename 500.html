@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/system/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/system/favicon-16x16.png">
 <link rel="manifest" href="/images/icons/system/site.webmanifest">
-<link rel="stylesheet" href="/_bridgetown/static/index.HU4SEWC4.css" />
+<link rel="stylesheet" href="/_bridgetown/static/index.6B3RBF7V.css" />
 <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 <script src="/_bridgetown/static/index.RARUY3ZT.js" defer></script>
 <script>
@@ -76,9 +76,10 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: 0,
+      downDelay: ('default' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      scroll() {
+      home: ('default' == 'home'), 
+      scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
         let upDelay = this.upDelay;
@@ -115,9 +116,41 @@
           setProperty('--header-top', '0px')
           setProperty('--avatar-top', '0px')
         }
+      },
+      updateAvatarStyles() {
+        if (!this.home) {
+          return
+        }
+
+        let downDelay = this.downDelay;
+        let fromScale = 1
+        let toScale = 36 / 64
+        let fromX = 0
+        let toX = 2 / 16
+
+        let scrollY = downDelay - window.scrollY
+        console.log('scrollY', scrollY);
+
+        let scale = (scrollY * (fromScale - toScale)) / downDelay + toScale
+        scale = clamp(scale, fromScale, toScale)
+        console.log('scale', scale);
+
+        let x = (scrollY * (fromX - toX)) / downDelay + toX
+        x = clamp(x, fromX, toX)
+        console.log('x', x);
+
+        let borderScale = 1 / (toScale / scale)
+        let borderX = (-toX + x) * borderScale
+        let borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`
+
+        setProperty('--avatar-image-transform', `translate3d(${x}rem, 0, 0) scale(${scale})`)
+
+        setProperty('--avatar-border-transform', borderTransform)
+        setProperty('--avatar-border-opacity', scale === toScale ? 1 : 0)
       }
     }
   }
+
 
   function clamp(number, a, b) {
     let min = Math.min(a, b)
@@ -180,19 +213,38 @@ setTimeout(() => {
     }" 
     class="relative z-50 flex flex-col pointer-events-none print:hidden"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
+    <div class="top-0 order-last pt-3 -mb-3 sm:px-8 hidden" style="position: var(--header-position);" 
+        x-data="scrollToShow()" 
+        x-on:scroll.window.passive="updateAvatarStyles()"
+        x-ref="avatar">
+        <div class="mx-auto max-w-7xl lg:px-8">
+            <div class="relative px-4 sm:px-8 lg:px-12">
+                <div class="max-w-2xl mx-auto lg:max-w-5xl">
+                    <div class="top-[var(--avatar-top,theme(spacing.3))] w-full" style="position: var(--header-inner-position);">
+                        <div class="relative">
+                            <div class="absolute left-0 top-3 origin-left transition-opacity h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10" style="opacity: var(--avatar-border-opacity, 0); transform: var(--avatar-border-transform);"></div>
+                            <a aria-label="Home" class="block w-16 h-16 origin-left pointer-events-auto" href="/" style="transform: var(--avatar-image-transform);">
+                                <img alt="" sizes="4rem" srcset="https://res.cloudinary.com/tonsoffun/image/upload/w_600,c_limit,q_85/v1666727171/avatar_oo5ahy.jpg" src="https://res.cloudinary.com/tonsoffun/image/upload/w_1800,c_limit,q_80/v1666727171/avatar_oo5ahy.jpg" width="1280" height="1280" decoding="async" data-nimg="future" class="object-cover w-16 h-16 rounded-full bg-zinc-100 dark:bg-zinc-800" style="color: transparent;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div x-data="scrollToShow()" 
-        x-on:scroll.window.passive="scroll()"
+        x-on:scroll.window.passive="scrollMenu()"
         class="top-0 z-10 h-16 pt-6"
         x-ref="navbar"
         style="position:var(--header-position)">
         <div class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full"
             style="position:var(--header-inner-position)">
-            <div class="mx-auto max-w-7xl lg:px-4">
-                <div class="relative px-2 sm:px-4 lg:px-6 mx-18">
+            <div class="mx-auto max-w-7xl lg:px-8">
+                <div class="relative px-4 sm:px-8 lg:px-12">
                     <div class="max-w-3xl mx-auto lg:max-w-5xl">
-                        <div class="relative flex gap-4 ml-[18px]" style="">
+                        <div class="relative flex gap-4" style="">
                             <div class="flex flex-1">
-                                <div class="m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
+                                <div class=" m-1 h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
                                     <a aria-label="Home" class="pointer-events-auto mx-18" href="/">
                                         <img alt=""
                                             sizes="2.25rem"
@@ -398,7 +450,7 @@ setTimeout(() => {
         </div>
     </div>
 </header>
-                <div style="height: var(--content-offset);"></div>
+
                 <main>
                     <h1>500</h1>
 
