@@ -14,7 +14,10 @@ layout: default
                                 class="object-cover aspect-square -rotate-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
                                 loading="lazy" style="color:transparent"></div>
                     </div>
-                    <div class="lg:order-first lg:row-span-2 [&>p]:mt-6 [&>p]:space-y-7 [&>p]:text-base [&>p]:text-zinc-600 [&>p]:dark:text-zinc-400">
+                    <div class="prose lg:order-first lg:row-span-2 dark:prose-invert">
+                        <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                            <%= resource.data.title %>
+                        </h1>
                         <%= yield %>
                     </div>
                     <%= render "list_social_links", locals: { site: site } %>
