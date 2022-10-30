@@ -19,7 +19,7 @@ audit:
     url:
     website_url:
     domain: 
-  - name: currency``-dollar
+  - name: currency-dollar
     label: Tech Debt
     description: |
       Tech Debt is a way to leverage technology to support near term business objectives at the expense 
