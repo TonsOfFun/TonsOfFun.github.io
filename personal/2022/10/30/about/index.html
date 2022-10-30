@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"
     class="h-full antialiased"
-    style="--header-position:sticky; --content-offset:0px; --header-height:64px; --header-mb:0px; --header-top:0px; --avatar-top:0px;">
+    style="--header-position:sticky; --header-height:64px; --header-mb:0px; --header-top:0px; --avatar-top:0px;">
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/system/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/system/favicon-16x16.png">
 <link rel="manifest" href="/images/icons/system/site.webmanifest">
-<link rel="stylesheet" href="/_bridgetown/static/index.6B3RBF7V.css" />
+<link rel="stylesheet" href="/_bridgetown/static/index.BWX5T7KQ.css" />
 <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 <script src="/_bridgetown/static/index.RARUY3ZT.js" defer></script>
 <script>
@@ -213,6 +213,7 @@ setTimeout(() => {
     }" 
     class="relative z-50 flex flex-col pointer-events-none print:hidden"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
+    <div class="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
     <div class="top-0 order-last pt-3 -mb-3 sm:px-8 hidden" style="position: var(--header-position);" 
         x-data="scrollToShow()" 
         x-on:scroll.window.passive="updateAvatarStyles()"
@@ -234,6 +235,7 @@ setTimeout(() => {
     </div>
     <div x-data="scrollToShow()" 
         x-on:scroll.window.passive="scrollMenu()"
+        x-init="scrollMenu()"
         class="top-0 z-10 h-16 pt-6"
         x-ref="navbar"
         style="position:var(--header-position)">

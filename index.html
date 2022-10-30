@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"
     class="h-full antialiased"
-    style="--header-position:sticky; --content-offset:0px; --header-height:64px; --header-mb:0px; --header-top:0px; --avatar-top:0px;">
+    style="--header-position:sticky; --header-height:64px; --header-mb:0px; --header-top:0px; --avatar-top:0px;">
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/system/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/system/favicon-16x16.png">
 <link rel="manifest" href="/images/icons/system/site.webmanifest">
-<link rel="stylesheet" href="/_bridgetown/static/index.6B3RBF7V.css" />
+<link rel="stylesheet" href="/_bridgetown/static/index.BWX5T7KQ.css" />
 <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 <script src="/_bridgetown/static/index.RARUY3ZT.js" defer></script>
 <script>
@@ -213,6 +213,7 @@ setTimeout(() => {
     }" 
     class="relative z-50 flex flex-col pointer-events-none print:hidden"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
+    <div class="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
     <div class="top-0 order-last pt-3 -mb-3 sm:px-8 " style="position: var(--header-position);" 
         x-data="scrollToShow()" 
         x-on:scroll.window.passive="updateAvatarStyles()"
@@ -234,6 +235,7 @@ setTimeout(() => {
     </div>
     <div x-data="scrollToShow()" 
         x-on:scroll.window.passive="scrollMenu()"
+        x-init="scrollMenu()"
         class="top-0 z-10 h-16 pt-6"
         x-ref="navbar"
         style="position:var(--header-position)">
@@ -455,16 +457,16 @@ setTimeout(() => {
     <div style="height: var(--content-offset);"></div>
 
                 <main>
-                    <div class="sm:px-8 mt-16 sm:mt-32">
+                    <div class="sm:px-8 mt-9">
     <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+            <div class="max-w-2xl mx-auto lg:max-w-5xl">
                 <div class="max-w-2xl">
                     <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl" id="software-engineer-founder-and-cto-consultant">Software engineer, founder, and CTO consultant.</h1>
 
 <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">I’m Justin, a technology consultant and entrepreneur based in San Francisco. I’ve worked with dozens of startups to get their product delivered to market from ideation, design, devlopment, continuous integration, and deployments.</p>
 
-                    <div class="mt-6 flex gap-6">
+                    <div class="flex gap-6 mt-6">
                             <a class="font-semibold group -m-1 p-1" href="https://github.com/TonsOfFun" aria-label="Follow me on GitHub" target="_blank" rel="noopener noreferrer">    
                 <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.2-.7 0-.7 0-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"/>
@@ -502,34 +504,34 @@ setTimeout(() => {
     </div>
 </div>
 <div class="mt-16 sm:mt-20">
-    <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <div class="flex justify-center gap-5 py-4 -my-4 overflow-hidden sm:gap-8">
         <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="3744" height="5616" decoding="async" data-nimg="future" class="absolute inset-0 h-full w-full object-cover" loading="lazy" style="color: transparent;">
+            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="3744" height="5616" decoding="async" data-nimg="future" class="absolute inset-0 object-cover w-full h-full" loading="lazy" style="color: transparent;">
         </div>
         <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
-            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="3936" height="2624" decoding="async" data-nimg="future" class="absolute inset-0 h-full w-full object-cover" loading="lazy" style="color: transparent;">
+            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="3936" height="2624" decoding="async" data-nimg="future" class="absolute inset-0 object-cover w-full h-full" loading="lazy" style="color: transparent;">
         </div><div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="5760" height="3840" decoding="async" data-nimg="future" class="absolute inset-0 h-full w-full object-cover" loading="lazy" style="color: transparent;">
+            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="5760" height="3840" decoding="async" data-nimg="future" class="absolute inset-0 object-cover w-full h-full" loading="lazy" style="color: transparent;">
         </div>
         <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
-            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="2400" height="3000" decoding="async" data-nimg="future" class="absolute inset-0 h-full w-full object-cover" loading="lazy" style="color: transparent;">
+            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="2400" height="3000" decoding="async" data-nimg="future" class="absolute inset-0 object-cover w-full h-full" loading="lazy" style="color: transparent;">
         </div>
         <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="4240" height="2384" decoding="async" data-nimg="future" class="absolute inset-0 h-full w-full object-cover" loading="lazy" style="color: transparent;">
+            <img alt="" sizes="(min-width: 640px) 18rem, 11rem" srcset="" width="4240" height="2384" decoding="async" data-nimg="future" class="absolute inset-0 object-cover w-full h-full" loading="lazy" style="color: transparent;">
         </div>
     </div>
 </div>
-<div class="sm:px-8 mt-24 md:mt-28">
+<div class="mt-24 sm:px-8 md:mt-28">
     <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+            <div class="max-w-2xl mx-auto lg:max-w-5xl">
                 <div class="grid max-w-xl grid-cols-1 mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2">
                     <div class="flex flex-col gap-16">
                             <article class="relative flex flex-col items-start group">
     <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
     <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
     </div>
-    <a href="/personal/2022/10/28/about/">
+    <a href="/personal/2022/10/30/about/">
         <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
         <span class="relative z-10">Justin Bowen is TonsOfFun</span>
     </a>
