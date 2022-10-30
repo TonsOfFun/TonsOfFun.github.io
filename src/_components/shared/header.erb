@@ -5,6 +5,7 @@
     }" 
     class="relative z-50 flex flex-col pointer-events-none print:hidden"
     style="height:var(--header-height);margin-bottom:var(--header-mb)">
+    <div class="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
     <div class="top-0 order-last pt-3 -mb-3 sm:px-8 <%= @resource.data.layout == 'home' ? '' : 'hidden' %>" style="position: var(--header-position);" 
         x-data="scrollToShow()" 
         x-on:scroll.window.passive="updateAvatarStyles()"
@@ -26,6 +27,7 @@
     </div>
     <div x-data="scrollToShow()" 
         x-on:scroll.window.passive="scrollMenu()"
+        x-init="scrollMenu()"
         class="top-0 z-10 h-16 pt-6"
         x-ref="navbar"
         style="position:var(--header-position)">
