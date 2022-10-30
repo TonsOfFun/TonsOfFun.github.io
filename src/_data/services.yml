@@ -2,7 +2,17 @@
 audit:
   - name: currency-dollar
     label: Tech Due Dilligence
-    description: 
+    description: |
+      Investors need to understand the technical risk of their investments. Usually by the time
+      a Venture Captial or Private Equity firm are having Tech Due Dilligence performed they're
+      confident in the business prospect. Tech Due Dilligence provides an understanding of technical 
+      risks and expectations to address them in subsequent months and years after investment. 
+      There are a few common questions investors want answered. 
+    content: |
+      Does the product roadmap, scale, and solution align with the growth targets of the fund raise? 
+      Does the team have the right personel or understand which hires need to be made? Does the company
+      have the organizational maturative of technical experience, processes, and culture required at
+      their stage? 
     color: 
     experience: 
     years: 
@@ -11,7 +21,10 @@ audit:
     domain: 
   - name: currency-dollar
     label: Tech Debt
-    description: 
+    description: |
+      Tech Debt is a way to leverage technology to support near term business objectives at the expense 
+      of technology cost later. Tech Debit something to expect at any stage of product development, but
+      how much Tech Debt a company can tollerate depends on how their team and product are structured.
     color: 
     experience: 
     years: 
@@ -20,7 +33,11 @@ audit:
     domain: 
   - name: currency-dollar
     label: Performance
-    description: 
+    description: |
+      Application performance impacts the user experience and cost businesses money. There is the operational
+      cost, but also the customer cost. We'll take a holistic perspective to understand the full stack performance
+      profile of products to understand where the most value to the customers and ultimately the business come from.
+      Improvements to performance yield improvements to the companies bottom line.
     color: 
     experience: 
     years: 
@@ -29,7 +46,9 @@ audit:
     domain: 
   - name: currency-dollar
     label: Testing
-    description: 
+    description: |
+      Automated testing provides consistency and reliability of established product offerings when releasing new products
+      or enhancements.
     color: 
     experience: 
     years: 

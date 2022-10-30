@@ -1,6 +1,5 @@
 ---
 layout: default
-cloudinary_id: v1666727172/about_godeuq
 ---
 <div class="mt-16 sm:px-8 sm:mt-32">
     <div class="mx-auto max-w-7xl lg:px-8">
@@ -10,15 +9,18 @@ cloudinary_id: v1666727172/about_godeuq
                     <div class="lg:pl-20">
                         <div class="max-w-xs px-2.5 lg:max-w-none"><img alt="Justin Bowen being tons of fun" sizes="(min-width: 1024px) 32rem, 20rem"
                                 srcset=""
-                                src="<%= cloudinary_url layout.data.cloudinary_id, "medium" %>"
+                                src="<%= cloudinary_url site.metadata.about_id, "medium" %>"
                                 width="800" height="800" decoding="async" data-nimg="future"
                                 class="object-cover aspect-square -rotate-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
                                 loading="lazy" style="color:transparent"></div>
                     </div>
-                    <div class="lg:order-first lg:row-span-2 [&>p]:mt-6 [&>p]:space-y-7 [&>p]:text-base [&>p]:text-zinc-600 [&>p]:dark:text-zinc-400">
+                    <div class="prose lg:order-first lg:row-span-2 dark:prose-invert">
+                        <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                            <%= resource.data.title %>
+                        </h1>
                         <%= yield %>
                     </div>
-                    <%= render "list_social_links" %>
+                    <%= render "list_social_links", locals: { site: site } %>
                 </div>
             </div>
         </div>
