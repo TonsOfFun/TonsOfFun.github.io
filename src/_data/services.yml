@@ -37,7 +37,7 @@ audit:
       Application performance impacts the user experience and cost businesses money. There is the operational
       cost, but also the customer cost. We'll take a holistic perspective to understand the full stack performance
       profile of products to understand where the most value to the customers and ultimately the business come from.
-      Improvements to performance yield improvements to the companies bottom line.
+      Improvements to performance yield improvements to the companies bottom line. You can't improve what you can't measure
     color: 
     experience: 
     years: 
@@ -47,8 +47,8 @@ audit:
   - name: currency-dollar
     label: Testing
     description: |
-      Automated testing provides consistency and reliability of established product offerings when releasing new products
-      or enhancements.
+      Automated testing provides consistency and reliability of existing product offerings when releasing new features
+      or enhancements. You can't optimize confidently without test coverage.
     color: 
     experience: 
     years: 
@@ -57,7 +57,10 @@ audit:
     domain: 
   - name: currency-dollar
     label: CI/CD
-    description: 
+    description: |
+      Automated continuous integration and deployments increase team efficiency and enhance the developer experience. 
+      Automated testing is only one aspected, but code quality and consistency as well as Infrastructure as Code build 
+      phases ensure the code and the platform it runs on are in peak shape.
     color: 
     experience: 
     years: 
@@ -66,7 +69,10 @@ audit:
     domain: 
   - name: currency-dollar
     label: Scaling
-    description: 
+    description: |
+      Scaling issues can be found across the stack frontend load times, web request response times, request queueing delay, 
+      background jobs queueing, and database query queueing. Scaling automation requires the right metrics to trigger alarms 
+      and scaling events appropriately.
     color: 
     experience: 
     years: 
@@ -75,7 +81,9 @@ audit:
     domain: 
   - name: currency-dollar
     label: Developer Experience
-    description: 
+    description: |
+      A happy team is a productive team. Codebases, DevOps, database administration, workflows, and automations make the developer's
+      lives better and their performance improves when they're not stuck doing tedious and manual maintenance work.
     color: 
     experience: 
     years: 
@@ -84,7 +92,9 @@ audit:
     domain: 
   - name: currency-dollar
     label: Product Process
-    description: 
+    description: |
+      Having processes that empower teams enable the team to perform at their best. Processes should get out of the way of progress.
+      A good workflow that a team can agree upon, but be flexible enough to change with growth is crucial to sustainable productivity.
     color: 
     experience: 
     years: 
@@ -94,7 +104,11 @@ audit:
 business:
   - name: currency-dollar
     label: Lean Startup Workshop
-    description: 
+    description: |
+      You have an idea you want to bring to life? Maybe you think it's time to pay a developer to build an app. Before you spend time
+      and a lot of money building something, make sure it's something users want. Know what will be built before you go into development.
+      Validate that you understand who your users are by working through exercises in workflows, user stories, diagrams, and get user 
+      feedback on product ideas and designs that can be adapted to their needs with less cost than code.
     color: 
     experience: 
     years: 
