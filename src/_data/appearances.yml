@@ -15,7 +15,7 @@ conferences:
     title: "Applied Queueing Theory"
     description: We can use Ruby to do anything we as a community want. Today we’ll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn’t accessible until the last decade or so.
     url: https://www.youtube.com/watch?v=GY4AT2z7mcI
-    embed_url: https://www.youtube.com/embed/eG9_ngMwYGk
+    embed_url: https://www.youtube.com/embed/GY4AT2z7mcI
     thumbnail_url: https://i.ytimg.com/vi/GY4AT2z7mcI/maxresdefault.jpg
     action: Watch the video
   - event: 
