@@ -41,6 +41,14 @@ social:
     label: Follow me on Instagram
     url: https://Instagram.com/TonsOfFun111
     color: "#E4405F"
+  - title: discord
+    label: Connect on Discord
+    url: https://discordapp.com/users/569074648772509698
+    color: "#5865F2"
+#  - title: xbox
+#    label: Connect on Xbox Live
+#    url: https://Instagram.com/TonsOfFun111
+#    color: "#107C10"
 #  - title: gitlab
 #    label: Follow me on GitLab
 #    url: https://gitlab.com/TonsOfFun

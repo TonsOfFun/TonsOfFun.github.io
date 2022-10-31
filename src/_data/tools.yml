@@ -436,7 +436,7 @@ web:
     website_url:
   - name: jsonwebtokens
     label: JSON Web Tokens
-    description: 
+    description: I've been using JWT for authenticated user credentials for almost all of my projects.
     color: "#000000"
     experience:
     years: 
@@ -444,7 +444,7 @@ web:
     website_url:
   - name: webrtc
     label: WebRTC
-    description: 
+    description: I've used both Twilio Video and hand rolled WebRTC signaling servers and WebRTC clients with WebSockets to provide product solutions for realtime communcation through audio/video and collaboration through screen shares.
     color: "#333333"
     experience:
     years: 
@@ -452,7 +452,7 @@ web:
     website_url:
   - name: rubysinatra
     label: Sinatra
-    description: I've build a few microservices with Sinatra to expose APIs with Ruby. One of the most interesting examples that made it to production was a geocoding service that took coordinates and returned location names using OSM, PostGIS, and Redis for a caching layer. It could handle batches of coordinates with a custom stored proceedure and serviced tens of millions of requests a day.
+    description: I've built a few microservices with Sinatra to expose APIs with Ruby. One of the most interesting examples that made it to production was a geocoding service that took coordinates and returned location names using OSM, PostGIS, and Redis for a caching layer. It could handle batches of coordinates with a custom stored proceedure and serviced tens of millions of requests a day.
     color: "#000000"
     experience:
     years: 
@@ -500,7 +500,7 @@ web:
     website_url:
   - name: graphql
     label: GraphQL
-    description: 
+    description: I've used RESTful APIs for over a decade and starting working with GraphQL in 2017
     color: "#E10098"
     experience:
     years: 
@@ -517,7 +517,7 @@ web:
 database:
   - name: postgresql
     label: PostgreSQL
-    description:
+    description: I've built dozens of web applications backed by PostgreSQL databases. The first production service I deployed with postgres was in 2013 using the PostGIS extention to leverage powerful geo indexing and querying to deliver a high throughput (tens of millions of requests per day) reverse geocoding service for Banjo.
     color: "#4169E1"
     experience:
     years: 
@@ -525,7 +525,7 @@ database:
     website_url:
   - name: microsoftsqlserver
     label: Microsoft SQL Server
-    description:
+    description: At CATS I help maintain and write Java and SQL interfaces for Microsoft SQL Server.
     color: "#CC2927"
     experience:
     years: 
@@ -533,7 +533,7 @@ database:
     website_url:
   - name: mongodb
     label: MongoDB
-    description:
+    description: I used MongoDB heavily at Banjo in 2012 we had a 24 hour TTL collection of all social posts from Twitter, Instagram, Facebook, and Foursquare and a collection for geo posts at events detected by our events service I designed and built.
     color: "#47A248"
     experience:
     years: 
@@ -541,7 +541,8 @@ database:
     website_url:
   - name: mysql
     label: MySQL
-    description:
+    description: I have contrinbuted to a number of my client's web applications with MySQL server backends. I had initially started using MySQL before the Oracle debacle and also at Focus Testing Services in 2011, 
+      but I've ended up using PostgreSQL for most of the application my teams and I have developed.
     color: "#4479A1"
     experience:
     years: 
@@ -549,7 +550,10 @@ database:
     website_url:
   - name: microsoftsqlserver
     label: Microsoft SQL Server
-    description:
+    description: | 
+      At CATS we used Microsoft SQL Server. I help to maintain the Windows Server machine's hardware (SCSI RAID, UPS battery backups, etc.) and software upgrades (Windows System and Applicaiton Dependencies). 
+      I also had an opporunity to contribute to the development of our Java JBoss web app and services for the backend with a good old JDBC Microsoft SQL Server driver and Swing Desktop frontend. 
+      Coincidentally it was my first time using SQL and last time using Microsoft SQL Server.
     color: "#CC2927"
     experience:
     years: 
@@ -558,7 +562,7 @@ database:
 map:
   - name: googlemaps
     label: Google Maps
-    description:
+    description: 
     color: "#4285F4"
     experience:
     years: 
