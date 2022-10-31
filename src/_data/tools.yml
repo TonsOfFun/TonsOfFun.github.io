@@ -220,7 +220,9 @@ datastore:
 background:
   - name: celery
     label: Celery
-    description: I've used Celery for background job processing in drone mapping and real-time Computer Vision applications
+    description: | 
+      I've used Celery for background job processing for real-time Computer Vision applications at Cainthus. Background jobs like TMS tile analysis jobs rendered heatmaps for matching patterns of target polygons across entire fields 
+      on-demand as users interacted with the map interface. For the dairy cow monitoring we used Celery to parallelize our Computer Vision analysis of real-time camera feeds to report analytics to our API.
     color: "#37814A"
     experience:
     years: 
@@ -523,14 +525,6 @@ database:
     years: 
     url:
     website_url:
-  - name: microsoftsqlserver
-    label: Microsoft SQL Server
-    description: At CATS I help maintain and write Java and SQL interfaces for Microsoft SQL Server.
-    color: "#CC2927"
-    experience:
-    years: 
-    url:
-    website_url:
   - name: mongodb
     label: MongoDB
     description: I used MongoDB heavily at Banjo in 2012 we had a 24 hour TTL collection of all social posts from Twitter, Instagram, Facebook, and Foursquare and a collection for geo posts at events detected by our events service I designed and built.
@@ -541,7 +535,8 @@ database:
     website_url:
   - name: mysql
     label: MySQL
-    description: I have contrinbuted to a number of my client's web applications with MySQL server backends. I had initially started using MySQL before the Oracle debacle and also at Focus Testing Services in 2011, 
+    description: |
+      I have contrinbuted to a number of my client's web applications with MySQL server backends. I had initially started using MySQL before the Oracle debacle and also at Focus Testing Services in 2011, 
       but I've ended up using PostgreSQL for most of the application my teams and I have developed.
     color: "#4479A1"
     experience:
@@ -562,7 +557,7 @@ database:
 map:
   - name: googlemaps
     label: Google Maps
-    description: 
+    description: I've used Google Maps for a number of projects. PINSTOP was one of the more comprehensive mapping projects built with a Google Map interface that supported place search with eh Google Places API along with custom pindrops and place details.
     color: "#4285F4"
     experience:
     years: 
@@ -570,7 +565,9 @@ map:
     website_url:
   - name: leaflet
     label: Leaflet
-    description:
+    description: |
+      LeafLeft was used for the drone mapping and analytics product I built at Cainthus. We used it to render customer Tile Map Server (TMS) layers and also to provider a user interface for drawing polygons around areas of interest. 
+      These polygon area's were then used as the query parameter for a computer vision analysis across the TMS top layer with on demand heat map renderings as users zoomed in/out and panned around.
     color: "#199900"
     experience:
     years: 
@@ -586,7 +583,8 @@ map:
     website_url:
   - name: openstreetmap
     label: OpenStreetMap
-    description:
+    description: |
+      OpenStreetMap is a fantasic open source data and tool set that provides multipolygon information about administrative regions, streets, and buildings around the world. It was the foundational dataset used in the Banjo reverse geocoder service that I built in 2013.
     color: "#7EBC6F"
     experience:
     years: 
