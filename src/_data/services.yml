@@ -34,9 +34,9 @@ audit:
   - name: currency-dollar
     label: Performance
     description: |
-      Application performance impacts the user experience and cost businesses money. There is the operational
-      cost, but also the customer cost. We'll take a holistic perspective to understand the full stack performance
-      profile of products to understand where the most value to the customers and ultimately the business come from.
+      Application performance impacts the customer experience and cost businesses money. There is the operational cost, but also the customer cost. 
+      Perceived slowness causes frustration leading to user's losing patience and interest in the product. We'll take a holistic perspective to 
+      understand the full stack performance profile of products to understand where the most value to the customers and ultimately the business comes from.
       Improvements to performance yield improvements to the companies bottom line. You can't improve what you can't measure
     color: 
     experience: 
