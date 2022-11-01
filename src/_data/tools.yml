@@ -10,7 +10,7 @@
 os:
   - name: windows95
     label: Windows 95
-    description: 
+    description: My first operating system as a kid. We soon upgraded to Windows 98 and Windows 98 Plus. Good times.
     color: "#008080"
     experience: Novice
     years: 
@@ -18,7 +18,7 @@ os:
     website_url:
   - name: windowsxp
     label: Windows XP
-    description: 
+    description: I couldn't find a logo for Windows 2000, but Windows XP styled like Windows 2000 was my daily driver early in my career.
     color: "#003399"
     experience: Advanced
     years: 
@@ -26,7 +26,7 @@ os:
     website_url:
   - name: windows11
     label: Windows 11
-    description: 
+    description: Currently using Windows 11 mostly for gaming. You can follow me on Twitch to checkout my build and content there.
     color: "#0078D4"
     experience: Advanced
     years: 
@@ -34,16 +34,18 @@ os:
     website_url:
   - name: ubuntu
     label: Ubuntu
-    description: 
+    description: | 
+      I've been using Ubuntu for well over a decade now. I've used Ubuntu Desktop for development as well as 
+      Ubuntu Server for cloud and on-premise deployments
     color: "#008080"
-    experience: Novice
+    experience: Expert
     years: 
     url:
     website_url:
 development:
   - name: atom
     label: Atom
-    description: I used Atom for development for years
+    description: I used Atom to write code for years.
     color: "#66595C"
     experience: Expert
     years: 
@@ -84,7 +86,7 @@ development:
   - name: solarized
     label: Solarized
     logo_url: /images/icons/skill/solarized.png
-    description: 
+    description: I really love the Solarized color sheme. I use it for terminals and editors. If anyone knows how to make VSCode and Terminal/iTerm2 use the OS settings hit me up on twitter.
     color: "#000000"
     experience: Intermediate
     years: 
@@ -106,19 +108,21 @@ development:
     years: 
     url:
     website_url:
-project:
+collaboration: 
   - name: markdown
     label: Markdown
-    description:
+    description: I love writing content with markdown. Most of this website is markdown files or markdown in YAML files
     color: "#000000"
     experience:
     years: 
     url:
     website_url:
-productivity: 
-  - name: markdown
-    label: Markdown
-    description:
+  - name: github
+    label: GitHub
+    description: |
+      I really like using GitHub for code version, discussions, and project management. It's just the write amount 
+      of features, right in the place you push your code, so why not just user Projects, Issues, and Pull Requests.
+      I also hear good things about GitLab, but just haven't had a opportunity to use their project management features yet.
     color: "#000000"
     experience:
     years: 
@@ -126,7 +130,10 @@ productivity:
     website_url:
   - name: loom
     label: Loom
-    description:
+    description: |
+      I'm a big proponent of asynchronous work. Loom is a great way to share ideas and receive inline feedback. 
+      From announcements to updates, design revisions to pull request demos, Loom videos provide a great user experience 
+      to capture, share, and provide feedback async.
     color: "#625DF5"
     experience: Proficient
     years:
@@ -134,15 +141,18 @@ productivity:
     website_url:
   - name: notion
     label: Notion
-    description:
+    description: Documentation is critical for async processes and notion is a great way to collaboratively produce documentation.
     color: "#000000"
-    experience:
+    experience: Proficient
     years:
     url:
     website_url:
   - name: slack
     label: Slack
-    description:
+    description: |
+      Slack is a great way to partially sync up with the expectation being you don't have to respond imediately. 
+      Chat is self documenting in a way because public channels record ideas and decisions from disucussions that are 
+      searchable for posterity. You can easily use integrations to take a message and create a task/doc or just copy paste.
     color: "#4A154B"
     experience:
     years:
@@ -151,7 +161,9 @@ productivity:
 deploy:
   - name: terraform
     label: Terraform
-    description:
+    description: |
+      Infrastructure as Code is something I'm passionate about. Terraform is a remarkably powerful tool for reproducable 
+      cloud infrastructure. I've used it for automated deployment workflows with GitHub Actions.
     color: "#7B42BC"
     experience:
     years: 
@@ -159,7 +171,10 @@ deploy:
     website_url:
   - name: githubactions
     label: GitHub Actions
-    description:
+    description: |
+      GitHub Actions is my favorate way to automate CI/CD workflows. From testing to infrastructure to deployments 
+      GitHub Actions is an incredibly powerful tool to make the developer experience that much better through automating 
+      the boring, tedious, and previously manual stuff.
     color: "#2088FF"
     experience:
     years: 
@@ -167,7 +182,9 @@ deploy:
     website_url:
   - name: circleci
     label: CircleCI
-    description:
+    description: |
+      I used to use CircleCI when it was first released in like 2012 and have used them on and off over the years depending 
+      on the project. 
     color: "#343434"
     experience:
     years: 
@@ -192,7 +209,7 @@ design:
     website_url:
   - name: miro
     label: Miro
-    description:
+    description: Miro is a great async way to ideate and brainstorm collaboratively.
     color: "#050038"
     experience:
     years: 
