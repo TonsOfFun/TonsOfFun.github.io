@@ -190,7 +190,9 @@ design:
     domain: 
   - name: currency-dollar
     label: Architecture Diagrams
-    description: 
+    description: |
+      Architecture diagrams are an important part of documenting software and infrastructure decisions. Once you have your product design mapped 
+      out or if it's already built, documenting the system design in a diagram is crucial for onboarding and maintaining visibility and understanding.
     color: 
     experience: 
     years: 
@@ -200,7 +202,8 @@ design:
 development:
   - name: currency-dollar
     label: Product Development
-    description: 
+    description: |
+      With a design in hand or with well documented plans to enhance an existing product, then you're ready to build. 
     color: 
     experience: 
     years: 
@@ -208,8 +211,9 @@ development:
     website_url:
     domain: 
   - name: currency-dollar
-    label: Development Experience Improvement
-    description: 
+    label: Developer Experience
+    description: |
+      Improving the developer experience is instrubmental in enhancing productivity and sustainability across developer and organizational processes.
     color: 
     experience: 
     years: 
@@ -218,7 +222,8 @@ development:
     domain: 
   - name: currency-dollar
     label: Performance Enhancements
-    description: 
+    description: | 
+      Once you receive a performance audit report you probably want to address the issues to ensure your customer experience and bottom line are as efficient as possible.
     color: 
     experience: 
     years: 
@@ -227,7 +232,8 @@ development:
     domain: 
   - name: currency-dollar
     label: Infrastructure Automations
-    description: 
+    description: |
+      Automation is about consistency and reliability. Removing the monotony and manual labor improves developer happiness and frees up resources to deliver business value.
     color: 
     experience: 
     years: 
@@ -236,7 +242,9 @@ development:
     domain: 
   - name: currency-dollar
     label: Software Upgrades
-    description: 
+    description: |
+      Software upgrades lag behind and that's a form of technical debt. Sometimes "if it ain't broke, don't fix it" is applicable, but other times it is leaving value on the table.
+      Ensuring your software stack is up to date improves maintainability, reliability, security, performance, and productivity.
     color: 
     experience: 
     years: 
