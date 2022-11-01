@@ -7,41 +7,6 @@
 #     years: 
 #     url:
 #     website_url:
-os:
-  - name: windows95
-    label: Windows 95
-    description: My first operating system as a kid. We soon upgraded to Windows 98 and Windows 98 Plus. Good times.
-    color: "#008080"
-    experience: Novice
-    years: 
-    url:
-    website_url:
-  - name: windowsxp
-    label: Windows XP
-    description: I couldn't find a logo for Windows 2000, but Windows XP styled like Windows 2000 was my daily driver early in my career.
-    color: "#003399"
-    experience: Advanced
-    years: 
-    url:
-    website_url:
-  - name: windows11
-    label: Windows 11
-    description: Currently using Windows 11 mostly for gaming. You can follow me on Twitch to checkout my build and content there.
-    color: "#0078D4"
-    experience: Advanced
-    years: 
-    url:
-    website_url:
-  - name: ubuntu
-    label: Ubuntu
-    description: | 
-      I've been using Ubuntu for well over a decade now. I've used Ubuntu Desktop for development as well as 
-      Ubuntu Server for cloud and on-premise deployments
-    color: "#008080"
-    experience: Expert
-    years: 
-    url:
-    website_url:
 development:
   - name: atom
     label: Atom
@@ -69,7 +34,7 @@ development:
     website_url:
   - name: iterm2
     label: iTerm2
-    description: 
+    description: Sometimes iTerm2 is great for special usecases like typing, or hitting return, on multiple tabs at once.
     color: "#000000"
     experience: Intermediate
     years: 
@@ -267,7 +232,7 @@ background:
 payment:
   - name: stripe
     label: Stripe
-    description:
+    description: I've built out payments for a handful of products using Stripe, including subscribptions.
     color: "#008CDD"
     experience:
     years: 
@@ -277,7 +242,7 @@ payment:
 messaging:
   - name: twilio
     label: Twilio
-    description:
+    description: I've used Twilio for sending email, chat, video, and voice integrations.
     color: "#F22F46"
     experience:
     years: 
@@ -286,7 +251,7 @@ messaging:
     website_url:
   - name: telegram
     label: Telegram
-    description:
+    description: I've made a few Telegram bots, one of my favorites integrated with TendAir to provide alerts to my group chat for indoor air quality.
     color: "#26A5E4"
     experience:
     years: 
@@ -295,7 +260,7 @@ messaging:
     website_url:
   - name: mailchimp
     label: MailChimp
-    description:
+    description: I've integrated with marketing campaigns run using MailChimp. This website might even use MailChimp for subscriptions... some day.
     color: "#FFE01B"
     experience:
     years: 
@@ -304,7 +269,7 @@ messaging:
     website_url:
   - name: mailgun
     label: MailGun
-    description:
+    description: I've used MailGun and SendGrid to send emails to users in dozens of products
     color: "#F06B66"
     experience:
     years: 
@@ -313,7 +278,8 @@ messaging:
     website_url:
   - name: rabbitmq
     label: RabbitMQ
-    description:
+    description: |
+      At Cainthus we tested using RabbitMQ with Celery, but ultimitely Redis is my preferred message broker for it's simplicity and powerful feature set.
     color: "#FF6600"
     experience:
     years: 
@@ -324,7 +290,11 @@ messaging:
     label: ZeroMQ
     description:
     color: "#DF0000"
-    experience:
+    experience: |
+      I've used ZMQ for IPC (Inter Process Communication) to share image data between processes on the same machine. 
+      I've found using shared memory objects with Faktory to be more performant and more concise to develop with. 
+      Faktory also provides the extensibility to use different languages for jobs, like API clients in JavaScript as well as processs jobs on distributed 
+      machines.
     years: 
     logo_url: 
     url:
@@ -332,7 +302,7 @@ messaging:
 ai:
   - name: pytorch
     label: PyTorch
-    description:
+    description: I've used PyTorch for training and deploying neural networks, mostly for computer vision.
     color: "#EE4C2C"
     experience:
     years: 
@@ -340,7 +310,7 @@ ai:
     website_url:
   - name: pytorchlightning
     label: PyTorch Lightning
-    description:
+    description: Recently I've used PyTorch Lighting for more performant inference at nSightSurgical AI
     color: "#792EE5"
     experience:
     years: 
@@ -348,7 +318,7 @@ ai:
     website_url:
   - name: tensorflow
     label: Tensor Flow
-    description:
+    description: I've deployed ML pipelines that train and use nueral networks for computer vision inference on image data.
     color: "#FF6F00"
     experience:
     years: 
@@ -357,9 +327,9 @@ ai:
 language:
   - name: ruby
     label: Ruby
-    description:
+    description: I've been using Ruby for over a decade and I still learn new things and find joy writing Ruby.
     color: "#CC342D"
-    experience:
+    experience: Expert
     years: 
     url:
     website_url:
@@ -398,7 +368,7 @@ language:
 frontend:
   - name: electron
     label: Electron
-    description: 
+    description: I've used electron to deliver react apps to desktop
     color: "#47848F"
     experience:
     years: 
@@ -406,7 +376,7 @@ frontend:
     website_url:
   - name: react
     label: React
-    description:
+    description: I've used react to deliver dozens of products for startups over the years.
     color: "#61DAFB"
     experience:
     years: 
@@ -414,7 +384,7 @@ frontend:
     website_url:
   - name: redux
     label: Redux
-    description:
+    description: I've been using redux for managing state in React apps
     color: "#764ABC"
     experience:
     years: 
@@ -422,7 +392,7 @@ frontend:
     website_url:  
   - name: stimulus
     label: Stimulus
-    description:
+    description: Stimulus controllers are just enough JavaScript for me. 
     color: "#77E8B9"
     experience:
     years: 
@@ -430,7 +400,9 @@ frontend:
     website_url:
   - name: tailwindcss
     label: Tailwind CSS
-    description:
+    description: |
+      Tailwind is a great CSS utility framework that makes me feel like I'm not terrible at CSS. 
+      This site uses the Tailwind UI Spotlight template as a base with minor customizations.
     color: "#06B6D4"
     experience:
     years: 
@@ -438,7 +410,7 @@ frontend:
     website_url:
   - name: alpinedotjs
     label: Alpine.js
-    description:
+    description: Alpine is great, lightweight and there's even a sprinkle of Alpine in this site!
     color: "#8BC0D0"
     experience:
     years: 
@@ -447,7 +419,10 @@ frontend:
 web:
   - name: rubyonrails
     label: Rails
-    description: I've been using Rails to create Web applications and APIs since Rails 2. I've launch dozens of products 
+    description: | 
+      I've been using Rails to create Web applications and APIs since Rails 2. I've launch dozens of full-stack
+      products with Rails even a few with classic Turbolinks. I'm really excited about HOTwire and the new community
+      tooling like Turdbo Reflex.
     color: "#CC0000"
     experience:
     years: 
@@ -624,40 +599,6 @@ vision:
     years: 
     url:
     website_url:
-hardware:
-  - name: arduino
-    label: Arduino
-    description:
-    color: "#00979D"
-    experience:
-    years:
-    url:
-    website_url: 
-  - name: nvidia
-    label: NVIDIA
-    description:
-    color: "#76B900"
-    experience:
-    years:
-    url:
-    website_url: 
-  - name: raspberrypi
-    label: Raspberry Pi
-    description:
-    color: "#A22846"
-    experience:
-    years:
-    url:
-    website_url: 
-async: 
-  - name: slack
-    label: Slack
-    description:
-    color: "#4A154B"
-    experience:
-    years:
-    url:
-    website_url:
 cloud:
   - name: amazonaws
     label: Amazon AWS
@@ -696,6 +637,68 @@ cloud:
     description:
     color: "#00A95C"
     experience:
+    years: 
+    url:
+    website_url:
+hardware:
+  - name: arduino
+    label: Arduino
+    description:
+    color: "#00979D"
+    experience:
+    years:
+    url:
+    website_url: 
+  - name: nvidia
+    label: NVIDIA
+    description: I have nearly a decade of experience delivering CUDA power products to market.
+    color: "#76B900"
+    experience:
+    years:
+    url:
+    website_url: 
+  - name: raspberrypi
+    label: Raspberry Pi
+    description: |
+      I have been tinkering with Raspberry Pis for over a decade now. Anywhere from heliostats 
+      to monitoring plants with computer vision to water them
+    color: "#A22846"
+    experience:
+    years:
+    url:
+    website_url: 
+os:
+  - name: windows95
+    label: Windows 95
+    description: My first operating system as a kid. We soon upgraded to Windows 98 and Windows 98 Plus. Good times.
+    color: "#008080"
+    experience: Novice
+    years: 
+    url:
+    website_url:
+  - name: windowsxp
+    label: Windows XP
+    description: I couldn't find a logo for Windows 2000, but Windows XP styled like Windows 2000 was my daily driver early in my career.
+    color: "#003399"
+    experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: windows11
+    label: Windows 11
+    description: Currently using Windows 11 mostly for gaming. You can follow me on Twitch to checkout my build and content there.
+    color: "#0078D4"
+    experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: ubuntu
+    label: Ubuntu
+    description: | 
+      I've been using Ubuntu for well over a decade now. I've used Ubuntu Desktop for development as well as 
+      Ubuntu Server for cloud and on-premise deployments
+    color: "#008080"
+    experience: Expert
     years: 
     url:
     website_url:
