@@ -16,6 +16,31 @@ development:
     years: 
     url:
     website_url:
+  - name: visualstudiocode
+    label: VSCode
+    description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
+    color: "#007ACC"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
+  - name: solarized
+    label: Solarized
+    logo_url: /images/icons/skill/solarized.png
+    description: I really love the Solarized color sheme. I use it for terminals and editors. If anyone knows how to make VSCode and Terminal/iTerm2 use the OS settings hit me up on twitter.
+    color: "#000000"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
+  - name: sublimetext
+    label: Sublime Text
+    description: I used Text Mate and Sublime Text way back in the day, but haven't used recent versions.
+    color: "#FF9800"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
   - name: docker
     label: Docker
     description: Docker makes development and deployment dependencies repeatable and consistent. Using images to lock in requirements for things like OpenCV, TensorFlow, PyTorch, all with NVIDIA's Docker Engine for CUDA support make onboarding, developing, and deploying with remote containers a breeze. I've used Docker Hub for private organizations and even host a few of my own images there.
@@ -45,31 +70,6 @@ development:
     description: I used to use plain old Jupyter notebooks, but mostly use Google Colab these days. Sometimes I will run notebooks on remote containers with the VSCode extension.
     color: "#F37626"
     experience: Advanced
-    years: 
-    url:
-    website_url:
-  - name: solarized
-    label: Solarized
-    logo_url: /images/icons/skill/solarized.png
-    description: I really love the Solarized color sheme. I use it for terminals and editors. If anyone knows how to make VSCode and Terminal/iTerm2 use the OS settings hit me up on twitter.
-    color: "#000000"
-    experience: Intermediate
-    years: 
-    url:
-    website_url:
-  - name: sublimetext
-    label: Sublime Text
-    description: I used Sublime Text way back in the day, but haven't used recent versions.
-    color: "#FF9800"
-    experience: Intermediate
-    years: 
-    url:
-    website_url:
-  - name: visualstudiocode
-    label: VSCode
-    description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
-    color: "#007ACC"
-    experience: Intermediate
     years: 
     url:
     website_url:
@@ -183,9 +183,11 @@ design:
 datastore:
   - name: redis
     label: Redis
-    description:
+    description: |
+      Redis is a high performance in-memory data store I've used for caching things like rendered views and geocoder look ups. It's a great jobs queue for Sidekiq and is the foundation for Faktory. 
+      It's also a powerful PubSub message broker that is used for things like WebSocket broadcasting with ActionCable for live updates pushed from the server to the users.
     color: "#DC382D"
-    experience: Redis is a high performance in-memory data store I've used for caching things like rendered views and geocoder look ups. It's a great jobs queue for Sidekiq and is the foundation for Faktory. It's also a powerful PubSub message broker that is used for things like WebSocket broadcasting with ActionCable for live updates pushed from the server to the users.
+    experience: 
     years: 
     logo_url: 
     url:
@@ -288,13 +290,13 @@ messaging:
     website_url:
   - name: zeromq
     label: ZeroMQ
-    description:
-    color: "#DF0000"
-    experience: |
+    description: |
       I've used ZMQ for IPC (Inter Process Communication) to share image data between processes on the same machine. 
       I've found using shared memory objects with Faktory to be more performant and more concise to develop with. 
       Faktory also provides the extensibility to use different languages for jobs, like API clients in JavaScript as well as processs jobs on distributed 
       machines.
+    color: "#DF0000"
+    experience: 
     years: 
     logo_url: 
     url:
@@ -327,17 +329,17 @@ ai:
 language:
   - name: ruby
     label: Ruby
-    description: I've been using Ruby for over a decade and I still learn new things and find joy writing Ruby.
+    description: I've been using Ruby for over a decade. I still learn new things and find joy writing Ruby.
     color: "#CC342D"
-    experience: Expert
+    experience: Advanced
     years: 
     url:
     website_url:
   - name: php
     label: PHP
-    description:
+    description: I have done audits for and deployed a few applications in PHP, but it's not my daily driver.
     color: "#777BB4"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -345,15 +347,15 @@ language:
     label: JavaScript
     description: I use JavaScript mostly for browser based applications, but have also made React Native mobile and Electron desktop applications
     color: "#F7DF1E"
-    experience:
+    experience: Advanced
     years: 
     url:
     website_url:
   - name: typescript
     label: TypeScript
-    description: 
+    description: I have done audits for and deployed a few applications in TypeScript, but it's not my daily driver. Typing great, but it's not an excuse to skip testing.
     color: "#3178C6"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -361,7 +363,23 @@ language:
     label: Python
     description: I mostly use Python for Computer Vision and other Machine Learning tasks.
     color: "#3776AB"
-    experience:
+    experience: Advanced
+    years: 
+    url:
+    website_url:
+  - name: rust
+    label: Rust
+    description: Rust is pretty sweet and I look forward to doing more work with it.
+    color: "#000000"
+    experience: Intermediate
+    years: 
+    url:
+    website_url:
+  - name: rust
+    label: Rust
+    description: Elixir and the Pheonix framework have had my interest for a while, but I've limited production experience.
+    color: "#4B275F"
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -378,7 +396,7 @@ frontend:
     label: React
     description: I've used react to deliver dozens of products for startups over the years.
     color: "#61DAFB"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -386,7 +404,7 @@ frontend:
     label: Redux
     description: I've been using redux for managing state in React apps
     color: "#764ABC"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:  
@@ -394,7 +412,7 @@ frontend:
     label: Stimulus
     description: Stimulus controllers are just enough JavaScript for me. 
     color: "#77E8B9"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -404,7 +422,7 @@ frontend:
       Tailwind is a great CSS utility framework that makes me feel like I'm not terrible at CSS. 
       This site uses the Tailwind UI Spotlight template as a base with minor customizations.
     color: "#06B6D4"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -412,7 +430,7 @@ frontend:
     label: Alpine.js
     description: Alpine is great, lightweight and there's even a sprinkle of Alpine in this site!
     color: "#8BC0D0"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -424,7 +442,7 @@ web:
       products with Rails even a few with classic Turbolinks. I'm really excited about HOTwire and the new community
       tooling like Turdbo Reflex.
     color: "#CC0000"
-    experience:
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -432,7 +450,7 @@ web:
     label: JSON Web Tokens
     description: I've been using JWT for authenticated user credentials for almost all of my projects.
     color: "#000000"
-    experience:
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -440,7 +458,7 @@ web:
     label: WebRTC
     description: I've used both Twilio Video and hand rolled WebRTC signaling servers and WebRTC clients with WebSockets to provide product solutions for realtime communcation through audio/video and collaboration through screen shares.
     color: "#333333"
-    experience:
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -448,7 +466,7 @@ web:
     label: Sinatra
     description: I've built a few microservices with Sinatra to expose APIs with Ruby. One of the most interesting examples that made it to production was a geocoding service that took coordinates and returned location names using OSM, PostGIS, and Redis for a caching layer. It could handle batches of coordinates with a custom stored proceedure and serviced tens of millions of requests a day.
     color: "#000000"
-    experience:
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -456,7 +474,7 @@ web:
     label: Flask
     description: At Cainthus we served our APIs with Flask for our React apps that rendered data derived from Computer Vision
     color: "#000000"
-    experience:
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -464,7 +482,7 @@ web:
     label: Express.js
     description: At Momentage we created a simple file upload service with Express JS and MongoDB's GridFS for resumable file uploads with S3 and CloudFront serving the uploaded assets.
     color: "#000000"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -472,7 +490,7 @@ web:
     label: Django
     description: At Cainthus we used Django for our Drone mapping web app with Celery for background jobs to process map tile analysis and visualizations.
     color: "#092E20"
-    experience:
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -480,15 +498,15 @@ web:
     label: CakePHP
     description: At Focus Testing Services we had a CakePHP JSON API serving our desktop app that was built with Flash FlexBuilder using ActionScript 3
     color: "#D33C43"
-    experience:
+    experience: Novice
     years: 
     url:
     website_url:
   - name: laravel
     label: Laravel
-    description: 
+    description: Laravel is cool in my book.
     color: "#FF2D20"
-    experience:
+    experience: Novice
     years: 
     url:
     website_url:
@@ -567,7 +585,8 @@ map:
     website_url:
   - name: mapbox
     label: Mapbox
-    description:
+    description: |
+      MapBox has a great suite of solutions with their APIs and SDKs, though most of the products I've built have been too high volumen and on early stage startup budgets to afford using them as opposed to handrolled solutions.
     color: "#000000"
     experience:
     years: 
@@ -585,7 +604,7 @@ map:
 vision:
   - name: ffmpeg
     label: FFmpeg
-    description:
+    description: I've developed a few computer vision pipelines with FFMPEG decoding inputs that splits into two outputs for computer vision processing and encoding outputs for demos.
     color: "#4479A1"
     experience:
     years: 
@@ -593,7 +612,7 @@ vision:
     website_url:
   - name: opencv
     label: OpenCV
-    description:
+    description: I've been using OpenCV for a little under a decade. I have built a number of products for startups and even have a few OSS projects built with OpenCV.
     color: "#5C3EE8"
     experience:
     years: 
@@ -602,7 +621,7 @@ vision:
 cloud:
   - name: amazonaws
     label: Amazon AWS
-    description:
+    description: I've managed classic EC2 instances, but typically will automate a VPC with ASG policies for ECS instances.
     color: "#4285F4"
     experience:
     years: 
@@ -610,7 +629,7 @@ cloud:
     website_url:
   - name: digitalocean
     label: DigitalOcean
-    description:
+    description: It's been a while since I've deployed with it, but DigitalOcean still has some great offerings.
     color: "#0080FF"
     experience:
     years: 
@@ -618,7 +637,7 @@ cloud:
     website_url:
   - name: googlecloud
     label: Google Cloud
-    description:
+    description: I've managed a number of deployments on GCP using Compute and Run environments.
     color: "#4285F4"
     experience:
     years: 
@@ -626,7 +645,7 @@ cloud:
     website_url:
   - name: heroku
     label: Heroku
-    description:
+    description: I started using Heroku is 2012 and I still really enjoy Heroku to this day. I should probably checkout some of the new hotness like Render, Vercel, Fly.io, and the like, but I mostly just use AWS ECS/EKS with Terraform and GitHub Actions
     color: "#430098"
     experience:
     years: 
@@ -634,7 +653,7 @@ cloud:
     website_url:
   - name: linode
     label: Linode
-    description:
+    description: I've managed a couple of client's deployments on Linode, but it's definitely not my preference.
     color: "#00A95C"
     experience:
     years: 
@@ -643,7 +662,7 @@ cloud:
 hardware:
   - name: arduino
     label: Arduino
-    description:
+    description: I've been tinkering with Arduinos building sensors with ESPs or that talk to Raspberry Pis over serial.
     color: "#00979D"
     experience:
     years:
