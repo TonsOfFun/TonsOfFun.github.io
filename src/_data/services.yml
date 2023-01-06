@@ -34,9 +34,9 @@ audit:
   - name: currency-dollar
     label: Performance
     description: |
-      Application performance impacts the user experience and cost businesses money. There is the operational
-      cost, but also the customer cost. We'll take a holistic perspective to understand the full stack performance
-      profile of products to understand where the most value to the customers and ultimately the business come from.
+      Application performance impacts the customer experience and costs businesses money. There is the operational cost, but also the cost of lost customers. 
+      Perceived slowness causes frustration leading to user's losing patience and interest in the product. We'll take a holistic perspective to 
+      understand the full stack performance profile of products to understand where the most value to the customers and ultimately the business comes from.
       Improvements to performance yield improvements to the companies bottom line. You can't improve what you can't measure
     color: 
     experience: 
@@ -71,7 +71,7 @@ audit:
     label: Scaling
     description: |
       Scaling issues can be found across the stack frontend load times, web request response times, request queueing delay, 
-      background jobs queueing, and database query queueing. Scaling automation requires the right metrics to trigger alarms 
+      background jobs queueing, and database query structure, indexing, and, you guess it, also queueing. Scaling automation requires the right metrics to trigger alarms 
       and scaling events appropriately.
     color: 
     experience: 
@@ -118,7 +118,17 @@ business:
 design:
   - name: currency-dollar
     label: Product Design
-    description: 
+    description: |
+      Product design is more important than product development. I'm a developer and I've seen too many build before design and struggle 
+      to launch sucessfully. A design first approach allows you to iterate quickly and get valuable feedback before you spend a dime on 
+      development. Design cycles cost less than development cycles and their is less of a sunk cost falisy at play. You can throw away part
+      of a design more readily than code that's already been written. Design is about constraints and removal all that is not essential until
+      you're left with what is necessary.
+    content: |
+     "Perfection is achieved not when there is nothing more to add but when there is nothing left to take away."
+     "The value of a creative product doesn't lie in how much there is, but in how much has been discarded. 
+     "When in doubt, leave it out."
+     "Less is more"
     color: 
     experience: 
     years: 
@@ -127,7 +137,11 @@ design:
     domain: 
   - name: currency-dollar
     label: User Stories
-    description: 
+    description: |
+      Part of the product design process is working through the user's journey through user stories. This allows you to layout your ideas
+      of what a user is coming to your product to accomplish and prioritize what is crucial to deliver initially. You can then iterate to 
+      your ultimate vision or follow the feedback of your users as they use the product. This is an opportunity to also consider what 
+      information you can gather from the user's journey in order to make informed decisions based on analytics later on.
     color: 
     experience: 
     years: 
@@ -136,7 +150,38 @@ design:
     domain: 
   - name: currency-dollar
     label: Workflow Diagrams
-    description: 
+    description: |
+      Workflow diagrams are a great way to visually layout user experiences from an interaction perspective. Taking user stories and mapping them out into workflow diagrams helps to determine where their might be unforeseen steps in the process.
+      As you map out the journey you have to consider, how a user gets from this step in the journey to that step. Maybe there is an automated 
+      process that needs to connect the two, like a verification messsage or maybe there is a user experience you hadn't considered. Workflow 
+      diagrams map out the user stories into a story board you can walk through more visually without even having to wireframe or prototype.
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
+    domain: 
+  - name: currency-dollar
+    label: Wireframes
+    description: |
+      Low fidelity wireframes help to start understanding how to reduce complexity exposed to the users visual experience. Simplicity in the user 
+      interface will yield less friction than overwhelming numbers of visual elements for users to decide where to go next. It's always easier to add,
+      but the real opportunity comes from removing uncessary distractions. Wire frames are an ideal time to get user feedback on their expectations of a
+      user interface at a particular step in the user experience without their opinion of the visual design getting in the way. You'll learn what the 
+      user's intentions and expectations on when they ask questions. You'll also learn what their stuggles are when they don't know what they're expected 
+      to do next. 
+    color: 
+    experience: 
+    years: 
+    url:
+    website_url:
+    domain: 
+  - name: currency-dollar
+    label: Prototypes
+    description: |
+      High fidelity clickable mockups using tools like Figma, Invision, or similar are a powerful mechinism for validating design before your build.
+      Give users a chance to experience your designs and take advantage of the opportunity to learn from their real experience rather than your imagined
+      expectations.
     color: 
     experience: 
     years: 
@@ -145,7 +190,9 @@ design:
     domain: 
   - name: currency-dollar
     label: Architecture Diagrams
-    description: 
+    description: |
+      Architecture diagrams are an important part of documenting software and infrastructure decisions. Once you have your product design mapped 
+      out or if it's already built, documenting the system design in a diagram is crucial for onboarding and maintaining visibility and understanding.
     color: 
     experience: 
     years: 
@@ -155,7 +202,8 @@ design:
 development:
   - name: currency-dollar
     label: Product Development
-    description: 
+    description: |
+      With a design in hand or with well documented plans to enhance an existing product, then you're ready to build. 
     color: 
     experience: 
     years: 
@@ -163,8 +211,9 @@ development:
     website_url:
     domain: 
   - name: currency-dollar
-    label: Development Experience Improvement
-    description: 
+    label: Developer Experience
+    description: |
+      Improving the developer experience is instrubmental in enhancing productivity and sustainability across developer and organizational processes.
     color: 
     experience: 
     years: 
@@ -173,7 +222,8 @@ development:
     domain: 
   - name: currency-dollar
     label: Performance Enhancements
-    description: 
+    description: | 
+      Once you receive a performance audit report you probably want to address the issues to ensure your customer experience and bottom line are as efficient as possible.
     color: 
     experience: 
     years: 
@@ -182,7 +232,8 @@ development:
     domain: 
   - name: currency-dollar
     label: Infrastructure Automations
-    description: 
+    description: |
+      Automation is about consistency and reliability. Removing the monotony and manual labor improves developer happiness and frees up resources to deliver business value.
     color: 
     experience: 
     years: 
@@ -191,7 +242,9 @@ development:
     domain: 
   - name: currency-dollar
     label: Software Upgrades
-    description: 
+    description: |
+      Software upgrades lag behind and that's a form of technical debt. Sometimes "if it ain't broke, don't fix it" is applicable, but other times it is leaving value on the table.
+      Ensuring your software stack is up to date improves maintainability, reliability, security, performance, and productivity.
     color: 
     experience: 
     years: 
