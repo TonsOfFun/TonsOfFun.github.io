@@ -2,7 +2,8 @@ companies:
   - name: 'nSight Surgical AI'
     roles:
       - title: 'Director of Engineering'
-        description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.'
+        description: 'Leading team developing CPU-accelerated ML/DL/AI computer vision systems for hospitals across the US, with research in partnership with Stanford Healthcare. Ensuring real-time data processing on-premise at hospitals and in the cloud. Built data processing pipeline used for cloud training and real-time inference.'
+        old_description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.'
         start: '2022'
         end: 'present'
         url: 
@@ -13,7 +14,8 @@ companies:
   - name: 'Silicon Valley Software Group'
     roles: 
       - title: 'CTO Consultant'
-        description: 'Tech due dilligence for VC, PE, and acquisitions.'
+        description: 'Leading tech due diligence for venture capital and private equity fundraising and acquisitions, including partnering to support technical and business audits as well as advising firms on business and product integration strategy.'
+        old_description: 'Tech due dilligence for VC, PE, and acquisitions.'
         start: '2021'
         end: 'present'
         url: 
@@ -24,7 +26,9 @@ companies:
   - name: 'Sea Foam Media & Technology'
     roles: 
       - title: 'CTO Consultant'
-        description: 'Providing startups with business advice, marketing, design, and development services to bring product ideation to market.'
+        mo: 'Built real-time audio/video collaboration platform for musicians to practice and perform with the lowest possible latency. Managed Mesh-WebRTC implementation. Integrated Twilio API TURN/STUN services and Twilio Video SDK.'
+        description: 'Co-founded startup consulting firm to help early-stage companies with brand development and messaging, defining product requirements and technical architecture, and leading teams to design and build MVPs.'
+        old_description: 'Providing startups with business advice, marketing, design, and development services to bring product ideation to market.'
         start: '2018'
         end: 'present'
         url: 
@@ -46,7 +50,7 @@ companies:
   - name: 'Cainthus'
     roles: 
       - title: 'CTO'
-        description: 'Directly interfaced with Cargill VC to close on Series B fund raising efforts tech due dilligence. Coordinated an international team of scientists and engineers to deliver on the installation and management of international on farm deployment sites that used our edge based GPU acceleerated AI to process hundreds of cameras and report events to the cloud platform in real time.'
+        description: 'Grew global remote team from 1 to 8 engineers, scientists, and designers to deliver cutting-edge agtech products to market (drone analytics for field crops and dairy barn computer vision). Lead tech due diligence to close Series B fundraise with Cargill Animal Nutrition.'
         start: '2017'
         end: '2018'
         url: 
@@ -68,7 +72,8 @@ companies:
   - name: 'PINSTOP'
     roles: 
       - title: 'Cofounder, Director of Engineering'
-        description: 'I built a full stack web application to manage client-concierge interactions for 5 star international hotels in collaboration with the Ritz Carlton and Grand Hyatt in Tokyo.'
+        description: Designed and developed a custom itinerary mapping platform plus travel experience recommendation engine for use by elite concierge teams (including the Grand Hyatt and Ritz-Carlton hotels in Tokyo).
+        old_description: 'I built a full stack web application to manage client-concierge interactions for 5 star international hotels in collaboration with the Ritz Carlton and Grand Hyatt in Tokyo.'
         start: '2016'
         end: '2017'
         url: 
@@ -91,7 +96,8 @@ companies:
   - name: 'Momentage'
     roles: 
       - title: 'Lead Software Engineer, CTO'
-        description: 'I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high throughput media uploading service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads to S3.'
+        description: Lead the development of a short-form multimedia sharing platform. Designed a high-throughput media uploading service with node.js for handling file uploads to S3.
+        old_description: 'I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high throughput media uploading service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads to S3.'
         start: '2014'
         end: '2016'
         url: 
@@ -102,7 +108,8 @@ companies:
   - name: 'Banjo'
     roles: 
       - title: 'Lead Senior Software Engineer'
-        description: 'Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.'
+        description: Independently built geocoding and data processing platform used to raise $150M. Built event detection system using advanced geo information systems to index social media content and determine what events were happening where, using geo queries on indexed polygons of all buildings and administration boundaries in the world. Built geo-coding microservices that handled 10s of millions of requests each day.
+        old_description: 'Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.'
         start: '2012'
         end: '2014'
         url: 

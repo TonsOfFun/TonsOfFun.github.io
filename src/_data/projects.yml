@@ -11,7 +11,8 @@ opensource:
     twitter_url: https://twitter.com/tonsoffun111
   - name: GreenThumb IO
     label: GreenThumb IO
-    description: GreenThumb IO is an OSS organization that came out of a series of AgTech hackathons in the central valley California.
+    description: After winning a hackathon, I built GreenThumb.io to help agronomists and farmers optimize their costs to yields throughout harvest cycles. Developed computer vision system to monitor plant growth. Integrated automated fertigation systems using Arduinos and Raspberry Pis to apply and track fertilizer based on visual inputs. I have shared my work as an open source project.
+    old_description: GreenThumb IO is an OSS organization that came out of a series of AgTech hackathons in the central valley California.
     url: https://greenthumb.io
     domain: greenthumb.io
     logo_url: /images/logos/greenthumbio.jpeg
