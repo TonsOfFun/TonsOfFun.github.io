@@ -112,11 +112,11 @@ companies:
         old_description: 'Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.'
         start: '2012'
         end: '2014'
-        url: 
+        url: https://www.safex.ai/
     logo_url: /images/logos/banjo.webp
     website_url: 'https://tonsof.fun/banjo/'
     location: 'San Francisco Bay Area'
-    description: 'Location based social events discovery platform.'
+    description: 'Banjo, now safeXai wasocation based social events discovery platform powered by advanced signal processing and artificial intielligence'
   - name: 'Focus Testing Services, inc.'
     roles:
       - title: 'Lead Procuct Engineer'
