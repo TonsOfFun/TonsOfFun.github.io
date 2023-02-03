@@ -2,23 +2,22 @@
 /// <reference types="@google/local-home-sdk" />
 const app = new smarthome.App("1.0.0");
 app.onIdentify((request) => {
-    console.debug("IDENTIFY request:", request);
-    return Promise.all(request.inputs[0].payload.devices.map((device) => {
-        const response = {
-            intent: smarthome.Intents.IDENTIFY,
-            requestId: request.requestId,
-            payload: {
-                device: {
-                    id: device.id || "",
-                    verificationId: "local-elgato-device-id"
-                },
-            },
-        };
-        console.debug("IDENTIFY response", response);
-       
-    })).then(() => {
+  console.debug("IDENTIFY request:", request);
+  const devices = request.inputs[0].payload.devices;
+  return Promise.all(devices.map((device) => {
+      const response = {
+          intent: smarthome.Intents.IDENTIFY,
+          requestId: request.requestId,
+          payload: {
+              device: {
+                  id: device.id || "",
+                  verificationId: "local-elgato-device-id"
+              },
+          },
+      };
+      console.debug("IDENTIFY response", response);
       return response;
-  });
+  }));
 })
 .onQuery((request) => {
     console.debug("QUERY request", request);
