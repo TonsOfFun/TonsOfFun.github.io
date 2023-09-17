@@ -1,0 +1,346 @@
+{'public_identifier': 'tonsoffun111',
+ 'profile_pic_url': 'https: //s3.us-west-000.backblazeb2.com/proxycurl/person/tonsoffun111/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230907%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230907T223210Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8ed7e4c1f8cb5be22a432b0743303459b9cdd2fad747beb87385d4b8b9e67717',
+ 'background_cover_image_url': None,
+ 'first_name': 'Justin',
+ 'last_name': 'Bowen',
+ 'full_name': 'Justin Bowen',
+ 'follower_count': 5182,
+ 'occupation': 'CTO Consultant at Silicon Valley Software Group',
+ 'headline': 'CTO Consultant/Rubyist/ML & Computer Vision. Building startup dreams into reality for over a decade.',
+ 'summary': 'A technology leader with over a decade of experience developing web architecture for successful start-ups and contributing to $100mm+ in fundraising, seed through series D. Hired and grown international teams of remote engineers and scientists. \n\nWorked hands on with contributors and project owners to build out platforms in high volume data processing for location-based imagery and video. Applied machine learning and deployed AI services for a number of large scale clients.',
+ 'country': 'US',
+ 'country_full_name': 'United States of America',
+ 'city': 'San Francisco',
+ 'state': 'California',
+ 'experiences': [
+    {'starts_at': {'day': 1, 'month': 2, 'year': 2022
+      },
+   'ends_at': None,
+   'company': 'Adventure Fund',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/adventurefund/',
+   'title': 'Limited Partner',
+   'description': 'Adventure Fund is a $10M fund comprised of successful founders and seasoned operators investing in the best early-stage startups.',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/C560BAQFpm7weXqvQEA/company-logo_400_400/0/1611176578250?e=1701907200&v=beta&t=2beMeIctQIE2A2T4WUls6S22_zJsVRpEeM4qosfgI9Q'},
+      {'starts_at': {'day': 1, 'month': 12, 'year': 2021
+        },
+   'ends_at': None,
+   'company': 'nSight Surgical ',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/nsight-surgical/',
+   'title': 'Director Of Engineering',
+   'description': '- Performed R&D in partnership with Stanford Healthcare.\n- Led the development of GPU-accelerated ML/DL/AI computer vision systems for hospitals.\n- Deployed on-premise AI in medical facilities across the US and in the cloud.\n- Built data processing pipeline used for processing cloud training data and performing real-time inference.\n- Led user-facing product development with a global remote team of engineers, data scientists, and designers.\n\nLanguages & frameworks: Python • Faktory • Ruby • Rails • PostgreSQL • Redis • OpenCV • PyTorch • CUDA • Docker • React • ONNXRuntime',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/C560BAQEjr0ItY8C4XA/company-logo_400_400/0/1622785245361?e=1701907200&v=beta&t=6H1b8yz9x8WLBXs0TBq3CH5IpC6vIICK8SQJuU8P5-I'},
+        {'starts_at': {'day': 1, 'month': 9, 'year': 2021
+          },
+   'ends_at': None,
+   'company': 'Silicon Valley Software Group',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/siliconvalleysoftwaregroup/',
+   'title': 'CTO Consultant',
+   'description': 'Silicon Valley Software Group is a management consulting firm specializing in helping companies innovate with emerging technologies. With over 200 years of combined CTO and VPE experience, we are uniquely positioned to provide unmatched business value and intelligence to our clients in areas such as machine learning, high-performance computing, cyber security, growth engineering, team building and scaling. Featured in Inc Magazine as the #1 technology consulting firm to modernize companies for 2018, Silicon Valley Software Group helps some of the fastest growing startups, Fortune 500 brands, and governments around the world.',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/C560BAQE1jaEblsGYIg/company-logo_400_400/0/1580793734768?e=1701907200&v=beta&t=R9_5z_pw8mbOUKWhjRHGqfQCpH4JVF_ZmHSf7IA_xkQ'},
+          {'starts_at': {'day': 1, 'month': 2, 'year': 2016
+            },
+   'ends_at': {'day': 1, 'month': 12, 'year': 2021
+            },
+   'company': 'GreenThumb IO',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/greenthumb-io/',
+   'title': 'Founder // CEO',
+   'description': 'Open source R&D project combining smart cameras and AI to fundamentally transform the cannabis industry from seed to sale.\n\n- Built edge and cloud computer vision product for plant leaf and bud area analysis.\n- Ruby, Rails, Sidekiq, Python, OpenCV, Postgres, PostGIS, Redis, Raspberry Pi, WebSockets - ActionCable (AnyCable-Go).\n- Real-time image processing with Rails and Sidekiq.\n- Custom Python OpenCV algorithms exposed in an image service via Thumbor OpenCV engine.',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/C560BAQGgY6Dj4pU-Rg/company-logo_400_400/0/1524940873902?e=1701907200&v=beta&t=telIzifoFdrqLtiL-k8B5X-XxXymDeWm9L8yr-HI0Ec'},
+            {'starts_at': {'day': 1, 'month': 1, 'year': 2018
+              },
+   'ends_at': {'day': 1, 'month': 12, 'year': 2021
+              },
+   'company': 'Sea Foam Media & Technology',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/seafoammedia/',
+   'title': 'Co-founder & CTO',
+   'description': 'Launched a startup consulting firm with my now-wife to help early-stage companies with everything from brand development and messaging to defining their product requirements and designing/building their MVPs.',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/C560BAQH0ZCrieUyK_g/company-logo_400_400/0/1544473519324?e=1701907200&v=beta&t=8_s0-Hr-a6hcLBpIjcWG8r4eF_WZDLS3KyOKhe3fG0w'},
+              {'starts_at': {'day': 1, 'month': 8, 'year': 2017
+                },
+   'ends_at': {'day': 1, 'month': 1, 'year': 2018
+                },
+   'company': 'Cainthus',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/ever-ag-dairy/',
+   'title': 'CTO',
+   'description': '- Led a team to engineer a product for drone flight mapping and analysis with heat map overlays for agronomists.\n- Led team developing dairy barn AI analytics using computer vision.\n- Grew global remote team from 1 to 8 data scientists, engineers, and designers.\n- Handled the tech due diligence for Series B fundraising with Cargill Animal Nutrition for the dairy barn monitoring product.\n\nLanguages & frameworks: Python, React, LeafLet.js, OpenCV, Django, MongoDB, Postgres, PostGIS, Redis, Celery, GDal2Tiles',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/D4E0BAQHabTCwuZaI4Q/company-logo_400_400/0/1665755590071?e=1701907200&v=beta&t=XiRCNtqOxzqd1BIZQYHFqFtVbzVbtY5B4cr_R8Dn3q0'},
+                {'starts_at': {'day': 1, 'month': 8, 'year': 2016
+                  },
+   'ends_at': {'day': 1, 'month': 8, 'year': 2017
+                  },
+   'company': 'Cainthus',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/ever-ag-dairy/',
+   'title': 'Director of Engineering',
+   'description': 'Worked with a growing team to make the drone platform production ready and helped build out, test, and enhance the Dairy cow computer vision platform.',
+   'location': 'San Francisco Bay Area',
+   'logo_url': 'https: //media.licdn.com/dms/image/D4E0BAQHabTCwuZaI4Q/company-logo_400_400/0/1665755590071?e=1701907200&v=beta&t=XiRCNtqOxzqd1BIZQYHFqFtVbzVbtY5B4cr_R8Dn3q0'},
+                  {'starts_at': {'day': 1, 'month': 3, 'year': 2016
+                    },
+   'ends_at': {'day': 1, 'month': 8, 'year': 2016
+                    },
+   'company': 'Cainthus',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/ever-ag-dairy/',
+   'title': 'Lead Data Engineer and Platform Architect',
+   'description': 'Worked with a small team to optimize and scale a drone analytics and real-time geo search and instant heat map results.',
+   'location': None,
+   'logo_url': 'https: //media.licdn.com/dms/image/D4E0BAQHabTCwuZaI4Q/company-logo_400_400/0/1665755590071?e=1701907200&v=beta&t=XiRCNtqOxzqd1BIZQYHFqFtVbzVbtY5B4cr_R8Dn3q0'},
+                    {'starts_at': {'day': 1, 'month': 12, 'year': 2016
+                      },
+   'ends_at': {'day': 1, 'month': 8, 'year': 2017
+                      },
+   'company': 'PINSTOP',
+   'company_linkedin_profile_url': None,
+   'title': 'Director Of Engineering',
+   'description': '- Designed and developed a custom itinerary mapping platform for the concierge teams at the Grand Hyatt and Ritz-Carlton hotels in Tokyo. \n- Developed a recommendation engine for travel experiences.\n- Helped manage tech+business expectations and sell product to elite hotels across Japan.\n\nLanguages & frameworks: Ruby, Rails, Turbolinks, MongoDB, Redis, Sidekiq',
+   'location': 'Tokyo, Japan',
+   'logo_url': None
+                    },
+                    {'starts_at': {'day': 1, 'month': 3, 'year': 2015
+                      },
+   'ends_at': {'day': 1, 'month': 8, 'year': 2016
+                      },
+   'company': 'ZALA',
+   'company_linkedin_profile_url': None,
+   'title': 'Lead Software Engineer, CTO',
+   'description': None,
+   'location': 'San Francisco Bay Area',
+   'logo_url': None
+                    },
+                    {'starts_at': {'day': 1, 'month': 6, 'year': 2012
+                      },
+   'ends_at': {'day': 1, 'month': 12, 'year': 2013
+                      },
+   'company': 'Banjo',
+   'company_linkedin_profile_url': None,
+   'title': 'Lead Senior Ruby Software Engineer',
+   'description': "Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world. \n\nI designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions. Exposed the data to Web and Mobile client facing through a JSON API. Worked closely with both Data Science and Client teams to achieve greatness.  I got very familiar with the spatial features from MongoDB and PostgreSQL's GIST extension.",
+   'location': 'San Francisco Bay Area',
+   'logo_url': None
+                    },
+                    {'starts_at': {'day': 1, 'month': 12, 'year': 2013
+                      },
+   'ends_at': {'day': 1, 'month': 3, 'year': 2016
+                      },
+   'company': 'Momentage',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/momentage/',
+   'title': 'Lead Software Engineer, CTO',
+   'description': 'I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high volume media consumer service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads. Built a JSON API for the mobile and web clients with Rails 4 backend using sidekiq for long jobs and media processing. I assist with iOS and Android app development and code review.',
+   'location': 'Earth',
+   'logo_url': None
+                    }
+                  ],
+ 'education': [
+                    {'starts_at': {'day': 1, 'month': 1, 'year': 2006
+                      },
+   'ends_at': {'day': 1, 'month': 1, 'year': 2008
+                      },
+   'field_of_study': 'Computer Science',
+   'degree_name': None,
+   'school': 'College of San Mateo',
+   'school_linkedin_profile_url': None,
+   'description': None,
+   'logo_url': 'https: //media.licdn.com/dms/image/D560BAQFVbsuohO9gtQ/company-logo_400_400/0/1682616238320?e=1701907200&v=beta&t=CjW09TsP-2jHpdC8vaQOfE-ATYljCN-y6ghsrgX3mB4',
+   'grade': None,
+   'activities_and_societies': None
+                    }
+                  ],
+ 'languages': ['English'
+                  ],
+ 'accomplishment_organisations': [],
+ 'accomplishment_publications': [],
+ 'accomplishment_honors_awards': [
+                    {'title': 'RubyConf Speaker - "Discover Machine Learning in Ruby" (Houston, TX)',
+   'issuer': 'RubyConf',
+   'issued_on': {'day': 1, 'month': 11, 'year': 2022
+                      },
+   'description': 'See talk: https: //www.youtube.com/watch?v=XXtqUptI_oQ&t=4s'},
+                      {'title': 'RailsConf Speaker - "The Queue Continuum: Applied Queuing Theory" (Portland, OR)',
+   'issuer': 'RailsConf',
+   'issued_on': {'day': 1, 'month': 5, 'year': 2022
+                        },
+   'description': 'See talk: https: //www.youtube.com/watch?v=GY4AT2z7mcI'},
+                        {'title': 'RailsConf Speaker - "Exploring Real-time Computer Vision Using ActionCable" (Virtual)',
+   'issuer': 'RailsConf',
+   'issued_on': {'day': 1, 'month': 4, 'year': 2021
+                          },
+   'description': 'See talk: https: //www.youtube.com/watch?v=VsTLXiv0H-g'},
+                          {'title': '3rd Place - AppsForAg Hackathon',
+   'issuer': 'UC Davis',
+   'issued_on': {'day': 1, 'month': 12, 'year': 2015
+                            },
+   'description': 'Placed 3rd in UC Davis AppsForAg hackathon, as a solo team.'
+                          }
+                        ],
+ 'accomplishment_patents': [],
+ 'accomplishment_courses': [],
+ 'accomplishment_projects': [
+                          {'starts_at': {'day': 1,
+    'month': 12,
+    'year': 2015
+                            },
+   'ends_at': {'day': 1, 'month': 12, 'year': 2015
+                            },
+   'title': 'GreenThumb',
+   'description': 'Dec 3,
+                            2015\nGreenThumb placed 3rd @AppsForAg Hatckathon UC Davis\n\nGreenThumb is a mobile app to assign and verify common field tasks like applying fertilizers/pesticides, soil/tissue sampling, irrigation, etc, and build a database of these events to enable historical data analytics. This significantly improves communication among crop advisers, growers, and foremen, re-enforces safety/security requirements, and improves productivity by cutting down hours for record-keeping, while enabling field-level analytics for increasing yield.',
+   'url': None
+                          }
+                        ],
+ 'accomplishment_test_scores': [],
+ 'volunteer_work': [
+                          {'starts_at': {'day': 1, 'month': 4, 'year': 2015
+                            },
+   'ends_at': {'day': 1, 'month': 7, 'year': 2015
+                            },
+   'title': 'Volunteer Developer',
+   'cause': 'HUMANITARIAN_RELIEF',
+   'company': 'Gham Power ',
+   'company_linkedin_profile_url': 'https: //www.linkedin.com/company/gham-power/',
+   'description': 'Our overseas developers work and live in Kathmandu and I heard from them first hand the tragedy that had unfolded in the aftermath of the quake. Some lost their homes, all slept outdoors with babies and grandparents. Others had to trek miles to villages that were destroyed to help their families survive the first weeks of the disaster. To help them, we have started a campaign Rebuild With Sun to provide solar powered lights and charging stations to displaced people living in shelters and tents, and also for relief work. \n\nIt was a privilege for me, creating and maintaining the the relief map Updating it daily, as teams and supplies made their way slowly to those in such desperate need. I was amazed at the effort that so many put in to help. Mine was a small part, sitting comfortably in California cheering on those who I knew through work and the relief workers in the field literally carrying solar and cooking equipment to the hardest hit areas.',
+   'logo_url': 'https: //media.licdn.com/dms/image/C510BAQG2sKVfntJS4w/company-logo_400_400/0/1543222308336?e=1701907200&v=beta&t=RV8EkkY_JlEJViPo29m17VLeRphlCxEX50A-qnFCN-k'}],
+ 'certifications': [],
+ 'connections': None,
+ 'people_also_viewed': [
+                              {'link': 'https: //www.linkedin.com/in/imkevinliang',
+   'name': 'Kevin Liang',
+   'summary': 'Engineering Manager at Verkada (Hiring!!)',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/holinger',
+   'name': 'Chris Holinger',
+   'summary': 'Advisor, Former Head of IT & Systems @ Engine No. 1, Director @ PwC',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/jeffnelsonjeffnelson',
+   'name': 'Jeffrey Nelson',
+   'summary': 'CTO at Stealth startup',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/nathaniel-s',
+   'name': 'Nathaniel Smith',
+   'summary': "CEO at nSight Surgical (I'm Hiring!)",
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/pmederos',
+   'name': 'Paul Mederos',
+   'summary': 'wellness entrepreneur',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/seanpaulmurphy',
+   'name': 'Paul Murphy',
+   'summary': 'Principal at 3Advance: The Product Development Team for Startups',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/makhfi',
+   'name': 'Pejman Makhfi',
+   'summary': 'CTO - Investor - Advisor',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/denis-ivanov-174baa5',
+   'name': 'Denis Ivanov',
+   'summary': 'CTO at Shiekh Shoes and Karmaloop.com',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/vamsi-gadiraju',
+   'name': 'Vamsi Gadiraju',
+   'summary': 'CTO at Superorder',
+   'location': None
+                              },
+                              {'link': 'https: //www.linkedin.com/in/nazariy-hazdun-93822552',
+   'name': 'Nazariy Hazdun',
+   'summary': 'CTO | Forbes Technology Member | 10k+ Followers | Helping Startup Founders to design & develop innovative tech products',
+   'location': None
+                              }
+                            ],
+ 'recommendations': [],
+ 'activities': [],
+ 'similarly_named_profiles': [
+                              {'name': 'Justin Bowen',
+   'link': 'https: //www.linkedin.com/in/justinbowendfw',
+   'summary': 'Empowering security and innovation in mobility, empowering anyone to build a unified cloud whether public and/or private!',
+   'location': 'Dallas-Fort Worth Metroplex'
+                              },
+                              {'name': 'Justin Bowen',
+   'link': 'https: //www.linkedin.com/in/justin-bowen-9132455',
+   'summary': 'Director Of Operations at Go Store It Self Storage',
+   'location': 'Charlotte Metro'
+                              },
+                              {'name': 'Justin Bowen',
+   'link': 'https: //www.linkedin.com/in/justin-a-bowen',
+   'summary': 'Executive Director of Finance & Accounting (Billing & Collections)',
+   'location': 'St Joseph, MI'
+                              },
+                              {'name': 'Justin Bowen',
+   'link': 'https: //www.linkedin.com/in/justin-bowen-50904381',
+   'summary': 'Detective with the Utah Department of Public Safety',
+   'location': 'Salt Lake City, UT'
+                              }
+                            ],
+ 'articles': [],
+ 'groups': [],
+ 'skills': ['Computer Vision',
+  'Machine Learning',
+  'Python (Programming Language)',
+  'Data Engineering',
+  'Redis',
+  'Amazon Web Services (AWS)',
+  'Git',
+  'Ruby on Rails',
+  'Ruby',
+  'Java',
+  'Android',
+  'REST',
+  'Ubuntu',
+  'JavaScript',
+  'Web Services',
+  'SQL',
+  'iOS',
+  'Team Leadership',
+  'PostgreSQL',
+  'Web Development'
+                            ],
+ 'inferred_salary': {'min': None, 'max': None
+                            },
+ 'gender': None,
+ 'birth_date': None,
+ 'industry': None,
+ 'extra': None,
+ 'interests': ['Animal Welfare',
+  'Arts and Culture',
+  'Ceramics',
+  'Children',
+  'Civil Rights and Social Action',
+  'Climbing',
+  'Code',
+  'Disaster and Humanitarian Relief',
+  'Economic Empowerment',
+  'Education',
+  'Environment',
+  'Guitar',
+  'Health',
+  'Human Rights',
+  'Iot',
+  'Music',
+  'Photography',
+  'Politics',
+  'Poverty Alleviation',
+  'Science and Technology',
+  'See 1',
+  'See Less',
+  'Social Services',
+  'Sports',
+  'Sustainability',
+  'Trumpet',
+  'Yoga'
+                            ],
+ 'personal_emails': ['jusbowen@gmail.com'
+                            ],
+ 'personal_numbers': ['+16504551407'
+                            ]
+                          }

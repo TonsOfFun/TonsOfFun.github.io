@@ -1,18 +1,15 @@
 ---
 layout: post
 published: false
-title: CATS - Tech Support
-date: 2008-05-01
-datetime: May 1, 2008
-category:
-    career
-tags:
-    windows
-    support
-    java
-    ruby
+title:  Some engaging title
+date: 2020-02-02
+datetime: Month DD, YYYY
+description: Some engaging description to go with the title and content all with SEO in mind
+categories: 
+    - visor
+    - ml
+    - cv
 ---
-
 
 ## Intro header, to hook the reader (Why, How, What)
 ### Why?

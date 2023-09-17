@@ -1,0 +1,128 @@
+CTO ConsultantCTO Consultant
+Silicon Valley Software GroupSilicon Valley Software Group
+Sep 2021 - Present · 2 yrs 1 moSep 2021 - Present · 2 yrs 1 mo
+San Francisco Bay AreaSan Francisco Bay Area
+Silicon Valley Software Group is a management consulting firm specializing in helping companies innovate with emerging technologies. With over 200 years of combined CTO and VPE experience, we are uniquely positioned to provide unmatched business value and intelligence to our clients in areas such as machine learning, high-performance computing, cyber security, growth engineering, team building and scaling. Featured in Inc Magazine as the #1 technology consulting firm to modernize companies for 2018, Silicon Valley Software Group helps some of the fastest growing startups, Fortune 500 brands, and governments around the world.Silicon Valley Software Group is a management consulting firm specializing in helping companies innovate with emerging technologies. With over 200 years of combined CTO and VPE experience, we are uniquely positioned to provide unmatched business value and intelligence to our clients in areas such as machine learning, high-performance computing, cyber security, growth engineering, team building and scaling. Featured in Inc Magazine as the #1 technology consulting firm to modernize companies for 2018, Silicon Valley Software Group helps some of the fastest growing startups, Fortune 500 brands, and governments around the world.
+Skills: Google Cloud Platform (GCP) · Machine Learning · Data Engineering · Amazon Web Services (AWS)Skills: Google Cloud Platform (GCP) · Machine Learning · Data Engineering · Amazon Web Services (AWS)
+nSight Surgical logo
+Director Of EngineeringDirector Of Engineering
+nSight Surgical · Full-timenSight Surgical · Full-time
+Dec 2021 - Present · 1 yr 10 mosDec 2021 - Present · 1 yr 10 mos
+San Francisco Bay AreaSan Francisco Bay Area
+- Performed R&D in partnership with Stanford Healthcare.
+- Led the development of GPU-accelerated ML/DL/AI computer vision systems for hospitals.
+- Deployed on-premise AI in medical facilities across the US and in the cloud.
+- Built data processing pipeline used for processing cloud training data and performing real-time inference.
+- Led user-facing product development with a global remote team of engineers, data scientists, and designers.
+
+Languages & frameworks: Python • Faktory • Ruby • Rails • PostgreSQL • Redis • OpenCV • PyTorch • CUDA • Docker • React • ONNXRuntime- Performed R&D in partnership with Stanford Healthcare. - Led the development of GPU-accelerated ML/DL/AI computer vision systems for hospitals. - Deployed on-premise AI in medical facilities across the US and in the cloud. - Built data processing pipeline used for processing cloud training data and performing real-time inference. - Led user-facing product development with a global remote team of engineers, data scientists, and designers. Languages & frameworks: Python • Faktory • Ruby • Rails • PostgreSQL • Redis • OpenCV • PyTorch • CUDA • Docker • React • ONNXRuntime
+Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)
+Adventure Fund logo
+Limited PartnerLimited Partner
+Adventure FundAdventure Fund
+Feb 2022 - Present · 1 yr 8 mosFeb 2022 - Present · 1 yr 8 mos
+San Francisco Bay AreaSan Francisco Bay Area
+Adventure Fund is a $10M fund comprised of successful founders and seasoned operators investing in the best early-stage startups.Adventure Fund is a $10M fund comprised of successful founders and seasoned operators investing in the best early-stage startups.
+Sea Foam Media & Technology logo
+Co-founder & CTOCo-founder & CTO
+Sea Foam Media & TechnologySea Foam Media & Technology
+Jan 2018 - Dec 2021 · 4 yrsJan 2018 - Dec 2021 · 4 yrs
+San Francisco Bay AreaSan Francisco Bay Area
+Launched a startup consulting firm with my now-wife to help early-stage companies with everything from brand development and messaging to defining their product requirements and designing/building their MVPs.Launched a startup consulting firm with my now-wife to help early-stage companies with everything from brand development and messaging to defining their product requirements and designing/building their MVPs.
+Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)
+GreenThumb IO logo
+Founder // CEOFounder // CEO
+GreenThumb IOGreenThumb IO
+Feb 2016 - Dec 2021 · 5 yrs 11 mosFeb 2016 - Dec 2021 · 5 yrs 11 mos
+San Francisco Bay AreaSan Francisco Bay Area
+Open source R&D project combining smart cameras and AI to fundamentally transform the cannabis industry from seed to sale.
+
+- Built edge and cloud computer vision product for plant leaf and bud area analysis.
+- Ruby, Rails, Sidekiq, Python, OpenCV, Postgres, PostGIS, Redis, Raspberry Pi, WebSockets - ActionCable (AnyCable-Go).
+- Real-time image processing with Rails and Sidekiq.
+- Custom Python OpenCV algorithms exposed in an image service via Thumbor OpenCV engine.Open source R&D project combining smart cameras and AI to fundamentally transform the cannabis industry from seed to sale. - Built edge and cloud computer vision product for plant leaf and bud area analysis. - Ruby, Rails, Sidekiq, Python, OpenCV, Postgres, PostGIS, Redis, Raspberry Pi, WebSockets - ActionCable (AnyCable-Go). - Real-time image processing with Rails and Sidekiq. - Custom Python OpenCV algorithms exposed in an image service via Thumbor OpenCV engine.
+Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)
+Ever.Ag - Dairy logo
+CainthusCainthus
+1 yr 11 mos1 yr 11 mos
+CTOCTO
+Aug 2017 - Jan 2018 · 6 mosAug 2017 - Jan 2018 · 6 mos
+San Francisco Bay AreaSan Francisco Bay Area
+- Led a team to engineer a product for drone flight mapping and analysis with heat map overlays for agronomists.
+- Led team developing dairy barn AI analytics using computer vision.
+- Grew global remote team from 1 to 8 data scientists, engineers, and designers.
+- Handled the tech due diligence for Series B fundraising with Cargill Animal Nutrition for the dairy barn monitoring product.
+
+Languages & frameworks: Python, React, LeafLet.js, OpenCV, Django, MongoDB, Postgres, PostGIS, Redis, Celery, GDal2Tiles- Led a team to engineer a product for drone flight mapping and analysis with heat map overlays for agronomists. - Led team developing dairy barn AI analytics using computer vision. - Grew global remote team from 1 to 8 data scientists, engineers, and designers. - Handled the tech due diligence for Series B fundraising with Cargill Animal Nutrition for the dairy barn monitoring product. Languages & frameworks: Python, React, LeafLet.js, OpenCV, Django, MongoDB, Postgres, PostGIS, Redis, Celery, GDal2Tiles
+Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)Skills: Machine Learning · Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)
+Director of EngineeringDirector of Engineering
+Aug 2016 - Aug 2017 · 1 yr 1 moAug 2016 - Aug 2017 · 1 yr 1 mo
+San Francisco Bay AreaSan Francisco Bay Area
+Worked with a growing team to make the drone platform production ready and helped build out, test, and enhance the Dairy cow computer vision platform.Worked with a growing team to make the drone platform production ready and helped build out, test, and enhance the Dairy cow computer vision platform.
+Skills: Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)Skills: Python (Programming Language) · Data Engineering · Redis · Amazon Web Services (AWS)
+Lead Data Engineer and Platform ArchitectLead Data Engineer and Platform Architect
+Mar 2016 - Aug 2016 · 6 mosMar 2016 - Aug 2016 · 6 mos
+Worked with a small team to optimize and scale a drone analytics and real-time geo search and instant heat map results.Worked with a small team to optimize and scale a drone analytics and real-time geo search and instant heat map results.
+Skills: Data Engineering · Redis · Amazon Web Services (AWS)Skills: Data Engineering · Redis · Amazon Web Services (AWS)
+Director Of EngineeringDirector Of Engineering
+PINSTOPPINSTOP
+Dec 2016 - Aug 2017 · 9 mosDec 2016 - Aug 2017 · 9 mos
+Tokyo, JapanTokyo, Japan
+- Designed and developed a custom itinerary mapping platform for the concierge teams at the Grand Hyatt and Ritz-Carlton hotels in Tokyo. 
+- Developed a recommendation engine for travel experiences.
+- Helped manage tech+business expectations and sell product to elite hotels across Japan.
+
+Languages & frameworks: Ruby, Rails, Turbolinks, MongoDB, Redis, Sidekiq- Designed and developed a custom itinerary mapping platform for the concierge teams at the Grand Hyatt and Ritz-Carlton hotels in Tokyo. - Developed a recommendation engine for travel experiences. - Helped manage tech+business expectations and sell product to elite hotels across Japan. Languages & frameworks: Ruby, Rails, Turbolinks, MongoDB, Redis, Sidekiq
+Skills: Sidekiq · Geographic Information Systems (GIS) · Data Engineering · Ruby on Rails · MongoDBSkills: Sidekiq · Geographic Information Systems (GIS) · Data Engineering · Ruby on Rails · MongoDB
+Lead Software Engineer, CTOLead Software Engineer, CTO
+ZALAZALA
+Mar 2015 - Aug 2016 · 1 yr 6 mosMar 2015 - Aug 2016 · 1 yr 6 mos
+San Francisco Bay AreaSan Francisco Bay Area
+Skills: Redis · Amazon Web Services (AWS)Skills: Redis · Amazon Web Services (AWS)
+Momentage logo
+Lead Software Engineer, CTOLead Software Engineer, CTO
+MomentageMomentage
+Dec 2013 - Mar 2016 · 2 yrs 4 mosDec 2013 - Mar 2016 · 2 yrs 4 mos
+EarthEarth
+I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high volume media consumer service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads. Built a JSON API for the mobile and web clients with Rails 4 backend using sidekiq for long jobs and media processing. I assist with iOS and Android app development and code review.I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high volume media consumer service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads. Built a JSON API for the mobile and web clients with Rails 4 backend using sidekiq for long jobs and media processing. I assist with iOS and Android app development and code review.
+Skills: Heroku · Redis · Amazon Web Services (AWS) · Ruby on Rails · PostgreSQLSkills: Heroku · Redis · Amazon Web Services (AWS) · Ruby on Rails · PostgreSQL
+Lead Senior Ruby Software EngineerLead Senior Ruby Software Engineer
+BanjoBanjo
+Jun 2012 - Dec 2013 · 1 yr 7 mosJun 2012 - Dec 2013 · 1 yr 7 mos
+San Francisco Bay AreaSan Francisco Bay Area
+Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world. 
+
+I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions. Exposed the data to Web and Mobile client facing through a JSON API. Worked closely with both Data Science and Client teams to achieve greatness. I got very familiar with the spatial features from MongoDB and PostgreSQL's GIST extension.Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world. I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions. Exposed the data to Web and Mobile client facing through a JSON API. Worked closely with both Data Science and Client teams to achieve greatness. I got very familiar with the spatial features from MongoDB and PostgreSQL's GIST extension.
+Skills: Sidekiq · Geographic Information Systems (GIS) · Redis · Amazon Web Services (AWS) · MongoDBSkills: Sidekiq · Geographic Information Systems (GIS) · Redis · Amazon Web Services (AWS) · MongoDB
+Lead Software EngineerLead Software Engineer
+Gadient MediaGadient Media
+Feb 2012 - Jun 2012 · 5 mosFeb 2012 - Jun 2012 · 5 mos
+Davenport, Iowa AreaDavenport, Iowa Area
+Managing a small team of engineers in Nepal and Iowa. Responsible for oversite and development of the iOS and Android mobile apps and the REST dataservices that power them. Using HostedRedmine for project management, Flash Builder for client development, Ruby 1.9.2 and Rails 3.2.2 for server side development.Managing a small team of engineers in Nepal and Iowa. Responsible for oversite and development of the iOS and Android mobile apps and the REST dataservices that power them. Using HostedRedmine for project management, Flash Builder for client development, Ruby 1.9.2 and Rails 3.2.2 for server side development.
+Skills: Redis · Amazon Web Services (AWS) · Ruby on RailsSkills: Redis · Amazon Web Services (AWS) · Ruby on Rails
+Systems EngineerSystems Engineer
+Focus Testing Services, inc.Focus Testing Services, inc.
+Jan 2010 - Jun 2012 · 2 yrs 6 mosJan 2010 - Jun 2012 · 2 yrs 6 mos
+San Francisco Bay AreaSan Francisco Bay Area
+Responsible for network security, services and systems reliability, software development, and support.
+
+Design, build, and maintain Rails web applications that compliment a software suite of Adobe Air desktop apps. Using secure single sign on authentication and role and relationship based access control. Along with managing a small enterprise environment of over 25 desktops and development, corporate, and production servers
+
+Experience with Ubuntu server/desktop admin/user/development, Windows desktop admin/support, Juniper routers and switches, Cisco VoIP phones, Linux, FTP, SVN, Git, SSH, VLANs, VPN, Nagios, UEC, Eucalyptus, Apache, MySQL, Ruby, PHP, HTML/CSS/JS, and Flash Builder (Flex)Responsible for network security, services and systems reliability, software development, and support. Design, build, and maintain Rails web applications that compliment a software suite of Adobe Air desktop apps. Using secure single sign on authentication and role and relationship based access control. Along with managing a small enterprise environment of over 25 desktops and development, corporate, and production servers Experience with Ubuntu server/desktop admin/user/development, Windows desktop admin/support, Juniper routers and switches, Cisco VoIP phones, Linux, FTP, SVN, Git, SSH, VLANs, VPN, Nagios, UEC, Eucalyptus, Apache, MySQL, Ruby, PHP, HTML/CSS/JS, and Flash Builder (Flex)
+Skills: MySQL · Redis · Amazon Web Services (AWS) · Ruby on RailsSkills: MySQL · Redis · Amazon Web Services (AWS) · Ruby on Rails
+Ruby Software EngineerRuby Software Engineer
+Jarinx MediaJarinx Media
+Dec 2010 - Sep 2011 · 10 mosDec 2010 - Sep 2011 · 10 mos
+Davenport, Iowa AreaDavenport, Iowa Area
+Responsible for all things technical at a small startup. I research and develop new features, such as google maps, facebook connect, twitter connect, notifications and service availability (Ruby, JavaScript, Cloud/Cluster solutions). Responsible for a small team of developers involved in agile test and behavior driven development cycles. Currently in prerelease stages, the company welcomes contacts and inquires about Venture Capitol or anyone interested in learning more and working for experience. (SF Bay Area or Davenport)Responsible for all things technical at a small startup. I research and develop new features, such as google maps, facebook connect, twitter connect, notifications and service availability (Ruby, JavaScript, Cloud/Cluster solutions). Responsible for a small team of developers involved in agile test and behavior driven development cycles. Currently in prerelease stages, the company welcomes contacts and inquires about Venture Capitol or anyone interested in learning more and working for experience. (SF Bay Area or Davenport)
+Skills: Redis · Amazon Web Services (AWS)Skills: Redis · Amazon Web Services (AWS)
+Computer Assisted Testing ServiceComputer Assisted Testing Service
+4 yrs 6 mos4 yrs 6 mos
+Java/Ruby Software EngineerJava/Ruby Software Engineer
+May 2008 - Nov 2009 · 1 yr 7 mosMay 2008 - Nov 2009 · 1 yr 7 mos
+Maintained the registration and reporting application using Java and MS SQL, while handling mass emails to sites. Used Ruby on Rails and MySQL to develop new web interfaces designed to increase efficiency by improving the user experience. Continued advanced responsibilities of Technical Support and system administration.Maintained the registration and reporting application using Java and MS SQL, while handling mass emails to sites. Used Ruby on Rails and MySQL to develop new web interfaces designed to increase efficiency by improving the user experience. Continued advanced responsibilities of Technical Support and system administration.
+Skills: Redis · Amazon Web Services (AWS)Skills: Redis · Amazon Web Services (AWS)
+Technical Support, Windows Systems AdministratorTechnical Support, Windows Systems Administrator
+Jun 2005 - May 2008 · 3 yrsJun 2005 - May 2008 · 3 yrs
+Assured the availability of the testing service to over 300 testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and admin widows servers.Assured the availability of the testing service to over 300 testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and admin widows servers.
+Skills: Redis · Amazon Web Services (AWS)

@@ -4,6 +4,19 @@ companies:
       - title: 'Director of Engineering'
         description: 'Leading team developing CPU-accelerated ML/DL/AI computer vision systems for hospitals across the US, with research in partnership with Stanford Healthcare. Ensuring real-time data processing on-premise at hospitals and in the cloud. Built data processing pipeline used for cloud training and real-time inference.'
         old_description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.'
+        tags:
+          - Python
+          - Faktory
+          - Ruby
+          - Rails
+          - PostgreSQL
+          - Redis
+          - OpenCV
+          - PyTorch
+          - CUDA
+          - Docker
+          - React
+          - ONNXRuntime
         start: '2022'
         end: 'present'
         url: 
@@ -14,7 +27,8 @@ companies:
   - name: 'Silicon Valley Software Group'
     roles: 
       - title: 'CTO Consultant'
-        description: 'Leading tech due diligence for venture capital and private equity fundraising and acquisitions, including partnering to support technical and business audits as well as advising firms on business and product integration strategy.'
+        description: 'Led tech due diligence for $100M+ venture capital and private equity fundraising rounds and acquisitions. Audited businesses, teams, processes, and technology. Provided comprehensive reports to stakeholders to assess and mitigate risks while managing technical expectations. Advised and led on the integration of business and products post-acquisition.'
+        other_description: 'Leading tech due diligence for venture capital and private equity fundraising and acquisitions, including partnering to support technical and business audits as well as advising firms on business and product integration strategy.'
         old_description: 'Tech due dilligence for VC, PE, and acquisitions.'
         start: '2021'
         end: 'present'
@@ -26,12 +40,25 @@ companies:
   - name: 'Sea Foam Media & Technology'
     roles: 
       - title: 'CTO Consultant'
-        mo: 'Built real-time audio/video collaboration platform for musicians to practice and perform with the lowest possible latency. Managed Mesh-WebRTC implementation. Integrated Twilio API TURN/STUN services and Twilio Video SDK.'
-        description: 'Co-founded startup consulting firm to help early-stage companies with brand development and messaging, defining product requirements and technical architecture, and leading teams to design and build MVPs.'
+        description: 'Launched a startup consulting firm with my now-wife to help early-stage companies with everything from brand development and messaging to defining their product requirements and designing/building their MVPs.'
+        other_description: 'Co-founded startup consulting firm to help early-stage companies with brand development and messaging, defining product requirements and technical architecture, and leading teams to design and build MVPs.'
         old_description: 'Providing startups with business advice, marketing, design, and development services to bring product ideation to market.'
         start: '2018'
         end: 'present'
         url: 
+      - title: 'CTO Consultant'
+        description: 'For musicaloverture.com I built a real-time audio/video collaboration platform for musicians to practice and perform with the lowest possible latency. Managed Mesh-WebRTC implementation. Integrated Twilio API TURN/STUN services and Twilio Video SDK. Developed a Mesh-WebRTC implementation for free peer-to-multi-peer group audio/video call experiences. '
+        tags:
+          - Ruby
+          - Rails
+          - MySQL
+          - Redis
+          - Sidekiq
+          - WebSockets - ActionCable (AnyCable-Go)
+          - WebRTC'
+        start: '2018'
+        end: '2021'
+        url: https://musicaloverture.com
     logo_url: /images/logos/seafoammedia.png
     website_url: 'https://seafoam.media/tech/'
     location: 'Remote'
@@ -39,6 +66,18 @@ companies:
   - name: 'GreenThumb IO'
     roles:
       - title: 'Founder'
+        tags: 
+          - Hackathon
+          - Ruby
+          - Rails
+          - Sidekiq
+          - Python
+          - OpenCV
+          - Postgres
+          - PostGIS
+          - Redis
+          - Raspberry Pi
+          - WebSockets - ActionCable (AnyCable-Go
         description: 'Combining smart cameras, AI, and IoT technology to fundamentally transform the cannabis industry from seed to sale.'
         start: '2016'
         end: '2020'
@@ -47,7 +86,7 @@ companies:
     website_url: 'https://greenthumb.io/'
     location: 'Remote'
     description: 'Providing growers and cultivators meaningful data about their crops, pinpointing problems in real time. Analyzing camera data and turns it into actionable insights, digitizing characteristics of the plants into trackable assets.'
-  - name: 'Cainthus'
+  - name: 'Dairy.com (FKA Cainthus acquired by Ever.ag)'
     roles: 
       - title: 'CTO'
         description: 'Grew global remote team from 1 to 8 engineers, scientists, and designers to deliver cutting-edge agtech products to market (drone analytics for field crops and dairy barn computer vision). Lead tech due diligence to close Series B fundraise with Cargill Animal Nutrition.'
@@ -60,6 +99,18 @@ companies:
         end: '2017'  
         url: 
       - title: 'Lead Data Engineer and Platform Architecture Consultant'
+        tags: 
+          - Python
+          - React
+          - LeafLet.js
+          - OpenCV
+          - Django
+          - MongoDB
+          - Postgres
+          - PostGIS
+          - Redis
+          - Celery
+          - GDal2Tiles
         description: 'Worked with a small team to optimize and scale a drone analytics and real-time geo search to close Series A funding'
         start: '2016'
         end: '2016'

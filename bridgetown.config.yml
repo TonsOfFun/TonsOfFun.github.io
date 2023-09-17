@@ -30,6 +30,11 @@ cloudinary:
     medium: "w_1200,c_limit,q_80"
     large: "w_1800,c_limit,q_80"
     xlarge: "w_2048,c_limit,q_75"
+collections:
+  reverse_ordered:
+    output: true
+    sort_by: order
+    sort_direction: descending
 # Other options you might want to investigate:
 #
 # base_path: "/" # the subpath of your site, e.g. /blog. If you set this option,

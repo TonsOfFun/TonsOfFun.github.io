@@ -2,10 +2,10 @@
 layout: default
 ---
 <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8">
+    <div class="mx-auto max-w-7xl lg:px-8 print:max-w-full">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl">
-                <header class="max-w-2xl">
+            <div class="max-w-2xl mx-auto lg:max-w-5xl print:lg:max-w-full print:mx-0">
+                <header class="max-w-2xl print:max-w-full">
                     <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         <%= resource.data.title %>
                     </h1>
@@ -13,8 +13,8 @@ layout: default
                         <%= resource.data.description %>
                     </p>
                 </header>
-                <div class="mt-16 sm:mt-20">
-                    <div id="<%= resource.data.id %>" class="space-y-20">
+                <div class="mt-16 sm:mt-20 print:sm:mt-0">
+                    <div id="<%= resource.data.id %>" class="space-y-20 print:space-y-0">
                         <%= yield %>
                     </div>
                 </div>
