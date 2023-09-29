@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Life Experience | Justin Bowen is TonsOfFun</title>
+<title>Content Creation Workflow | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -76,9 +76,9 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: ('page' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
+      downDelay: ('post' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      home: ('page' == 'home'), 
+      home: ('post' == 'home'), 
       scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
@@ -198,7 +198,7 @@ setTimeout(() => {
 
     </head>
 
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  page ">
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  post ">
         <div id="__next">
             <div class="fixed inset-0 flex justify-center sm:px-8">
                 <div class="flex w-full max-w-7xl lg:px-8">
@@ -310,10 +310,9 @@ setTimeout(() => {
 </li>
 
                                                         <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -390,10 +389,9 @@ setTimeout(() => {
 </li>
 
                                             <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -456,75 +454,90 @@ setTimeout(() => {
 </header>
 
                 <main>
-                    <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8 print:max-w-full">
+                    <div class="mt-16 sm:px-8 lg:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl print:lg:max-w-full print:mx-0">
-                <header class="max-w-2xl print:max-w-full">
-                    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        Life Experience
-                    </h1>
-                    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        
-                    </p>
-                </header>
-                <div class="mt-16 sm:mt-20 print:sm:mt-0">
-                    <div id="" class="space-y-20 print:space-y-0">
-                        <h2 id="life-experience">Life Experience</h2>
-<h3 id="sports">Sports </h3>
-<ul>
-  <li>🏃‍♂️ Love to run in Golden Gate Park and on the trails on the penninsula.</li>
-  <li>💪 Started weight training in highschool and lift a couple times a week.</li>
-  <li>⚽️ Grew up playing soccer, I’m a goalie!</li>
-  <li>🧘‍♂️ Practicing yogi for over a decade now.</li>
-  <li>🏊‍♂️ Not a swimmer, but love to swim.</li>
-  <li>🤿 Grew up snorkling and PADI certified diver</li>
-</ul>
+            <div class="max-w-2xl mx-auto lg:max-w-5xl">
+                <div class="xl:relative">
+                    <div class="max-w-2xl mx-auto">
+                        <article>
+                            <header class="flex flex-col">
+                                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                                    Content Creation Workflow
+                                </h1>
+                                
+                                <time datetime="" class="flex items-center order-first text-base text-zinc-400 dark:text-zinc-500">
+                                    <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                    <span class="ml-3"></span>
+                                </time>
+                                <div>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium  rounded-full">grey</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-red-700 bg-red-100 rounded-full">red</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-yellow-800 bg-yellow-100 rounded-full">yellow</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">green</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-full">blue</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">default</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-indigo-700 bg-indigo-100 rounded-full">indigo</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-700 bg-purple-100 rounded-full">purple</a>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium text-pink-700 bg-pink-100 rounded-full">pink</a>
+                                </div>
+                            </header>
+                            
+                            <div class="mt-8 prose dark:prose-invert">
+                                <p><img src="https://res.cloudinary.com/tonsoffun/image/upload/w_1800,c_limit,q_80/v1666727172/RailsConfSelfie.jpg" alt="bg left:40%" /></p>
 
-<h3 id="travel-">Travel 🇮🇹🇯🇵🇮🇸🇨🇦🇫🇷🇪🇸🇲🇹🇳🇱🇸🇬🇹🇭🇭🇰🇬🇧🇮🇪🇬🇷🇨🇭🇱🇦</h3>
-<ul>
-  <li>🇮🇹 Italy</li>
-  <li>Milan</li>
-  <li>Rome</li>
-  <li>Alps</li>
-  <li>🇯🇵 Japan</li>
-  <li>Fujikowaguchiko</li>
-  <li>Kyoto</li>
-  <li>Nara</li>
-  <li>Tokyo</li>
-  <li>🇮🇸 Iceland</li>
-  <li>🇨🇦 Canada</li>
-  <li>🇫🇷 France</li>
-  <li>🇪🇸 Spain</li>
-  <li>🇲🇹 Malta</li>
-  <li>🇳🇱 Netherlands</li>
-  <li>🇸🇬 Singapore</li>
-  <li>🇹🇭 Thailand</li>
-  <li>🇭🇰 Hong Kong</li>
-  <li>🇬🇧 United Kingdom</li>
-  <li>🇮🇪 Ireland</li>
-  <li>🇬🇷 Greece</li>
-  <li>🇨🇭 Switzerland</li>
-  <li>🇱🇦 Laos</li>
-</ul>
+<h3 id="split-backgrounds-with-specified-size">Split backgrounds with specified size</h3>
 
-<h3 id="hobbies">Hobbies</h3>
-<ul>
-  <li>🏺 Ceramics</li>
-  <li>👨‍💻👨‍🔧 Electronics</li>
-  <li>🎮 Video Games</li>
-  <li>🪑 Woodworking</li>
-</ul>
+<hr />
 
-<h3 id="science--technology">🔬Science &amp; Technology</h3>
-<ul>
-  <li>👨‍🌾🌱🌾 Agriculture</li>
-  <li>☀️💨⚡️🔋 Energy</li>
-  <li>🍃🌳🍂 Environment</li>
-  <li>🍄💊 Mental Heatlh</li>
-  <li>📡 Astronomy &amp; Space</li>
-</ul>
+<!-- 
+backgroundImage:
+backgroundColor:
+color:
+-->
+<hr />
+<h3 id="intro-header-to-hook-the-reader-why-how-what">Intro header, to hook the reader (Why, How, What)</h3>
+<p>fdgd
+—</p>
 
+<h1 id="why">Why?</h1>
+<h2 id="why-is-this-an-issue-worth-solving">Why is this an issue worth solving</h2>
+<h3 id="topical-challenge-statement">Topical challenge statement</h3>
+<hr />
+<h1 id="how">How?</h1>
+<h2 id="how-should-it-be-done">How should it be done?</h2>
+<h3 id="how-is-it-done">How is it done?</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/auth/linkedin'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">'GET'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">linkedin_auth</span><span class="p">():</span>
+    <span class="n">linkedin_auth_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'https://www.linkedin.com/oauth/v2/authorization?response_type=code&amp;client_id=</span><span class="si">{</span><span class="n">CLIENT_ID</span><span class="si">}</span><span class="s">&amp;redirect_uri=</span><span class="si">{</span><span class="n">REDIRECT_URI</span><span class="si">}</span><span class="s">&amp;state=123456&amp;scope=profile%20email'</span>
+    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">linkedin_auth_url</span><span class="p">)</span>
+</code></pre></div></div>
+<hr />
+<h1 id="what-maybe-link-to-the-final-solution">What? (maybe link to the final solution?)</h1>
+<h2 id="what-is-the-solution">What is the solution?</h2>
+<h2 id="what-is-the-conclusion">What is the conclusion?</h2>
+<h1 id="conclusion">Conclusion</h1>
+<h2 id="what-are-the-considerations">What are the considerations?</h2>
+<hr />
+<h1 id="background-header">Background header</h1>
+<h2 id="experience-to-provide-context">Experience to provide context</h2>
+<hr />
+<h1 id="sitation">Sitation</h1>
+<h2 id="premise">Premise</h2>
+<h2 id="considerations">Considerations</h2>
+<hr />
+<h1 id="task">Task</h1>
+<h2 id="requirements">Requirements</h2>
+<hr />
+<h1 id="action">Action</h1>
+<h2 id="example">Example</h2>
+<hr />
+<h1 id="result">Result</h1>
+<h2 id="solution">Solution</h2>
+
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -596,7 +609,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/life.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/_posts/slides/outline.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>
