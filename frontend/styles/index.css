@@ -5,6 +5,11 @@
 /* Set up Tailwind imports */
 @tailwind base;
 @tailwind components;
+
+.tag {
+  @apply inline-flex items-center px-2 py-1 text-xs font-medium rounded-full;
+}
+
 @tailwind utilities;
 /* 
 :root {

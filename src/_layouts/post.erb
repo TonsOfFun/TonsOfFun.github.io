@@ -12,11 +12,18 @@ layout: default
                                 <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                                     <%= resource.data.title %>
                                 </h1>
+                                
                                 <time datetime="<%= resource.data.datetime %>" class="flex items-center order-first text-base text-zinc-400 dark:text-zinc-500">
                                     <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                                     <span class="ml-3"><%= resource.data.datetime %></span>
                                 </time>
+                                <div>
+                                    <% site.data.tags.each do |tag, colors| %>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium <%= colors %> rounded-full"><%= tag %></a>
+                                    <% end %> 
+                                </div>
                             </header>
+                            
                             <div class="mt-8 prose dark:prose-invert">
                                 <%= yield %>
                             </div>

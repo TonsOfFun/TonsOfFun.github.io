@@ -7,10 +7,31 @@ datetime: August 2, 2023
 description: Processing video streams in realtime presents a unique set of challenges... 
 categories: 
     - visor
+tags:
     - ml
     - cv
 ---
 
+```python
+import cv2
+import queue
+import threading
+
+frame_queue = queue.Queue()
+
+def read_frames(cap):
+    while True:
+        ret, frame = cap.read()
+        frame_queue.put(frame)
+
+threading.Thread(target=read_frames, args=(cap,)).start()
+
+while True:
+    if not frame_queue.empty():
+        frame = frame_queue.get()
+        processed_frame = some_processing_function(frame)
+        cv2.imshow('Processed Feed', processed_frame)
+```
 ## Processing images takes time
 One of the biggest challenges is processing every frame without them queuing up and lagging behind. 
 Having a constant framerate turns out to be a gift and a curse. 
@@ -90,10 +111,12 @@ While efficient, certain processing tasks on frames led to noticeable lags.
 import cv2
 
 cap = cv2.VideoCapture('rtsp://username:password@camera_ip:port/streaming/channels/1')
+
 while True:
     ret, frame = cap.read()
     # Some processing on the frame
     cv2.imshow('Live Feed', frame)
+```
 Initial Approach: A Straightforward Struggle
 Juggling Frames
 Reading and processing on a single thread means sometimes missing out on new frames.
@@ -101,8 +124,7 @@ Reading and processing on a single thread means sometimes missing out on new fra
 The Direct Route
 Reading frames and processing them sequentially.
 
-python
-Copy code
+```python
 while True:
     ret, frame = cap.read()
     processed_frame = some_processing_function(frame)  # This takes time

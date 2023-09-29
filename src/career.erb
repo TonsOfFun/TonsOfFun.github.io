@@ -35,7 +35,7 @@ title: Career Experiences
                 </div>
             </div>
             <div class="md:col-span-3">
-                <div class="space-y-16 print:space-y-0">
+                <div class="space-y-16 print:<%=  %>space-y-0">
                     <% company.roles.each do |role| %>
                         <%= render RoleCard.new(role: role, company: company) %>
                     <% end %>
