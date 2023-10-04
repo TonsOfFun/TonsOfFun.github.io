@@ -5,8 +5,9 @@ conferences:
       location: "Houston, Texas, USA"
     title: "Discover Machine Learning in Ruby"
     description: We can use Ruby to do anything we as a community want. Today we’ll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn’t accessible until the last decade or so.
-    url: https://rubyconf.org/schedule
-    embed_url: ""
+    url: https://www.youtube.com/watch?v=XXtqUptI_oQ&t
+    embed_url: https://www.youtube.com/embed/XXtqUptI_oQ?si=8pTtxNP4bkX0L4Dc
+    thumbnail_url: https://i.ytimg.com/vi/XXtqUptI_oQ/maxresdefault.jpg
     action: Check the schedule
   - event: 
       name: "RailsConf 2022"
