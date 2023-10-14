@@ -18,8 +18,8 @@ layout: default
                                     <span class="ml-3"><%= resource.data.datetime %></span>
                                 </time>
                                 <div>
-                                    <% site.data.tags.each do |tag, colors| %>
-                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium <%= colors %> rounded-full"><%= tag %></a>
+                                    <% resource.data.tags.each do |tag, color| %>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium <%= site.data.tags['default'] %> rounded-full"><%= tag %></a>
                                     <% end %> 
                                 </div>
                             </header>

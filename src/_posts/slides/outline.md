@@ -5,8 +5,6 @@ marp: true
 theme: default
 size: 16:9
 title: Content Creation Workflow
-paginate: true
-
 style: |
   img {background-color: transparent!important;}
   a:hover, a:active, a:focus {text-decoration: none;}

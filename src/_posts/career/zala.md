@@ -4,15 +4,16 @@ published: false
 title: ZALA Lifestyle
 date: 2015-3-01
 datetime: March 1, 2015
-category:
+categories:
     career
 tags:
-    startups
-    ruby
-    rails
-    ios
-    android
-    GIS
+    - startups
+    - Ruby
+    - Rails
+    - PostGIS
+    - iOS
+    - Android
+    - GIS
 ---
 
 

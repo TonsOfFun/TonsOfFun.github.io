@@ -108,7 +108,7 @@ business:
       You have an idea you want to bring to life? Maybe you think it's time to pay a developer to build an app. Before you spend time
       and a lot of money building something, make sure it's something users want. Know what will be built before you go into development.
       Validate that you understand who your users are by working through exercises in workflows, user stories, diagrams, and get user 
-      feedback on product ideas and designs that can be adapted to their needs with less cost than code.
+      feedback with product ideas and design prototypes that can be adapted to their needs with less cost than code.
     color: 
     experience: 
     years: 
@@ -241,7 +241,7 @@ development:
     website_url:
     domain: 
   - name: currency-dollar
-    label: Software Upgrades
+    label: Stack Upgrades
     description: |
       Software upgrades lag behind and that's a form of technical debt. Sometimes "if it ain't broke, don't fix it" is applicable, but other times it is leaving value on the table.
       Ensuring your software stack is up to date improves maintainability, reliability, security, performance, and productivity.

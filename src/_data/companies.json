@@ -1,0 +1,267 @@
+{
+  "companies": [
+    {
+      "name": "nSight Surgical AI",
+      "roles": [
+        {
+          "title": "Director of Engineering",
+          "description": "Leading team developing CPU-accelerated ML/DL/AI computer vision systems for hospitals across the US, with research in partnership with Stanford Healthcare. Ensuring real-time data processing on-premise at hospitals and in the cloud. Built data processing pipeline used for cloud training and real-time inference.",
+          "old_description": "Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.",
+          "tags": [
+            "Python",
+            "Faktory",
+            "Ruby",
+            "Rails",
+            "PostgreSQL",
+            "Redis",
+            "OpenCV",
+            "PyTorch",
+            "CUDA",
+            "Docker",
+            "React",
+            "ONNXRuntime"
+          ],
+          "start": "2022",
+          "end": "present",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/nsightsurgical.jpeg",
+      "website_url": "https://nsightsurgical.ai/",
+      "location": "Remote",
+      "description": "nSightSurgical AI provides intellegent insights and tracking of surgical objects in context."
+    },
+    {
+      "name": "Silicon Valley Software Group",
+      "roles": [
+        {
+          "title": "CTO Consultant",
+          "description": "Led tech due diligence for $100M+ venture capital and private equity fundraising rounds and acquisitions. Audited businesses, teams, processes, and technology. Provided comprehensive reports to stakeholders to assess and mitigate risks while managing technical expectations. Advised and led on the integration of business and products post-acquisition.",
+          "other_description": "Leading tech due diligence for venture capital and private equity fundraising and acquisitions, including partnering to support technical and business audits as well as advising firms on business and product integration strategy.",
+          "old_description": "Tech due dilligence for VC, PE, and acquisitions.",
+          "start": "2021",
+          "end": "present",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/svsg.png",
+      "website_url": "https://svsg.co/",
+      "location": "Remote from San Francisco, California",
+      "description": "Silicon Valley Software Group is a management consulting firm specializing in helping companies innovate with emerging technologies. With over 200 years of combined CTO and VPE experience, we are uniquely positioned to provide unmatched business value and intelligence to our clients in areas such as machine learning, high-performance computing, cyber security, growth engineering, team building and scaling. Featured in Inc Magazine as the #1 technology consulting firm to modernize companies for 2018, Silicon Valley Software Group helps some of the fasting growing startups, Fortune 500 brands, and governments around the world."
+    },
+    {
+      "name": "Sea Foam Media & Technology",
+      "roles": [
+        {
+          "title": "CTO Consultant",
+          "description": "Launched a startup consulting firm with my now-wife to help early-stage companies with everything from brand development and messaging to defining their product requirements and designing/building their MVPs.",
+          "other_description": "Co-founded startup consulting firm to help early-stage companies with brand development and messaging, defining product requirements and technical architecture, and leading teams to design and build MVPs.",
+          "old_description": "Providing startups with business advice, marketing, design, and development services to bring product ideation to market.",
+          "start": "2018",
+          "end": "present",
+          "url": null
+        },
+        {
+          "title": "CTO Consultant",
+          "description": "For musicaloverture.com I built a real-time audio/video collaboration platform for musicians to practice and perform with the lowest possible latency. Managed Mesh-WebRTC implementation. Integrated Twilio API TURN/STUN services and Twilio Video SDK. Developed a Mesh-WebRTC implementation for free peer-to-multi-peer group audio/video call experiences. ",
+          "tags": [
+            "Ruby",
+            "Rails",
+            "MySQL",
+            "Redis",
+            "Sidekiq",
+            "WebSockets - ActionCable (AnyCable-Go)",
+            "WebRTC'"
+          ],
+          "start": "2018",
+          "end": "2021",
+          "url": "https://musicaloverture.com"
+        }
+      ],
+      "logo_url": "/images/logos/seafoammedia.png",
+      "website_url": "https://seafoam.media/tech/",
+      "location": "Remote",
+      "description": "Sea Foam Media & Technology is a consulting agency specializing in providing tech and business guidence for growth stage startups gearing up to raise a new round of funding..."
+    },
+    {
+      "name": "GreenThumb IO",
+      "roles": [
+        {
+          "title": "Founder",
+          "tags": [
+            "Hackathon",
+            "Ruby",
+            "Rails",
+            "Sidekiq",
+            "Python",
+            "OpenCV",
+            "Postgres",
+            "PostGIS",
+            "Redis",
+            "Raspberry Pi",
+            "WebSockets - ActionCable (AnyCable-Go"
+          ],
+          "description": "Combining smart cameras, AI, and IoT technology to fundamentally transform the cannabis industry from seed to sale.",
+          "start": "2016",
+          "end": "2020",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/greenthumbio.jpeg",
+      "website_url": "https://greenthumb.io/",
+      "location": "Remote",
+      "description": "Providing growers and cultivators meaningful data about their crops, pinpointing problems in real time. Analyzing camera data and turns it into actionable insights, digitizing characteristics of the plants into trackable assets."
+    },
+    {
+      "name": "Dairy.com (FKA Cainthus acquired by Ever.ag)",
+      "roles": [
+        {
+          "title": "CTO",
+          "description": "Grew global remote team from 1 to 8 engineers, scientists, and designers to deliver cutting-edge agtech products to market (drone analytics for field crops and dairy barn computer vision). Lead tech due diligence to close Series B fundraise with Cargill Animal Nutrition.",
+          "start": "2017",
+          "end": "2018",
+          "url": null
+        },
+        {
+          "title": "Director of Engineering",
+          "description": "Grew a Series A team to deliver a drone mappping and analytics platform to market and Lead the product design, R&D, engineering, and testing of the Dairy cow computer vision platform.",
+          "start": "2016",
+          "end": "2017",
+          "url": null
+        },
+        {
+          "title": "Lead Data Engineer and Platform Architecture Consultant",
+          "tags": [
+            "Python",
+            "React",
+            "LeafLet.js",
+            "OpenCV",
+            "Django",
+            "MongoDB",
+            "Postgres",
+            "PostGIS",
+            "Redis",
+            "Celery",
+            "GDal2Tiles"
+          ],
+          "description": "Worked with a small team to optimize and scale a drone analytics and real-time geo search to close Series A funding",
+          "start": "2016",
+          "end": "2016",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/cainthus.jpeg",
+      "url": null,
+      "website_url": "https://cainthus.com/",
+      "location": "Remote, San Francisco, California and Dublin, Ireland",
+      "description": "Cargill funded Agricultural computer vision and technology company, providing AI managements services to field crop and livestock farmers globally."
+    },
+    {
+      "name": "PINSTOP",
+      "roles": [
+        {
+          "title": "Cofounder, Director of Engineering",
+          "description": "Designed and developed a custom itinerary mapping platform plus travel experience recommendation engine for use by elite concierge teams (including the Grand Hyatt and Ritz-Carlton hotels in Tokyo).",
+          "old_description": "I built a full stack web application to manage client-concierge interactions for 5 star international hotels in collaboration with the Ritz Carlton and Grand Hyatt in Tokyo.",
+          "start": "2016",
+          "end": "2017",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/pinstop.png",
+      "url": null,
+      "website_url": "https://pinstop.jp/",
+      "location": "Remote, San Francisco, California and Tokyo, Japan",
+      "description": "Bespoke concierge software for 5 star hospitality personel to provide custom guided experiences with localized translations of maps, addresses, and notes."
+    },
+    {
+      "name": "ZALA",
+      "roles": [
+        {
+          "title": "Lead Software Engineer, CTO",
+          "description": "Lead the design and development of the MVP web, iOS, and Android apps.",
+          "start": "2015",
+          "end": "2016",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/zala.png",
+      "website_url": "https://tonsof.fun/zala/",
+      "location": "Remote",
+      "description": "Locals guidebook for quality travel experiences and location based recommendations."
+    },
+    {
+      "name": "Momentage",
+      "roles": [
+        {
+          "title": "Lead Software Engineer, CTO",
+          "description": "Lead the development of a short-form multimedia sharing platform. Designed a high-throughput media uploading service with node.js for handling file uploads to S3.",
+          "old_description": "I lead the development and maintenance of a short-form multimedia sharing platform. We have designed a high throughput media uploading service with node.js (express.js, gridform, mongo, gridfs-stream) for handling file uploads to S3.",
+          "start": "2014",
+          "end": "2016",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/momentage.png",
+      "website_url": "https://tonsof.fun/momentage/",
+      "location": "Remote",
+      "description": "Short-form multimedia sharing platform for creatives."
+    },
+    {
+      "name": "Banjo",
+      "roles": [
+        {
+          "title": "Lead Senior Software Engineer",
+          "description": "Independently built geocoding and data processing platform used to raise $150M. Built event detection system using advanced geo information systems to index social media content and determine what events were happening where, using geo queries on indexed polygons of all buildings and administration boundaries in the world. Built geo-coding microservices that handled 10s of millions of requests each day.",
+          "old_description": "Built out the platform, algorithms, and geo indexes that form the foundation of the banjo events platform. This enhanced the backend system responsible for consuming and processing millions of location based social posts daily, allowing it to discover events around the world.I designed and built a number of low latency high throughput services to analyze the geo location information to determine events based on OSM polygon info for buildings and regions.",
+          "start": "2012",
+          "end": "2014",
+          "url": "https://www.safex.ai/"
+        }
+      ],
+      "logo_url": "/images/logos/banjo.webp",
+      "website_url": "https://tonsof.fun/banjo/",
+      "location": "San Francisco Bay Area",
+      "description": "Banjo, now safeXai wasocation based social events discovery platform powered by advanced signal processing and artificial intielligence"
+    },
+    {
+      "name": "Focus Testing Services, inc.",
+      "roles": [
+        {
+          "title": "Lead Procuct Engineer",
+          "description": "Responsible for network security, services and systems reliability, software development, and support. Design, build, and maintain Rails web applications that compliment a software suite of Adobe Flex/Flash Builder Air desktop apps.",
+          "start": "2010",
+          "end": "2012",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/focustesting.png",
+      "website_url": "https://tonsof.fun/focus/",
+      "location": "San Francisco Bay Area",
+      "description": "Certification testing software as a service."
+    },
+    {
+      "name": "Computer Assisted Testing Service (CATS) ",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "description": "Maintained the registration and reporting application using Java and MS SQL, while handling mass emails to sites. Used Ruby on Rails and MySQL to develop new web interfaces designed to increase efficiency by improving the user experience. Continued advanced responsibilities of Technical Support and system administration.",
+          "start": "2008",
+          "end": "2010",
+          "url": null
+        },
+        {
+          "title": "IT Technical Support, Windows Systems Administrator ",
+          "description": "Assured the availability of the testing service to over 300 globally distributed testing sites. Maintained servers and testing center network via telephone and on call support on weekends. Everyday tasks ranged from simple software support to assisting in the installation and configuration of small networks at the testing facility, by phone. Also helped maintain and administrate Microsoft SQL and Windows Server environments.",
+          "start": "2005",
+          "end": "2008",
+          "url": null
+        }
+      ],
+      "logo_url": "/images/logos/cats.png",
+      "website_url": "https://tonsof.fun/focus/",
+      "location": "San Francisco Bay Area",
+      "description": "Computer Assisted Testing Service (CATS) is a full service testing company for licensure, certification, assessment, and educational testing programs. CATS offers end‐to‐end examination services, including fixed and remote computer‐based testing, test development and research, and construction of new test item types for a wide range of professions. More information is available at"
+    }
+  ]
+}

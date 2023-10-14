@@ -4,13 +4,13 @@ published: false
 title: Content Creation Workflow
 date: 2023-05-01
 datetime: May 1, 2023
-category:
+categories:
     content-creation
 tags:
-    windows
-    support
-    java
-    ruby
+    - windows
+    - support
+    - java
+    - ruby
 ---
 
 Content Creation Workflow

@@ -4,14 +4,14 @@ published: false
 title: Sea Foam Media & Technology - MusicalOverture.com
 date: 2020-03-01
 datetime: March 1, 2020
-category:
+categories:
     career
 tags:
-    startups
-    ruby
-    rails
-    sidekiq
-    webrtc
+    - startups
+    - ruby
+    - rails
+    - sidekiq
+    - webrtc
 ---
 
 My Experience as a Lead Software Engineer at MusicalOverture

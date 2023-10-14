@@ -70,5 +70,97 @@
       "title": "visor",
       "path": "[[workspace]]/src/_posts/visor"
     }
+  ],
+  "frontMatter.data.types": [
+    {
+      "id": "companies",
+      "schema": {
+        "title": "Jobs",
+        "type": "object",
+        "required": [
+          "name",
+          "roles",
+          "location",
+          "website_url",
+          "description"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "roles": {
+            "type": "array",
+            "title": "Roles",
+            "items": {
+              "type": "object",            
+              "required": [
+                "title",
+                "description",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "type": "string"
+                },
+                "description": {
+                  "title": "Description",
+                  "type": "string"
+                },
+                "tags": {
+                  "title": "Tags",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "start": {
+                  "title": "Start",
+                  "type": "string"
+                },
+                "end": {
+                  "title": "End",
+                  "type": "string"
+                }
+              }              
+            }
+          },
+          "tags": {
+            "title": "Tags",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "website_url": {
+            "type": "string",
+            "title": "Website URL"
+          },
+          "logo_url": {
+            "type": "string",
+            "title": "Logo URL"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "location": {
+            "type": "string",
+            "title": "Location"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "companies",
+      "labelField": "name",
+      "title": "Companies",
+      "file": "[[workspace]]/src/_data/companies.json",
+      "type": "companies"
+    }
   ]
 }

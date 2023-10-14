@@ -4,18 +4,18 @@ published: false
 title: Sea Foam Media & Technology
 date: 2018-01-01
 datetime: January 1, 2018
-category:
+categories:
     career
 tags:
-    startups
-    ruby
-    rails
-    sidekiq
-    python
-    celery
-    django
-    mongodb
-    redis
+    - startups
+    - ruby
+    - rails
+    - sidekiq
+    - python
+    - celery
+    - django
+    - mongodb
+    - redis
 ---
 
 

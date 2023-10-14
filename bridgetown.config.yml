@@ -43,5 +43,5 @@ collections:
 # update `publicPath`.
 
 # timezone: America/Los_Angeles
-# pagination:
-#   enabled: true
+pagination:
+  enabled: true

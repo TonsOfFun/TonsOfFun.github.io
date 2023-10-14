@@ -4,14 +4,14 @@ published: false
 title: CATS - Tech Support
 date: 2005-06-01
 datetime: June 1, 2005
-category:
-    career
+categories:
+    - career
 tags:
-    windows
-    support
-    java
-    sqlserver
-    ruby
+    - windows
+    - support
+    - java
+    - sqlserver
+    - ruby
 ---
 
 ## Early in my career
