@@ -19,7 +19,7 @@ layout: default
                                 </time>
                                 <div>
                                     <% resource.data.tags.each do |tag, color| %>
-                                        <a href="#" class="inline-flex items-center px-2 py-1 text-xs font-medium <%= site.data.tags['default'] %> rounded-full"><%= tag %></a>
+                                        <%= link_to(tag, "/tags/#{tag}", {class: "inline-flex items-center px-2 py-1 text-xs font-medium #{site.data.tags['default'] } rounded-full"}) %>
                                     <% end %> 
                                 </div>
                             </header>
