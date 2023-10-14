@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Justin Bowen is TonsOfFun | Justin Bowen is TonsOfFun</title>
+<title>Posts in category personal | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -76,9 +76,9 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: ('about' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
+      downDelay: ('categories' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      home: ('about' == 'home'), 
+      home: ('categories' == 'home'), 
       scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
@@ -198,7 +198,7 @@ setTimeout(() => {
 
     </head>
 
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  about ">
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  categories ">
         <div id="__next">
             <div class="fixed inset-0 flex justify-center sm:px-8">
                 <div class="flex w-full max-w-7xl lg:px-8">
@@ -282,10 +282,9 @@ setTimeout(() => {
 </li>
 
                                                         <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/about/">
             About
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -362,10 +361,9 @@ setTimeout(() => {
 </li>
 
                                             <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/about/">
             About
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -457,102 +455,54 @@ setTimeout(() => {
 
                 <main>
                     <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8">
-        <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl">
-                <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-                    <div class="lg:pl-20">
-                        <div class="max-w-xs px-2.5 lg:max-w-none"><img alt="Justin Bowen being tons of fun" sizes="(min-width: 1024px) 32rem, 20rem"
-                                srcset=""
-                                src="https://res.cloudinary.com/tonsoffun/image/upload/w_1200,c_limit,q_80/v1666727172/about_godeuq.jpg"
-                                width="800" height="800" decoding="async" data-nimg="future"
-                                class="object-cover aspect-square -rotate-2 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
-                                loading="lazy" style="color:transparent"></div>
-                    </div>
-                    <div class="prose lg:order-first lg:row-span-2 dark:prose-invert">
-                        <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            Justin Bowen is TonsOfFun
-                        </h1>
-                        <p><img src="https://res.cloudinary.com/tonsoffun/image/upload/c_fill,g_face:center,w_1600,h_900,q_50/v1666727171/avatar_oo5ahy.jpg" alt="Justin Bowen being tons of fun" /></p>
-
-<p>Born and raised on the peninsula in the San Francisco Bay Area, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad’s office with the tech support crew at the end of the work day.</p>
-
-<p>My dad was a huge role model and positive influence throughout my childhood, education, and career. He was my first soccer coach and my first boss. When I was 8 or 9 my first personal computer had an Intel Pentium III with 512MB of RAM. My dad had me install all of the components and upgrade my graphics card (to play newer games like Half-Life) with an ATI Rage 32MB GPU and a huge (for the time) 80GB IDE HDD. We continued playing video games like Halo, Call of Duty, and PUBG.</p>
-
-<p>At 15 I tested out of high school, started college, and started my career working tech support. While simultaneously enrolled in college Java programming methods and data structures classes, tech support gave me an opportunity to learn from the user experience. Working customer facing phone support gave me exposure to people across the country with varying degrees of technical literacy and cultural backgrounds. I was able provide end to end support software bugs from documenting them on the phone to resolving them with the developers.</p>
-
-<p>Java and Microsoft SQL Server was the first tech stack I worked on, but I was intrigued by the OpenSource software community. I played with different Linux distros and found Ubuntu 8.04 (Hardy Heron) quickly came to love Ruby on Rails.</p>
-
-                    </div>
-                    <div class="lg:pl-20">
-    <ul role="list">
-            <li class="mt-4 flex">
-    <a class="hover:text-teal-500 dark:hover:text-teal-500 font-semibold group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200" href="https://github.com/TonsOfFun" aria-label="Follow me on GitHub" target="_blank" rel="noopener noreferrer">    
-                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.2-.7 0-.7 0-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"/>
-</svg>
-
-                <span class="ml-4">Follow me on GitHub</span>
-
-</a></li>
-            <li class="mt-4 flex">
-    <a class="hover:text-teal-500 dark:hover:text-teal-500 font-semibold group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200" href="https://twitter.com/TonsOfFun111" aria-label="Follow me on Twitter" target="_blank" rel="noopener noreferrer">    
-                <svg class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4.6c-.9.4-1.8.7-2.8.8 1-.6 1.8-1.6 2.2-2.7-1 .6-2 1-3.1 1.2-.9-1-2.2-1.6-3.6-1.6-2.7 0-4.9 2.2-4.9 4.9 0 .4 0 .8.1 1.1-4.2-.2-7.8-2.2-10.2-5.2-.5.8-.7 1.6-.7 2.5 0 1.7.9 3.2 2.2 4.1-.8 0-1.6-.2-2.2-.6v.1c0 2.4 1.7 4.4 3.9 4.8-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 2 2.4 3.4 4.6 3.4-1.7 1.3-3.8 2.1-6.1 2.1-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.5 2.2 9.1 0 14-7.5 14-14v-.6c1-.7 1.8-1.6 2.5-2.5z"/>
-</svg>
-
-                <span class="ml-4">Follow me on Twitter</span>
-
-</a></li>
-            <li class="mt-4 flex">
-    <a class="hover:text-teal-500 dark:hover:text-teal-500 font-semibold group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200" href="https://linkedin.com/in/TonsOfFun111" aria-label="Connect with me on LinkedIn" target="_blank" rel="noopener noreferrer">    
-                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M23,0H1C0.4,0,0,0.4,0,1v22c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V1C24,0.4,23.6,0,23,0z M7.1,20.5H3.6V9h3.6 V20.5z M5.3,7.4c-1.1,0-2.1-0.9-2.1-2.1c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1C7.4,6.5,6.5,7.4,5.3,7.4z M20.5,20.5h-3.6 v-5.6c0-1.3,0-3-1.8-3c-1.9,0-2.1,1.4-2.1,2.9v5.7H9.4V9h3.4v1.6h0c0.5-0.9,1.6-1.8,3.4-1.8c3.6,0,4.3,2.4,4.3,5.5V20.5z"/>
-</svg>
-
-                <span class="ml-4">Connect with me on LinkedIn</span>
-
-</a></li>
-            <li class="mt-4 flex">
-    <a class="hover:text-teal-500 dark:hover:text-teal-500 font-semibold group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200" href="https://Instagram.com/TonsOfFun111" aria-label="Follow me on Instagram" target="_blank" rel="noopener noreferrer">    
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" aria-hidden="true">
-  <title>Instagram</title>
-  <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-</svg>
-
-                <span class="ml-4">Follow me on Instagram</span>
-
-</a></li>
-            <li class="mt-4 flex">
-    <a class="hover:text-teal-500 dark:hover:text-teal-500 font-semibold group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200" href="https://discordapp.com/users/569074648772509698" aria-label="Connect on Discord" target="_blank" rel="noopener noreferrer">    
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" aria-hidden="true">
-  <title>Discord</title>
-  <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
-</svg>
-
-                <span class="ml-4">Connect on Discord</span>
-
-</a></li>
-
-        <li class="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40 flex">
-            <a class="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-                href="mailto:spencer@planetaria.tech">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500">
-                    <path fill-rule="evenodd"
-                        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z">
-                    </path>
-                </svg>
-                <span class="ml-4">justin@tonsof.fun</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
-                </div>
-            </div>
-        </div>
+  <div class="mx-auto max-w-7xl lg:px-8">
+    <div class="relative px-4 sm:px-8 lg:px-12">
+      <div class="max-w-2xl mx-auto lg:max-w-5xl">
+        <header class="max-w-2xl">
+          <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            Posts in category personal.
+          </h1>
+          <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">All of my long-form thoughts on
+            programming, leadership, product design, and more, collected in chronological order.</p>
+        </header>
+        
+        <div class="mt-16 sm:mt-20">
+          <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+            <div class="flex flex-col max-w-3xl space-y-16">
+                <article class="md:grid md:grid-cols-4 md:items-baseline">
+    <div class="relative flex flex-col items-start md:col-span-3 group">
+        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+    <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
     </div>
+    <a href="/personal/2022/09/02/about/">
+        <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+        <span class="relative z-10">Justin Bowen is TonsOfFun</span>
+    </a>
+</h2>
+<time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" datetime="September 2, 2022">
+    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+        <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+    </span>
+    September 2, 2022
+</time>
+<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Born and raised on the peninsula in the San Francisco Bay Area, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad&#39;s office with the tech support crew at the end of the work day.</p>
+<div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
+    Read article
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-4 h-4 ml-1 stroke-current">
+        <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+</div>
+    </div>
+    <time class="relative z-10 flex items-center order-first hidden mt-1 mb-3 text-sm md:block text-zinc-400 dark:text-zinc-500" datetime="2022-09-05">
+        September 2, 2022
+    </time>
+</article>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
                 </main>
                 <footer class="mt-32 print:hidden">
@@ -619,7 +569,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/about.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/categories/personal/index.html" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>
