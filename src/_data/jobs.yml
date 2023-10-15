@@ -83,7 +83,7 @@ companies:
         end: '2020'
         url: 
     logo_url: /images/logos/greenthumbio.jpeg
-    website_url: 'https://greenthumb.io/'
+    website_url: '/categories/greenthumb/'
     location: 'Remote'
     description: 'Providing growers and cultivators meaningful data about their crops, pinpointing problems in real time. Analyzing camera data and turns it into actionable insights, digitizing characteristics of the plants into trackable assets.'
   - name: 'Dairy.com (FKA Cainthus acquired by Ever.ag)'
