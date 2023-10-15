@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Life Experience | Justin Bowen is TonsOfFun</title>
+<title>GreenThumb Leaf Area Analysis | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -76,9 +76,9 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: ('page' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
+      downDelay: ('post' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      home: ('page' == 'home'), 
+      home: ('post' == 'home'), 
       scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
@@ -198,7 +198,7 @@ setTimeout(() => {
 
     </head>
 
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  page ">
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  post ">
         <div id="__next">
             <div class="fixed inset-0 flex justify-center sm:px-8">
                 <div class="flex w-full max-w-7xl lg:px-8">
@@ -310,10 +310,9 @@ setTimeout(() => {
 </li>
 
                                                         <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -390,10 +389,9 @@ setTimeout(() => {
 </li>
 
                                             <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -456,75 +454,97 @@ setTimeout(() => {
 </header>
 
                 <main>
-                    <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8 print:max-w-full">
+                    <div class="mt-16 sm:px-8 lg:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl print:lg:max-w-full print:mx-0">
-                <header class="max-w-2xl print:max-w-full">
-                    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        Life Experience
-                    </h1>
-                    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        
-                    </p>
-                </header>
-                <div class="mt-16 sm:mt-20 print:sm:mt-0">
-                    <div id="" class="space-y-20 print:space-y-0">
-                        <h2 id="life-experience">Life Experience</h2>
-<h3 id="sports">Sports </h3>
-<ul>
-  <li>🏃‍♂️ Love to run in Golden Gate Park and on the trails on the penninsula.</li>
-  <li>💪 Started weight training in highschool and lift a couple times a week.</li>
-  <li>⚽️ Grew up playing soccer, I’m a goalie!</li>
-  <li>🧘‍♂️ Practicing yogi for over a decade now.</li>
-  <li>🏊‍♂️ Not a swimmer, but love to swim.</li>
-  <li>🤿 Grew up snorkling and PADI certified diver</li>
-</ul>
+            <div class="max-w-2xl mx-auto lg:max-w-5xl">
+                <div class="xl:relative">
+                    <div class="max-w-2xl mx-auto">
+                        <article>
+                            <header class="flex flex-col">
+                                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                                    GreenThumb Leaf Area Analysis
+                                </h1>
+                                
+                                <time datetime="March 1, 2015" class="flex items-center order-first text-base text-zinc-400 dark:text-zinc-500">
+                                    <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                    <span class="ml-3">March 1, 2015</span>
+                                </time>
+                                <div>
+                                        <a href="/tags/python" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">python</a>
+                                        <a href="/tags/opencv" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">opencv</a>
+                                        <a href="/tags/matplotlib" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">matplotlib</a>
+                                        <a href="/tags/greenthumb" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">greenthumb</a>
+                                </div>
+                            </header>
+                            
+                            <div class="mt-8 prose dark:prose-invert">
+                                <blockquote>
+  <p>This blog was originally published on <a href="https://medium.com/greenthumbio/cannabis-leaf-area-analysis-d6449dbda07f">Medium</a>.</p>
+</blockquote>
 
-<h3 id="travel-">Travel 🇮🇹🇯🇵🇮🇸🇨🇦🇫🇷🇪🇸🇲🇹🇳🇱🇸🇬🇹🇭🇭🇰🇬🇧🇮🇪🇬🇷🇨🇭🇱🇦</h3>
-<ul>
-  <li>🇮🇹 Italy</li>
-  <li>Milan</li>
-  <li>Rome</li>
-  <li>Alps</li>
-  <li>🇯🇵 Japan</li>
-  <li>Fujikowaguchiko</li>
-  <li>Kyoto</li>
-  <li>Nara</li>
-  <li>Tokyo</li>
-  <li>🇮🇸 Iceland</li>
-  <li>🇨🇦 Canada</li>
-  <li>🇫🇷 France</li>
-  <li>🇪🇸 Spain</li>
-  <li>🇲🇹 Malta</li>
-  <li>🇳🇱 Netherlands</li>
-  <li>🇸🇬 Singapore</li>
-  <li>🇹🇭 Thailand</li>
-  <li>🇭🇰 Hong Kong</li>
-  <li>🇬🇧 United Kingdom</li>
-  <li>🇮🇪 Ireland</li>
-  <li>🇬🇷 Greece</li>
-  <li>🇨🇭 Switzerland</li>
-  <li>🇱🇦 Laos</li>
-</ul>
+<h2 id="intro">Intro</h2>
 
-<h3 id="hobbies">Hobbies</h3>
-<ul>
-  <li>🏺 Ceramics</li>
-  <li>👨‍💻👨‍🔧 Electronics</li>
-  <li>🎮 Video Games</li>
-  <li>🪑 Woodworking</li>
-</ul>
+<p>In this post I’m going to show you how to use openCV and some basic HSV color space analysis used to mask out non leaf pixels. We can use the mask to measure the leaf area in pixels. You can use basic trig to find out the pixel to millimeter value using the distance and angle of the field of view. I’ve broken my Jupiter notebook into smaller pieces to overcome the limitations of medium’s support for rendering long notebooks (though it did seem to render fine on mobile, I couldn’t see it properly on my MacBook Pro using Chrome). Anyway, I also have a full version of the <a href="https://gist.github.com/TonsOfFun/9ed35c29de2ef32884b7e5cea4144c2e">notebook</a> available for anyone interested.</p>
 
-<h3 id="science--technology">🔬Science &amp; Technology</h3>
-<ul>
-  <li>👨‍🌾🌱🌾 Agriculture</li>
-  <li>☀️💨⚡️🔋 Energy</li>
-  <li>🍃🌳🍂 Environment</li>
-  <li>🍄💊 Mental Heatlh</li>
-  <li>📡 Astronomy &amp; Space</li>
-</ul>
+<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*IjHOnf9J_k7-kbel4AXEKA.jpeg" alt="Leaf Area Analysis" /></p>
 
+<h2 id="dependencies">Dependencies</h2>
+<p>We’re going to utilize the imutils convenience package to resize the images for processing as well as for finding our HSV calibration values. OpenCV will be used for preprocessing the image and pixel selection by range. We use matplotlib is used from rendering images and graphs.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">imutils</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span> 
+</code></pre></div></div>
+
+<h2 id="leaf-masking">Leaf Masking</h2>
+<p>This is a basic function that converts the BGR (OpenCV is BGR, not RGB) image to HSV. Using the <code class="highlighter-rouge">leaf_lower</code> and <code class="highlighter-rouge">leaf_upper</code> HSV colorspace values defined using the range-detector helper tool found in imutils. These calibration settings work on both of my NestCams situated under the same type of HPS light. This is basically pulled from this PyImageSearch article on tracking a green ball.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># Defined bounds using https://github.com/jrosebr1/imutils/blob/master/bin/range-detector
+</span><span class="n">leaf_lower</span> <span class="o">=</span> <span class="p">(</span><span class="mi">29</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">leaf_upper</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">leaf_mask</span><span class="p">(</span><span class="n">bgr_image</span><span class="p">):</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="n">imutils</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">bgr_image</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+    <span class="n">blurred</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">hsv</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">blurred</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2HSV</span><span class="p">)</span>
+
+    <span class="c1"># construct a mask for the color "green", then perform
+</span>    <span class="c1"># a series of dilations and erosions to remove any small
+</span>    <span class="c1"># blobs left in the mask
+</span>    <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span> <span class="n">leaf_lower</span><span class="p">,</span> <span class="n">leaf_upper</span><span class="p">)</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">erode</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">dilate</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mask</span>
+</code></pre></div></div>
+
+<p>The erosions and dilations are to cleanup any smaller blobs picked up by the HSV range. In the next blogpost we will go over how to do additional filtering by analyzing the contours and their sizes. I’m not going to apply that here since the results of the post processing on the mask seem adequate for this stage. We will be replacing this model with a custom trained TensorFlow maks RCNN model. Checkout this blogpost on making a toy detector that can output a pixel-wise mask.</p>
+
+<script src="https://gist.github.com/TonsOfFun/e2e283b3a229a898e0fae217c276e48b.js"></script>
+
+<p>You can see the function working on the two sample images, above from week one and below from week 2. They represent the plants at two time periods 5 days apart. Now let’s checkout what insights the data has to offer.</p>
+
+<script src="https://gist.github.com/TonsOfFun/ececab5fd38f1db618847e7431a284f2.js"></script>
+
+<h2 id="health-reports-andgraphs">Health Reports and Graphs</h2>
+<p>Below you can checkout a leaf growth report. 10 square inches or 30 square centimeters of growth assuming our camera was hung at the correct height and give or take some variance due to inconsistent leaf distances from the lens. This gives a cultivator great insight into the general health of their crop just by graphing growth. You might also notice that I scaled the images down for processing so the results would have to be scaled up proportionately. That’s an exercise for another time as this post is just to get the concept of monitoring and graphing plant growth with smart cameras.</p>
+
+<p>We can now have the ability to provide reports on performance as well as alerts when growth has plateaued or even dropped off which is a clear sign of stress in any plant. We can also provide historical performance reviews so a cultivator can see how the current crop is vegging in comparison with previous crops at the same stage of growth.
+Let’s plot these data points from our two leaf area analyses. Since we only have our two data points from this time series our line graph will be a little boring, but you can imagine the growth being more engaging when plotting a point every minute instead of every 5 days. A realtime growth chart would include oscillations from the circadian rhythms induced by the light cycles, as well as fluctuating from variable environmental conditions. The decentralized AI will have to compensate for variability dynamically at each camera.</p>
+
+<script src="https://gist.github.com/TonsOfFun/4b4a7a0f6d4708ba46a89c457c41a115.js"></script>
+
+<p>With this functionality we increase the farmers awareness of problem areas in there grow sites and give them metrics to back their business’s performance overtime. We can now take photos of cannabis plants and produce metrics on our devices. It’s the first step on our path to a decentralized cannabis AI and there is enormous potential value in a trusted data source of cannabis cultivation metrics from seed to harvest. I’ll be putting out an article later this month talking about GreenThumb IO’s plans to empower the farmers with their own crop data with GTIO Security Tokens.</p>
+
+<script src="https://gist.github.com/TonsOfFun/9ed35c29de2ef32884b7e5cea4144c2e.js"></script>
+
+<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*jc0efTe4Ug77dOpmlj4T3A.jpeg" alt="cannabis leaves" /></p>
+
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -596,7 +616,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/life.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/_posts/greenthumb/greenthumb-leaf-area.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>

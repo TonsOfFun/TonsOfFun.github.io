@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Life Experience | Justin Bowen is TonsOfFun</title>
+<title>GreenThumb IO | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -76,9 +76,9 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: ('page' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
+      downDelay: ('post' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      home: ('page' == 'home'), 
+      home: ('post' == 'home'), 
       scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
@@ -198,7 +198,7 @@ setTimeout(() => {
 
     </head>
 
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  page ">
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  post ">
         <div id="__next">
             <div class="fixed inset-0 flex justify-center sm:px-8">
                 <div class="flex w-full max-w-7xl lg:px-8">
@@ -310,10 +310,9 @@ setTimeout(() => {
 </li>
 
                                                         <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -390,10 +389,9 @@ setTimeout(() => {
 </li>
 
                                             <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -456,75 +454,61 @@ setTimeout(() => {
 </header>
 
                 <main>
-                    <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8 print:max-w-full">
+                    <div class="mt-16 sm:px-8 lg:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl print:lg:max-w-full print:mx-0">
-                <header class="max-w-2xl print:max-w-full">
-                    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        Life Experience
-                    </h1>
-                    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        
-                    </p>
-                </header>
-                <div class="mt-16 sm:mt-20 print:sm:mt-0">
-                    <div id="" class="space-y-20 print:space-y-0">
-                        <h2 id="life-experience">Life Experience</h2>
-<h3 id="sports">Sports </h3>
-<ul>
-  <li>🏃‍♂️ Love to run in Golden Gate Park and on the trails on the penninsula.</li>
-  <li>💪 Started weight training in highschool and lift a couple times a week.</li>
-  <li>⚽️ Grew up playing soccer, I’m a goalie!</li>
-  <li>🧘‍♂️ Practicing yogi for over a decade now.</li>
-  <li>🏊‍♂️ Not a swimmer, but love to swim.</li>
-  <li>🤿 Grew up snorkling and PADI certified diver</li>
-</ul>
+            <div class="max-w-2xl mx-auto lg:max-w-5xl">
+                <div class="xl:relative">
+                    <div class="max-w-2xl mx-auto">
+                        <article>
+                            <header class="flex flex-col">
+                                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                                    GreenThumb IO
+                                </h1>
+                                
+                                <time datetime="March 1, 2015 dd" class="flex items-center order-first text-base text-zinc-400 dark:text-zinc-500">
+                                    <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                    <span class="ml-3">March 1, 2015 dd</span>
+                                </time>
+                                <div>
+                                        <a href="/tags/startups" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">startups</a>
+                                        <a href="/tags/hackathons" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">hackathons</a>
+                                        <a href="/tags/ruby-on-rails" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">ruby-on-rails</a>
+                                        <a href="/tags/python" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">python</a>
+                                        <a href="/tags/actioncable" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">actioncable</a>
+                                        <a href="/tags/postgis" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">postgis</a>
+                                        <a href="/tags/raspberrypi" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">raspberrypi</a>
+                                        <a href="/tags/websockets" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">websockets</a>
+                                        <a href="/tags/postgres" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">postgres</a>
+                                        <a href="/tags/opencv" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">opencv</a>
+                                        <a href="/tags/sidekiq" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">sidekiq</a>
+                                </div>
+                            </header>
+                            
+                            <div class="mt-8 prose dark:prose-invert">
+                                <h2 id="intro-to-agtech-through-a-series-of-hacakthons">Intro to AgTech through a series of hacakthons</h2>
+<p>I founded GreenThumb.io after participating in a series of hackathons called Apps for Ag. I placed 3rd in the first hackathon in Coalinga, California. My placing in the second hackathon at UC Davis earned me the incorporation costs for GreenThumb, which were paid for by the event sponsor. I volunteered as an advisor and mentor for the participants in the third event of that series in Salinas.</p>
 
-<h3 id="travel-">Travel 🇮🇹🇯🇵🇮🇸🇨🇦🇫🇷🇪🇸🇲🇹🇳🇱🇸🇬🇹🇭🇭🇰🇬🇧🇮🇪🇬🇷🇨🇭🇱🇦</h3>
-<ul>
-  <li>🇮🇹 Italy</li>
-  <li>Milan</li>
-  <li>Rome</li>
-  <li>Alps</li>
-  <li>🇯🇵 Japan</li>
-  <li>Fujikowaguchiko</li>
-  <li>Kyoto</li>
-  <li>Nara</li>
-  <li>Tokyo</li>
-  <li>🇮🇸 Iceland</li>
-  <li>🇨🇦 Canada</li>
-  <li>🇫🇷 France</li>
-  <li>🇪🇸 Spain</li>
-  <li>🇲🇹 Malta</li>
-  <li>🇳🇱 Netherlands</li>
-  <li>🇸🇬 Singapore</li>
-  <li>🇹🇭 Thailand</li>
-  <li>🇭🇰 Hong Kong</li>
-  <li>🇬🇧 United Kingdom</li>
-  <li>🇮🇪 Ireland</li>
-  <li>🇬🇷 Greece</li>
-  <li>🇨🇭 Switzerland</li>
-  <li>🇱🇦 Laos</li>
-</ul>
+<h3 id="agtech-101-intro-to-the-union-of-agriculture-and-technology">AgTech 101: intro to the union of agriculture and technology</h3>
+<p>Initially GreenThumb IO was designed in collaboration with agronomists to track records of consumables used by storing details in a geo-spatial index. This provided agronomists and farmers with location based feeds of notes and accumulated fertilizer and pestiside applications to ensure targets were met, tracked, and archived for reference.</p>
 
-<h3 id="hobbies">Hobbies</h3>
-<ul>
-  <li>🏺 Ceramics</li>
-  <li>👨‍💻👨‍🔧 Electronics</li>
-  <li>🎮 Video Games</li>
-  <li>🪑 Woodworking</li>
-</ul>
+<h3 id="cannabis-computer-vision-application">Cannabis computer vision application</h3>
+<p>GreenThumb became a computer vision product that was purpose built for monitoring cannabis plant health through <a href="leaf area">leaf area</a> and <a href="bud area">bud area</a> analysis.</p>
 
-<h3 id="science--technology">🔬Science &amp; Technology</h3>
-<ul>
-  <li>👨‍🌾🌱🌾 Agriculture</li>
-  <li>☀️💨⚡️🔋 Energy</li>
-  <li>🍃🌳🍂 Environment</li>
-  <li>🍄💊 Mental Heatlh</li>
-  <li>📡 Astronomy &amp; Space</li>
-</ul>
+<p><img src="https://res.cloudinary.com/tonsoffun/image/upload/v1697299678/greenthumb-graph_pc5wfd.gif" alt="GreenThumb IO" /></p>
 
+<h3 id="the-vision">The vision</h3>
+<p>GreenThumb had enourmous potential for cultivators because it helps them to monitor their crops and identify potential problems early on. The product could also used by researchers to study plant growth and development. Ultimately I was only able to get the product in the hads of a few agronomists, but was unable to tap the large market with my limited self funding. I made the decision to put this dream on a self and take a full time role at Cainthus.</p>
+
+<p><img src="https://res.cloudinary.com/tonsoffun/image/upload/v1697302623/greenthumb-io_gmrbku.gif" alt="GreenThumb Timelapse" style="width: 720px;" /></p>
+
+<h3 id="the-technology">The technology</h3>
+<p>I used Ruby, Rails, Sidekiq, Python, OpenCV, Postgres, PostGIS, Redis, Raspberry Pi, WebSockets - ActionCable (AnyCable-Go) to build the product. I also used real-time image processing with Rails and Sidekiq, and custom Python OpenCV algorithms exposed in an image service via Thumbor OpenCV engine using Google Cloud Run (GCR) on Google Cloud Platform (GCP). I also used a Raspberry Pi to capture and preprocess images from a camera and send them to the server for further processing.</p>
+
+<p>I am proud of the work that I have done on GreenThumb. It is a product that has the potential to make a real difference in the world. I am excited to continue working on it as a part of showcase of computer vision applications built with VisorCV. It will be interesting to see how it will be received this time around.</p>
+
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -596,7 +580,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/life.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/_posts/career/greenthumb.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>

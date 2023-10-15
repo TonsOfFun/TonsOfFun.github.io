@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Life Experience | Justin Bowen is TonsOfFun</title>
+<title>GreenThumb Bud Count &amp; Area Analysis | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -76,9 +76,9 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: ('page' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
+      downDelay: ('post' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      home: ('page' == 'home'), 
+      home: ('post' == 'home'), 
       scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
@@ -198,7 +198,7 @@ setTimeout(() => {
 
     </head>
 
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  page ">
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  post ">
         <div id="__next">
             <div class="fixed inset-0 flex justify-center sm:px-8">
                 <div class="flex w-full max-w-7xl lg:px-8">
@@ -310,10 +310,9 @@ setTimeout(() => {
 </li>
 
                                                         <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -390,10 +389,9 @@ setTimeout(() => {
 </li>
 
                                             <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -456,75 +454,125 @@ setTimeout(() => {
 </header>
 
                 <main>
-                    <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8 print:max-w-full">
+                    <div class="mt-16 sm:px-8 lg:mt-32">
+    <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl print:lg:max-w-full print:mx-0">
-                <header class="max-w-2xl print:max-w-full">
-                    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        Life Experience
-                    </h1>
-                    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        
-                    </p>
-                </header>
-                <div class="mt-16 sm:mt-20 print:sm:mt-0">
-                    <div id="" class="space-y-20 print:space-y-0">
-                        <h2 id="life-experience">Life Experience</h2>
-<h3 id="sports">Sports </h3>
-<ul>
-  <li>🏃‍♂️ Love to run in Golden Gate Park and on the trails on the penninsula.</li>
-  <li>💪 Started weight training in highschool and lift a couple times a week.</li>
-  <li>⚽️ Grew up playing soccer, I’m a goalie!</li>
-  <li>🧘‍♂️ Practicing yogi for over a decade now.</li>
-  <li>🏊‍♂️ Not a swimmer, but love to swim.</li>
-  <li>🤿 Grew up snorkling and PADI certified diver</li>
-</ul>
+            <div class="max-w-2xl mx-auto lg:max-w-5xl">
+                <div class="xl:relative">
+                    <div class="max-w-2xl mx-auto">
+                        <article>
+                            <header class="flex flex-col">
+                                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                                    GreenThumb Bud Count &amp; Area Analysis
+                                </h1>
+                                
+                                <time datetime="May 22, 2018" class="flex items-center order-first text-base text-zinc-400 dark:text-zinc-500">
+                                    <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                    <span class="ml-3">May 22, 2018</span>
+                                </time>
+                                <div>
+                                        <a href="/tags/python" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">python</a>
+                                        <a href="/tags/opencv" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">opencv</a>
+                                        <a href="/tags/matplotlib" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">matplotlib</a>
+                                        <a href="/tags/greenthumb" class="inline-flex items-center px-2 py-1 text-xs font-medium text-teal-600 bg-teal-100 rounded-full">greenthumb</a>
+                                </div>
+                            </header>
+                            
+                            <div class="mt-8 prose dark:prose-invert">
+                                <blockquote>
+  <p>This blog was originally published on the <a href="https://medium.com/greenthumbio">GreenThumb IO Medium</a> <a href="https://medium.com/greenthumbio/cannabis-bud-area-5ef7433e6f45">Leaf Area Analysis</a>.</p>
+  <h2 id="intro">Intro</h2>
+  <p>I gleamed my inspiration from <a href="https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/">PyImageSearch.com</a> yet again. I’m basically counting bright green spots, by combining some of the tricks from the last post on <a href="/greenthumb/2018/05/22/greenthumb-leaf-area/">Leaf Area Analysis</a>.</p>
+</blockquote>
 
-<h3 id="travel-">Travel 🇮🇹🇯🇵🇮🇸🇨🇦🇫🇷🇪🇸🇲🇹🇳🇱🇸🇬🇹🇭🇭🇰🇬🇧🇮🇪🇬🇷🇨🇭🇱🇦</h3>
-<ul>
-  <li>🇮🇹 Italy</li>
-  <li>Milan</li>
-  <li>Rome</li>
-  <li>Alps</li>
-  <li>🇯🇵 Japan</li>
-  <li>Fujikowaguchiko</li>
-  <li>Kyoto</li>
-  <li>Nara</li>
-  <li>Tokyo</li>
-  <li>🇮🇸 Iceland</li>
-  <li>🇨🇦 Canada</li>
-  <li>🇫🇷 France</li>
-  <li>🇪🇸 Spain</li>
-  <li>🇲🇹 Malta</li>
-  <li>🇳🇱 Netherlands</li>
-  <li>🇸🇬 Singapore</li>
-  <li>🇹🇭 Thailand</li>
-  <li>🇭🇰 Hong Kong</li>
-  <li>🇬🇧 United Kingdom</li>
-  <li>🇮🇪 Ireland</li>
-  <li>🇬🇷 Greece</li>
-  <li>🇨🇭 Switzerland</li>
-  <li>🇱🇦 Laos</li>
-</ul>
+<blockquote>
+  <p><a href="https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/">Detecting multiple bright spots in an image with Python and OpenCV - PyImageSearch</a></p>
+</blockquote>
 
-<h3 id="hobbies">Hobbies</h3>
-<ul>
-  <li>🏺 Ceramics</li>
-  <li>👨‍💻👨‍🔧 Electronics</li>
-  <li>🎮 Video Games</li>
-  <li>🪑 Woodworking</li>
-</ul>
+<h2 id="dependencies">Dependencies</h2>
+<p>In this <a href="https://hub.docker.com/r/tonsoffun/tensorflow-notebook/">docker image</a> I have all of the dependencies for both Leaf Area and Bud Area including working copies and works in progress. We’re going to be using the same setup as with the Leaf Area notebook. <a href="https://opencv.org/">OpenCV</a> will be used for preprocessing the image and pixel selection by range. <a href="https://matplotlib.org/">Matplotlib</a> is used from rendering images and graphs. We take advantage of <a href="">skimage.measure.label</a> for taking measurements and label them. We take these components and use <a href="https://opencv.org/">OpenCV</a> to find and annotate the contours.</p>
 
-<h3 id="science--technology">🔬Science &amp; Technology</h3>
-<ul>
-  <li>👨‍🌾🌱🌾 Agriculture</li>
-  <li>☀️💨⚡️🔋 Energy</li>
-  <li>🍃🌳🍂 Environment</li>
-  <li>🍄💊 Mental Heatlh</li>
-  <li>📡 Astronomy &amp; Space</li>
-</ul>
+<h2 id="hsv-range-selector">HSV Range Selector</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open <span class="nt">-a</span> XQuartz
+<span class="nv">ip</span><span class="o">=</span><span class="si">$(</span>ifconfig en0 | <span class="nb">grep </span>inet | <span class="nb">awk</span> <span class="s1">'$1=="inet" {print $2}'</span><span class="si">)</span>
+<span class="nv">display_number</span><span class="o">=</span><span class="sb">`</span>ps <span class="nt">-ef</span> | <span class="nb">grep</span> <span class="s2">"Xquartz :</span><span class="se">\d</span><span class="s2">"</span> | <span class="nb">grep</span> <span class="nt">-v</span> xinit | <span class="nb">awk</span> <span class="s1">'{ print $9; }'</span><span class="sb">`</span>
+/opt/X11/bin/xhost + <span class="nv">$ip</span>
+docker run <span class="nt">-it</span> <span class="nt">--rm</span> <span class="nt">-e</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$ip</span>:0 <span class="nt">-v</span> /tmp/.X11-unix:/tmp/.X11-unix tensorflow-notebook /bin/bash
+range-detector --filter HSV --image work/test3.png <span class="nt">--preview</span>
+</code></pre></div></div>
+<p>I pulled the first few lines of the script below from this comment. It was need to run the range_detector used in this and the previous blog post.</p>
 
+<p><a href="https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/">Running GUI applications using Docker for Mac</a></p>
+
+<p><img src="https://miro.medium.com/v2/resize:fit:4800/1*Oh0cwcXTqkSwsoWnSAvnPg.gif" alt="HSV MIN/MAX Selector UI" /></p>
+<blockquote>
+  <p>You can checkout this GIF to get an idea of how I go about defining the HSV boundary values.Creating the initial HSV Mask</p>
+</blockquote>
+
+<h2 id="creating-the-initial-hsv-mask">Creating the initial HSV Mask</h2>
+<script src="https://gist.github.com/TonsOfFun/f9fa0998e670db0c76d2446fc5943b9a.js"></script>
+
+<blockquote>
+  <p>Simple range mask like we did with the leaf detector</p>
+</blockquote>
+
+<h2 id="preview-themask">Preview the mask</h2>
+<p>We can easily mask the original image with <a href="https://docs.opencv.org/3.3.0/d2/de8/group__core__array.html#ga60b4d04b251ba5eb1392c34425497e14">OpenCV’s bitwise_and</a> which takes the original image and the mask and outputs a masked image.
+<script src="https://gist.github.com/TonsOfFun/73d6d3272873a139b9a8c807b8602a79.js"></script></p>
+
+<h2 id="cannabis-computervision">Cannabis Computer Vision</h2>
+<p>This is a side-by-side view of the HSV colorspace which the computer uses to isolate the buds and the masked preview. We use the <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html">numpy.vstack</a> to vertically <code class="highlighter-rouge">stack</code> the images. I chose vstack for the gists here and hstack in the notebook, but it really is a matter of developer preference and aspect ratio.
+<script src="https://gist.github.com/TonsOfFun/71466a09755331778c45e8b72139cf9f.js"></script></p>
+
+<h2 id="refining-themask">Refining the Mask</h2>
+<p>We can refine the mask using the same binary threshold, erode, and dilate technique used on the Leaf Area. This will clean up the specs of frost leave from the actual Bud Area.
+<script src="https://gist.github.com/TonsOfFun/2bd2592db3c82bb6e211aa37e74ccbc9.js"></script></p>
+
+<h2 id="before-and-after-cleaning-up-thecontours">Before and After Cleaning Up the Contours</h2>
+<p>You can see the <code class="highlighter-rouge">vstack</code>` comparing the contours pre and post cleanup.
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*j5aAUIw4jVJBDAJa6xfJ4A.jpeg" alt="masked bud sites" />
+You can still see a few smaller contours that escape this sweep, but they’re technically smaller bud sites below the top layer of canopy. Either way we’ll filter them in the next pass below.</p>
+
+<h2 id="enhance-mask-with-labeled-components">Enhance Mask with Labeled Components</h2>
+<p>Using <a href="http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.label">skimage.measure.label</a> we are further filtering out noise by ignoring blobs smaller than 100px. This means buds have to be this size or greater to get added to the labeled mask.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">labels</span> <span class="o">=</span> <span class="n">measure</span><span class="p">.</span><span class="n">label</span><span class="p">(</span><span class="n">postprocessed_mask</span><span class="p">,</span> <span class="n">neighbors</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">thresh</span><span class="p">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">"uint8"</span><span class="p">)</span>
+ 
+<span class="c1"># loop over the unique components
+</span><span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">np</span><span class="p">.</span><span class="n">unique</span><span class="p">(</span><span class="n">labels</span><span class="p">):</span>
+	<span class="c1"># if this is the background label, ignore it
+</span>	<span class="k">if</span> <span class="n">label</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+		<span class="k">continue</span>
+ 
+	<span class="c1"># otherwise, construct the label mask and count the
+</span>	<span class="c1"># number of pixels 
+</span>	<span class="n">labelMask</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">thresh</span><span class="p">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">"uint8"</span><span class="p">)</span>
+	<span class="n">labelMask</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
+	<span class="n">numPixels</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">countNonZero</span><span class="p">(</span><span class="n">labelMask</span><span class="p">)</span>
+
+	<span class="c1"># if the number of pixels in the component is sufficiently
+</span>	<span class="c1"># large, then add it to our mask of "large blobs"
+</span>	<span class="k">if</span> <span class="n">numPixels</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+		<span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">labelMask</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="label-thebuds">Label the Buds</h2>
+<p>Now we have what we need to label the bud sites on the preview image.
+<script src="https://gist.github.com/TonsOfFun/388d663dd4a1af33e1419dfedf65c5d3.js"></script>
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*tlrMzrMBYCTLYVW9bFmpvQ.jpeg" alt="labeled bud sites" />
+You can see the smaller spots, which actually appear to be smaller bud sites below the canopy are not labeled. We can remove or lower the threshold of 100px to further refine the camera’s calibration, but this is a great result for this stage.A Full Copy of the Notebook Below
+Below is the full copy of the notebook. I also have a docker image <a href="https://hub.docker.com/r/tonsoffun/tensorflow-notebook/">tonsoffun/tensorflow-notebook</a> which I’ve simply added OpenCV 3.3 via anaconda. This docker image supports both Bud and Leaf Area Analysis as well. Keep following along as I show you how we can use our OpenCV masks to train a Mask RCNN.</p>
+
+<script src="https://gist.github.com/TonsOfFun/09d62185e836375d358e54cc7f38e4bf.js"></script>
+
+<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*XnISCjeCHef6koxRWiykOg.jpeg" alt="HSV on top of masked bud sites" /></p>
+<blockquote>
+  <p>top: HSV Original, bottom: Final Mask Before Contour Filtering</p>
+</blockquote>
+
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -596,7 +644,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/life.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/_posts/greenthumb/greenthumb-bud-area.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Life Experience | Justin Bowen is TonsOfFun</title>
+<title>Posts tagged ruby-on-rails | Justin Bowen is TonsOfFun</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -76,9 +76,9 @@
     return {
       sticky: false,
       lastPos: window.scrollY + 0,
-      downDelay: ('page' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
+      downDelay: ('categories' == 'home' ? document.querySelector("div[x-ref='avatar']").offsetTop : 0),
       upDelay: 64,
-      home: ('page' == 'home'), 
+      home: ('categories' == 'home'), 
       scrollMenu() {        
         let downDelay = this.downDelay;
         let { top, height } = this.$refs.navbar.getBoundingClientRect()
@@ -198,7 +198,7 @@ setTimeout(() => {
 
     </head>
 
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  page ">
+    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black  categories ">
         <div id="__next">
             <div class="fixed inset-0 flex justify-center sm:px-8">
                 <div class="flex w-full max-w-7xl lg:px-8">
@@ -310,10 +310,9 @@ setTimeout(() => {
 </li>
 
                                                         <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -390,10 +389,9 @@ setTimeout(() => {
 </li>
 
                                             <li>
-        <a class="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400"
+        <a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
             href="/life/">
             Life
-            <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </a>
 </li>
 
@@ -457,79 +455,54 @@ setTimeout(() => {
 
                 <main>
                     <div class="mt-16 sm:px-8 sm:mt-32">
-    <div class="mx-auto max-w-7xl lg:px-8 print:max-w-full">
-        <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="max-w-2xl mx-auto lg:max-w-5xl print:lg:max-w-full print:mx-0">
-                <header class="max-w-2xl print:max-w-full">
-                    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        Life Experience
-                    </h1>
-                    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        
-                    </p>
-                </header>
-                <div class="mt-16 sm:mt-20 print:sm:mt-0">
-                    <div id="" class="space-y-20 print:space-y-0">
-                        <h2 id="life-experience">Life Experience</h2>
-<h3 id="sports">Sports </h3>
-<ul>
-  <li>🏃‍♂️ Love to run in Golden Gate Park and on the trails on the penninsula.</li>
-  <li>💪 Started weight training in highschool and lift a couple times a week.</li>
-  <li>⚽️ Grew up playing soccer, I’m a goalie!</li>
-  <li>🧘‍♂️ Practicing yogi for over a decade now.</li>
-  <li>🏊‍♂️ Not a swimmer, but love to swim.</li>
-  <li>🤿 Grew up snorkling and PADI certified diver</li>
-</ul>
-
-<h3 id="travel-">Travel 🇮🇹🇯🇵🇮🇸🇨🇦🇫🇷🇪🇸🇲🇹🇳🇱🇸🇬🇹🇭🇭🇰🇬🇧🇮🇪🇬🇷🇨🇭🇱🇦</h3>
-<ul>
-  <li>🇮🇹 Italy</li>
-  <li>Milan</li>
-  <li>Rome</li>
-  <li>Alps</li>
-  <li>🇯🇵 Japan</li>
-  <li>Fujikowaguchiko</li>
-  <li>Kyoto</li>
-  <li>Nara</li>
-  <li>Tokyo</li>
-  <li>🇮🇸 Iceland</li>
-  <li>🇨🇦 Canada</li>
-  <li>🇫🇷 France</li>
-  <li>🇪🇸 Spain</li>
-  <li>🇲🇹 Malta</li>
-  <li>🇳🇱 Netherlands</li>
-  <li>🇸🇬 Singapore</li>
-  <li>🇹🇭 Thailand</li>
-  <li>🇭🇰 Hong Kong</li>
-  <li>🇬🇧 United Kingdom</li>
-  <li>🇮🇪 Ireland</li>
-  <li>🇬🇷 Greece</li>
-  <li>🇨🇭 Switzerland</li>
-  <li>🇱🇦 Laos</li>
-</ul>
-
-<h3 id="hobbies">Hobbies</h3>
-<ul>
-  <li>🏺 Ceramics</li>
-  <li>👨‍💻👨‍🔧 Electronics</li>
-  <li>🎮 Video Games</li>
-  <li>🪑 Woodworking</li>
-</ul>
-
-<h3 id="science--technology">🔬Science &amp; Technology</h3>
-<ul>
-  <li>👨‍🌾🌱🌾 Agriculture</li>
-  <li>☀️💨⚡️🔋 Energy</li>
-  <li>🍃🌳🍂 Environment</li>
-  <li>🍄💊 Mental Heatlh</li>
-  <li>📡 Astronomy &amp; Space</li>
-</ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="mx-auto max-w-7xl lg:px-8">
+    <div class="relative px-4 sm:px-8 lg:px-12">
+      <div class="max-w-2xl mx-auto lg:max-w-5xl">
+        <header class="max-w-2xl">
+          <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            Posts tagged ruby-on-rails.
+          </h1>
+          <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">All of my long-form thoughts on
+            programming, leadership, product design, and more, collected in chronological order.</p>
+        </header>
+        
+        <div class="mt-16 sm:mt-20">
+          <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+            <div class="flex flex-col max-w-3xl space-y-16">
+                <article class="md:grid md:grid-cols-4 md:items-baseline">
+    <div class="relative flex flex-col items-start md:col-span-3 group">
+        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+    <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
     </div>
+    <a href="/career/2015/03/01/greenthumb/">
+        <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+        <span class="relative z-10">GreenThumb IO</span>
+    </a>
+</h2>
+<time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" datetime="March 1, 2015 dd">
+    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+        <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+    </span>
+    March 1, 2015 dd
+</time>
+<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+<div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
+    Read article
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-4 h-4 ml-1 stroke-current">
+        <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+</div>
+    </div>
+    <time class="relative z-10 flex items-center order-first hidden mt-1 mb-3 text-sm md:block text-zinc-400 dark:text-zinc-500" datetime="2022-09-05">
+        March 1, 2015 dd
+    </time>
+</article>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
                 </main>
                 <footer class="mt-32 print:hidden">
@@ -596,7 +569,7 @@ setTimeout(() => {
                             </p>
 
                             <p class="text-sm text-center">
-                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/life.md" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
+                            <a class="hover:text-teal-500 dark:hover:text-teal-400 font-semibold text-zinc-800 dark:text-zinc-200 transition hover:text-teal-500 dark:hover:text-teal-400 after:content-[&#39;_↗&#39;]" href="https://github.com/tonsoffun/tonsoffun.github.io/blob/main/src/tags/ruby-on-rails/index.html" target="_blank" rel="noopener noreferrer">Edit on GitHub</a>
                             </p>
                         </div>
                     </div>
