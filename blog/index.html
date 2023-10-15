@@ -170,6 +170,7 @@
 function startReloadConnection() {
   const evtSource = new EventSource("/_bridgetown/live_reload")
   evtSource.onmessage = event => {
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
     if (event.data == "reloaded!") {
       location.reload()
     } else {
@@ -181,6 +182,23 @@ function startReloadConnection() {
       }
     }
   }
+  evtSource.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
   evtSource.onerror = event => {
     if (evtSource.readyState === 2) {
       // reconnect with new object
@@ -496,6 +514,8 @@ setTimeout(() => {
     </span>
     September 2, 2022
 </time>
+<div class="relative z-10 w-full mt-4 overflow-auto rounded-xl">
+</div>
 <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Born and raised on the peninsula in the San Francisco Bay Area, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad&#39;s office with the tech support crew at the end of the work day.</p>
 <div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
     Read article
@@ -524,6 +544,8 @@ setTimeout(() => {
     </span>
     
 </time>
+<div class="relative z-10 w-full mt-4 overflow-auto rounded-xl">
+</div>
 <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
 <div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
     Read article
@@ -552,7 +574,10 @@ setTimeout(() => {
     </span>
     March 1, 2015
 </time>
-<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+<div class="relative z-10 w-full mt-4 overflow-auto rounded-xl">
+        <img class="object-cover w-full rounded-lg shadow-lg aspect-w-16 aspect-h-9" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*IjHOnf9J_k7-kbel4AXEKA.jpeg">
+</div>
+<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this blog post, we&#39;ll dive into a fascinating application of computer vision to analyze plant growth with OpenCV. We&#39;ll walk through the code and techniques used to measure the growth of plants over time.</p>
 <div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
     Read article
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-4 h-4 ml-1 stroke-current">
@@ -580,7 +605,10 @@ setTimeout(() => {
     </span>
     May 22, 2018
 </time>
-<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+<div class="relative z-10 w-full mt-4 overflow-auto rounded-xl">
+        <img class="object-cover w-full rounded-lg shadow-lg aspect-w-16 aspect-h-9" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*XnISCjeCHef6koxRWiykOg.jpeg">
+</div>
+<p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this blog post, we&#39;ll delve back into into the fascinating world of computer vision and image processing to detect and analyze buds in images. We&#39;ll walk through the code and techniques used to identify and label these buds with OpenCV and skimage.measure.</p>
 <div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
     Read article
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-4 h-4 ml-1 stroke-current">
@@ -608,6 +636,8 @@ setTimeout(() => {
     </span>
     March 1, 2015 dd
 </time>
+<div class="relative z-10 w-full mt-4 overflow-auto rounded-xl">
+</div>
 <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
 <div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
     Read article

@@ -170,6 +170,7 @@
 function startReloadConnection() {
   const evtSource = new EventSource("/_bridgetown/live_reload")
   evtSource.onmessage = event => {
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
     if (event.data == "reloaded!") {
       location.reload()
     } else {
@@ -181,6 +182,23 @@ function startReloadConnection() {
       }
     }
   }
+  evtSource.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
   evtSource.onerror = event => {
     if (evtSource.readyState === 2) {
       // reconnect with new object
@@ -481,9 +499,10 @@ setTimeout(() => {
                             <div class="mt-8 prose dark:prose-invert">
                                 <blockquote>
   <p>This blog was originally published on the <a href="https://medium.com/greenthumbio">GreenThumb IO Medium</a> <a href="https://medium.com/greenthumbio/cannabis-bud-area-5ef7433e6f45">Leaf Area Analysis</a>.</p>
-  <h2 id="intro">Intro</h2>
-  <p>I gleamed my inspiration from <a href="https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/">PyImageSearch.com</a> yet again. I’m basically counting bright green spots, by combining some of the tricks from the last post on <a href="/greenthumb/2018/05/22/greenthumb-leaf-area/">Leaf Area Analysis</a>.</p>
 </blockquote>
+
+<h2 id="intro">Intro</h2>
+<p>I gleamed my inspiration from <a href="https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/">PyImageSearch.com</a> yet again. I’m basically counting bright green spots, by combining some of the tricks from the last post on <a href="/greenthumb/2018/05/22/greenthumb-leaf-area/">Leaf Area Analysis</a>.</p>
 
 <blockquote>
   <p><a href="https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/">Detecting multiple bright spots in an image with Python and OpenCV - PyImageSearch</a></p>
