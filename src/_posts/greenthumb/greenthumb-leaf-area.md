@@ -2,6 +2,8 @@
 layout: post
 published: true
 title: GreenThumb Leaf Area Analysis
+description: In this blog post, we'll dive into a fascinating application of computer vision to analyze plant growth with OpenCV. We'll walk through the code and techniques used to measure the growth of plants over time.
+image_url: https://miro.medium.com/v2/resize:fit:720/format:webp/1*IjHOnf9J_k7-kbel4AXEKA.jpeg
 date: 2018-05-22
 datetime: March 1, 2015
 categories:

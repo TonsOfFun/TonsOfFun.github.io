@@ -12,6 +12,11 @@
     </span>
     <%= @article.data.datetime %>
 </time>
+<div class="relative z-10 w-full mt-4 overflow-auto rounded-xl">
+    <% if @article.data.image_url %>
+        <img class="object-cover w-full rounded-lg shadow-lg aspect-w-16 aspect-h-9" src="<%= @article.data.image_url %>">
+    <% end %>
+</div>
 <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"><%= @article.data.description %></p>
 <div aria-hidden="true" class="relative z-10 flex items-center mt-4 text-sm font-medium text-teal-500">
     Read article
