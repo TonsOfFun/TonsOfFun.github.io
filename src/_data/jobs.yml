@@ -54,13 +54,15 @@ companies:
           - MySQL
           - Redis
           - Sidekiq
-          - WebSockets - ActionCable (AnyCable-Go)
-          - WebRTC'
+          - WebSocket 
+          - ActionCable 
+          - AnyCable-Go
+          - WebRTC
         start: '2018'
         end: '2021'
         url: https://musicaloverture.com
     logo_url: /images/logos/seafoammedia.png
-    website_url: 'https://seafoam.media/tech/'
+    website_url: '/career/sea-foam-media-tech-musicaloverture'
     location: 'Remote'
     description: 'Sea Foam Media & Technology is a consulting agency specializing in providing tech and business guidence for growth stage startups gearing up to raise a new round of funding...'
   - name: 'GreenThumb IO'
@@ -68,49 +70,79 @@ companies:
       - title: 'Founder'
         tags: 
           - Hackathon
+          - GCP
           - Ruby
           - Rails
           - Sidekiq
           - Python
           - OpenCV
-          - Postgres
+          - PostgreSQL
           - PostGIS
           - Redis
           - Raspberry Pi
-          - WebSockets - ActionCable (AnyCable-Go
+          - WebSocket 
+          - ActionCable 
+          - AnyCable-Go
         description: 'Combining smart cameras, AI, and IoT technology to fundamentally transform the cannabis industry from seed to sale.'
         start: '2016'
         end: '2020'
         url: 
     logo_url: /images/logos/greenthumbio.jpeg
-    website_url: '/categories/greenthumb/'
+    website_url: '/career/greenthumb/'
     location: 'Remote'
     description: 'Providing growers and cultivators meaningful data about their crops, pinpointing problems in real time. Analyzing camera data and turns it into actionable insights, digitizing characteristics of the plants into trackable assets.'
   - name: 'Dairy.com (FKA Cainthus acquired by Ever.ag)'
     roles: 
       - title: 'CTO'
+        tags:
+          - AWS
+          - Python
+          - React          - 
+          - OpenCV
+          - GoogleColab
+          - TensorFlow
+          - Flask
+          - MongoDB
+          - PostgreSQL
+          - PostGIS
+          - Redis
+          - Celery
         description: 'Grew global remote team from 1 to 8 engineers, scientists, and designers to deliver cutting-edge agtech products to market (drone analytics for field crops and dairy barn computer vision). Lead tech due diligence to close Series B fundraise with Cargill Animal Nutrition.'
         start: '2017'
         end: '2018'
         url: 
       - title: 'Director of Engineering'
+        tags:
+          - AWS
+          - Python
+          - React
+          - LeafLet.js
+          - OpenCV
+          - Flask
+          - MongoDB
+          - PostgreSQL
+          - PostGIS
+          - Redis
+          - Celery
         description: 'Grew a Series A team to deliver a drone mappping and analytics platform to market and Lead the product design, R&D, engineering, and testing of the Dairy cow computer vision platform.'
         start: '2016'
         end: '2017'  
         url: 
       - title: 'Lead Data Engineer and Platform Architecture Consultant'
         tags: 
+          - Heroku
           - Python
           - React
           - LeafLet.js
           - OpenCV
           - Django
           - MongoDB
-          - Postgres
+          - PostgreSQL
           - PostGIS
           - Redis
           - Celery
           - GDal2Tiles
+          - Spark
         description: 'Worked with a small team to optimize and scale a drone analytics and real-time geo search to close Series A funding'
         start: '2016'
         end: '2016'
@@ -141,7 +173,7 @@ companies:
         end: '2016'
         url: 
     logo_url: /images/logos/zala.png
-    website_url: 'https://tonsof.fun/zala/'
+    website_url: '/career/zala/'
     location: 'Remote'
     description: 'Locals guidebook for quality travel experiences and location based recommendations.'
   - name: 'Momentage'
@@ -153,7 +185,7 @@ companies:
         end: '2016'
         url: 
     logo_url: /images/logos/momentage.png
-    website_url: 'https://tonsof.fun/momentage/'
+    website_url: '/career/momentage/'
     location: 'Remote'
     description: 'Short-form multimedia sharing platform for creatives.'
   - name: 'Banjo'
@@ -165,7 +197,7 @@ companies:
         end: '2014'
         url: https://www.safex.ai/
     logo_url: /images/logos/banjo.webp
-    website_url: 'https://tonsof.fun/banjo/'
+    website_url: '/career/banjo/'
     location: 'San Francisco Bay Area'
     description: 'Banjo, now safeXai wasocation based social events discovery platform powered by advanced signal processing and artificial intielligence'
   - name: 'Focus Testing Services, inc.'
@@ -176,7 +208,7 @@ companies:
         end: '2012'
         url: 
     logo_url: /images/logos/focustesting.png
-    website_url: 'https://tonsof.fun/focus/'
+    website_url: '/career/focus/'
     location: 'San Francisco Bay Area'
     description: 'Certification testing software as a service.'
   - name: 'Computer Assisted Testing Service (CATS) '
@@ -192,6 +224,6 @@ companies:
         end: '2008'
         url: 
     logo_url: /images/logos/cats.png
-    website_url: 'https://tonsof.fun/focus/'
+    website_url: '/career/focus/'
     location: 'San Francisco Bay Area'
     description: 'Computer Assisted Testing Service (CATS) is a full service testing company for licensure, certification, assessment, and educational testing programs. CATS offers end‐to‐end examination services, including fixed and remote computer‐based testing, test development and research, and construction of new test item types for a wide range of professions. More information is available at'

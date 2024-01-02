@@ -8,14 +8,11 @@
 #     url:
 #     website_url:
 development:
-  - name: atom
-    label: Atom
-    description: I used Atom to write code for years.
-    color: "#66595C"
-    experience: Expert
-    years: 
-    url:
-    website_url:
+  label: Development
+  description: |
+    I've been developing software for over a decade. I've used a lot of tools and technologies over the years. 
+    Here are some of the tools I currently use daily.
+  tools:
   - name: visualstudiocode
     label: VSCode
     description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
@@ -29,14 +26,6 @@ development:
     logo_url: /images/icons/skill/solarized.png
     description: I really love the Solarized color sheme. I use it for terminals and editors. If anyone knows how to make VSCode and Terminal/iTerm2 use the OS settings hit me up on twitter.
     color: "#000000"
-    experience: Intermediate
-    years: 
-    url:
-    website_url:
-  - name: sublimetext
-    label: Sublime Text
-    description: I used Text Mate and Sublime Text way back in the day, but haven't used recent versions.
-    color: "#FF9800"
     experience: Intermediate
     years: 
     url:
@@ -57,6 +46,24 @@ development:
     years: 
     url:
     website_url:
+  - name: sublimetext
+    label: Sublime Text
+    description: I used Text Mate and Sublime Text way back in the day, but haven't used recent versions.
+    color: "#FF9800"
+    experience: Intermediate
+    hidden: true
+    years: 
+    url:
+    website_url:
+  - name: atom
+    hidden: true
+    label: Atom
+    description: I used Atom to write code for years.
+    color: "#66595C"
+    experience: Expert
+    years: 
+    url:
+    website_url:
   - name: iterm2
     label: iTerm2
     description: Sometimes iTerm2 is great for special usecases like typing, or hitting return, on multiple tabs at once.
@@ -74,6 +81,9 @@ development:
     url:
     website_url:
 collaboration: 
+  label: Collaboration
+  description:
+  tools:
   - name: markdown
     label: Markdown
     description: I love writing content with markdown. Most of this website is markdown files or markdown in YAML files
@@ -124,6 +134,9 @@ collaboration:
     url:
     website_url:
 deploy:
+  label: Deployment
+  description:
+  tools:
   - name: terraform
     label: Terraform
     description: |
@@ -156,6 +169,9 @@ deploy:
     url:
     website_url:
 design:
+  label: Design
+  description:
+  tools:
   - name: figma
     label: Figma
     description: I enjoy the async collaborative approach design, feedback, and interating with Figma on product design.
@@ -181,6 +197,9 @@ design:
     url:
     website_url:
 datastore:
+  label: Data Stores
+  description:
+  tools:
   - name: redis
     label: Redis
     description: |
@@ -202,6 +221,9 @@ datastore:
     url:
     website_url:
 background:
+  label: Background Jobs
+  description:
+  tools:
   - name: celery
     label: Celery
     description: | 
@@ -219,7 +241,7 @@ background:
     color: "#B1003E"
     experience:
     years: 
-    logo_url: 
+    logo_url: /images/icons/skill/sidekiq.svg
     url:
     website_url:
   - name: faktory
@@ -228,10 +250,13 @@ background:
     color: "#EAC248"
     experience:
     years: 
-    logo_url: 
+    logo_url: /images/icons/skill/faktory.svg
     url:
     website_url:
 payment:
+  label: Payment Integrations
+  description:
+  tools:
   - name: stripe
     label: Stripe
     description: I've built out payments for a handful of products using Stripe, including subscribptions.
@@ -242,6 +267,9 @@ payment:
     url:
     website_url:
 messaging:
+  label: Messaging Integrations
+  description:
+  tools:
   - name: twilio
     label: Twilio
     description: I've used Twilio for sending email, chat, video, and voice integrations.
@@ -302,6 +330,19 @@ messaging:
     url:
     website_url:
 ai:
+  label: Artificial Intelligence
+  description: Artificial Intelligence > Machine Learning > Deep Learning 
+  tools:
+  - name: onnx
+    label: ONNX Runtime
+    description: |
+      I've used ONNX Runtime for deploying computer vision models to edge compute devices using CUDA and CoreML Execution Providers. 
+      I've also used ONNX Runtime for multitarget inference with multiple models loaded on CPU, GPU, and Edge TPU devices.
+    color: "#005CED"
+    experience:
+    years: 
+    url:
+    website_url:
   - name: pytorch
     label: PyTorch
     description: I've used PyTorch for training and deploying neural networks, mostly for computer vision.
@@ -326,7 +367,10 @@ ai:
     years: 
     url:
     website_url:
-language:
+languages:
+  label: Languages
+  description: Programming Languages
+  tools:
   - name: ruby
     label: Ruby
     description: I've been using Ruby for over a decade. I still learn new things and find joy writing Ruby.
@@ -335,11 +379,11 @@ language:
     years: 
     url:
     website_url:
-  - name: php
-    label: PHP
-    description: I have done audits for and deployed a few applications in PHP, but it's not my daily driver.
-    color: "#777BB4"
-    experience: Intermediate
+  - name: python
+    label: Python
+    description: I mostly use Python for Computer Vision and other Machine Learning tasks.
+    color: "#3776AB"
+    experience: Advanced
     years: 
     url:
     website_url:
@@ -359,11 +403,11 @@ language:
     years: 
     url:
     website_url:
-  - name: python
-    label: Python
-    description: I mostly use Python for Computer Vision and other Machine Learning tasks.
-    color: "#3776AB"
-    experience: Advanced
+  - name: php
+    label: PHP
+    description: I have done audits for and deployed a few applications in PHP, but it's not my daily driver.
+    color: "#777BB4"
+    experience: Intermediate
     years: 
     url:
     website_url:
@@ -375,8 +419,8 @@ language:
     years: 
     url:
     website_url:
-  - name: rust
-    label: Rust
+  - name: elixir
+    label: Elixir
     description: Elixir and the Pheonix framework have had my interest for a while, but I've limited production experience.
     color: "#4B275F"
     experience: Intermediate
@@ -384,6 +428,9 @@ language:
     url:
     website_url:
 frontend:
+  label: Frontend
+  description: Frontend frameworks
+  tools:
   - name: electron
     label: Electron
     description: I've used electron to deliver react apps to desktop
@@ -434,7 +481,13 @@ frontend:
     years: 
     url:
     website_url:
+  - name: postcss
+    label: PostCSS
+    description: PostCSS is great for processing CSS with plugins like Tailwind CSS and Autoprefixer.
 web:
+  label: Web
+  description: Web Application Frameworks
+  tools:
   - name: rubyonrails
     label: Rails
     description: | 
@@ -527,6 +580,9 @@ web:
     url:
     website_url:
 database:
+  label: Databases
+  description:
+  tools:
   - name: postgresql
     label: PostgreSQL
     description: I've built dozens of web applications backed by PostgreSQL databases. The first production service I deployed with postgres was in 2013 using the PostGIS extention to leverage powerful geo indexing and querying to deliver a high throughput (tens of millions of requests per day) reverse geocoding service for Banjo.
@@ -564,7 +620,10 @@ database:
     years: 
     url:
     website_url:
-map:
+mapping:
+  label: Mapping - GIS
+  description: Geo Information Systems and mapping tools for location based applications
+  tools:
   - name: googlemaps
     label: Google Maps
     description: I've used Google Maps for a number of projects. PINSTOP was one of the more comprehensive mapping projects built with a Google Map interface that supported place search with eh Google Places API along with custom pindrops and place details.
@@ -601,7 +660,10 @@ map:
     years: 
     url:
     website_url:
-vision:
+meida:
+  label: Media processing
+  description: Media processing tools for manipulating and analyzing audio, video, and image data
+  tools:
   - name: ffmpeg
     label: FFmpeg
     description: I've developed a few computer vision pipelines with FFMPEG decoding inputs that splits into two outputs for computer vision processing and encoding outputs for demos.
@@ -612,13 +674,17 @@ vision:
     website_url:
   - name: opencv
     label: OpenCV
-    description: I've been using OpenCV for a little under a decade. I have built a number of products for startups and even have a few OSS projects built with OpenCV.
+    description: |
+      OpenCV is a lower level library for video/image manipulation and computer vision inference using ONNX, CuDNN, a I've been using OpenCV for a little under a decade. I have built a number of Computer Visions Applications as products for startups and even have a few OSS projects built with OpenCV.
     color: "#5C3EE8"
     experience:
     years: 
     url:
     website_url:
 cloud:
+  label: Cloud hosting providers
+  description: I've used a number of cloud hosting providers over the years.
+  tools:
   - name: amazonaws
     label: Amazon AWS
     description: I've managed classic EC2 instances, but typically will automate a VPC with ASG policies for ECS instances.
@@ -660,6 +726,9 @@ cloud:
     url:
     website_url:
 hardware:
+  label: Hardware
+  description: I've used a number of hardware devices for prototyping and production deployments.
+  tools:
   - name: arduino
     label: Arduino
     description: I've been tinkering with Arduinos building sensors with ESPs or that talk to Raspberry Pis over serial.
@@ -668,14 +737,26 @@ hardware:
     years:
     url:
     website_url: 
+  - name: intel
+    label: Myriad X - OpenVino
+    description: |
+      Movidus acquired by Intel - I've used the Myriad VPU for computer vision inference on edge compute devices like the Raspberry Pi and 
   - name: nvidia
     label: NVIDIA
-    description: I have nearly a decade of experience delivering CUDA power products to market.
+    description: |
+      I have nearly a decade of experience delivering CUDA power products to market with experience in CUDA, cuDNN, TensorRT, and more. 
+      I've used NVIDIA GPUs for training and inference with PyTorch, TensorFlow, ONNX Runtime, and OpenCV. I also have experience developing for the NVIDIA Jetson Nano device line.
     color: "#76B900"
     experience:
     years:
     url:
     website_url: 
+  - name: apples
+    label: Apple Silicon
+    description: |
+      I've been able to leverage the Apple Silicon architecture using CoreMLTools in python to leverage the Apple Neural Engine for on-device inference. 
+      I've also used OpenCV and NumPy with Silicon support for GPU computations.
+    color:
   - name: raspberrypi
     label: Raspberry Pi
     description: |
@@ -687,6 +768,9 @@ hardware:
     url:
     website_url: 
 os:
+  label: Operating Systems
+  description:  I've used a number of operating systems over the years to develop and deploy software.
+  tools:
   - name: windows95
     label: Windows 95
     description: My first operating system as a kid. We soon upgraded to Windows 98 and Windows 98 Plus. Good times.

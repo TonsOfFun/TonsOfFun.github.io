@@ -1,25 +1,26 @@
 ---
 layout: post
 published: false
-title:  Scaling Rails with Puma and Sidekiq on Heroku
+title: Scaling Rails with Puma and Sidekiq on Heroku
 date: 2022-09-11
 datetime: September 11, 2022
-description: Born and raised on the peninsula in the San Francisco Bay Area, I was fortunate to be exposed to both business and technology at a very young age. Video games were a huge influence on my interest in computers and programming. I used to play games like DOOM, Quake, Hexen, and Duke Nukem 3D at my dad's office with the tech support crew at the end of the work day. 
-categories: 
-    - deployment
+description: Scaling Rails with Puma and Sidekiq on Heroku
+categories:
+  - deployment
 tags:
-    - performance
-    - scaling
-    - heroku
-    - concurrency
-    - ruby
-    - rails
+  - Rails
+  - Ruby
+  - concurrency
+  - heroku
+  - performance
+  - scaling
 ---
 
 ## Heroku Postgres
 ### Current Provision IOPs
 https://devcenter.heroku.com/articles/heroku-postgres-production-tier-technical-characterization#performance-characteristics
 2000 read/write operations per second. Even with more than 500 connections we cannot exceed the PIOPS or CPU load of our current DB tier. We need to continually work to improve query execution time (increase IOPS throughout by decreasing IO time) and query count (fewer IOPS) per web/job requests/transactions.
+https://devcenter.heroku.com/articles/concurrency-and-database-connections
 ### Connection Limit
 500 connections; this is the maximum for all tiers of Heroku Postgres
 ### Dyno Scaling Limitations

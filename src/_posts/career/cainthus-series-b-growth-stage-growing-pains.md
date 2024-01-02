@@ -5,14 +5,14 @@ title: Cainthus Series B - Growth stage growing pains
 date: 2017-08-01
 datetime: August 1, 2017
 categories:
-    - career
+  - career
 tags:
-    - startups
-    - python
-    - celery
-    - django
-    - mongodb
-    - redis
+  - Python
+  - Starups
+  - celery
+  - django
+  - mongodb
+  - redis
 ---
 When Cainthus pivoted to dairy cow monitoring we had a new set of challenges to achieve our goals to raise our Series B funding. 
 With our Series A funds in the bank, we had an opportunity to grow the team to meet the occasion. 
@@ -33,7 +33,7 @@ MLOps is an extension of DevOps requiring an understanding of the ML/DL framewor
 ## From data scientist to product engineer
 Sometimes people's backgrounds might be different than their current interests or career goals. As a data scientist one might typically be focused more on experimenting, evaluating, and innovating new algorithms and models. Just cause you have a PhD doesn't mean you have to work in R&D and with the right passion and motivation one is capable of becoming a great product engineer.
 ### Phd with an interest in egineering production software
-I had an experience leading the founding data science to becoming product engineering, and eventually my Director of Engineering. They had a nack for software architecture and an interest in the unique DevOps challenges we had to overcome in order to deploy to a specialized hybrid cloud-edge processing pipeline for realtime computer vision. We had worked together to build the drone application with a cloud backend using Celery background jobs to preprocess GeoJPEGs to GeoTIFFs
+I had an experience leading the founding data sciencist to becoming our lead product engineer, and eventually my Director of Engineering. They had a nack for software architecture and an interest in the unique DevOps challenges we had to overcome in order to deploy to a specialized hybrid cloud-edge processing pipeline for realtime computer vision. We had worked together to build the drone application with a cloud backend using Celery background jobs to preprocess GeoJPEGs to GeoTIFFs
 ### Selecting directors to scale the org
 ### R&D, Product Science, and Product Engineering teams formed
 ### Processes and workflows for successful AI orgs

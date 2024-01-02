@@ -5,7 +5,10 @@ module.exports = {
     './frontend/javascript/**/*.js',
   ],
   darkMode: 'class',
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
   theme: {
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
@@ -85,7 +88,6 @@ module.exports = {
           '--tw-prose-pre-border': 'transparent',
           '--tw-prose-th-borders': theme('colors.zinc.200'),
           '--tw-prose-td-borders': theme('colors.zinc.100'),
-
           '--tw-prose-invert-body': theme('colors.zinc.400'),
           '--tw-prose-invert-headings': theme('colors.zinc.200'),
           '--tw-prose-invert-links': theme('colors.teal.400'),

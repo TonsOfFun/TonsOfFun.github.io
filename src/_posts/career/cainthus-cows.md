@@ -5,15 +5,15 @@ title: Cainthus Cows - Real-time Computer Vision for Animal Health
 date: 2017-04-01
 datetime: April 1, 2017
 categories:
-    - career
+  - career
 tags:
-    - startups
-    - python
-    - celery
-    - django
-    - mongodb
-    - redis
-    - reactjs
+  - Python
+  - Starups
+  - celery
+  - django
+  - mongodb
+  - reactjs
+  - redis
 ---
 
 https://www.onecup.ai/

@@ -9,6 +9,17 @@ opensource:
     github_url: https://github.com/tonsoffun/
     instagram_url: https://instagram.com/tonsoffun111
     twitter_url: https://twitter.com/tonsoffun111
+  - name: VisorML
+    label: VisorCV
+    description: |
+      VisorML OSS like VisorCV the computer vision application framework55.
+    website_url: https://visorml.com
+    url: https://github.com/visorml
+    domain: github.com
+    logo_url: /images/logos/seafoammedia.png
+    github_url: https://github.com/visorml
+    instagram_url: https://instagram.com/visorml
+    twitter_url: https://twitter.com/visorml
   - name: GreenThumb IO
     label: GreenThumb IO
     description: After winning a hackathon, I built GreenThumb.io to help agronomists and farmers optimize their costs to yields throughout harvest cycles. Developed computer vision system to monitor plant growth. Integrated automated fertigation systems using Arduinos and Raspberry Pis to apply and track fertilizer based on visual inputs. I have shared my work as an open source project.
@@ -19,26 +30,16 @@ opensource:
     github_url: https://github.com/greenthumbio
     instagram_url: https://instagram.com/greenthumbio
     twitter_url: https://twitter.com/greenthumbdotio
-  - name: VisorML
-    label: VisorCV
-    description: 
-    website_url: https://visorml.com
-    url: https://github.com/visorml
-    domain: github.com
-    logo_url: /images/logos/seafoammedia.png
-    github_url: https://github.com/visorml
-    instagram_url: https://instagram.com/greenthumbio
-    twitter_url: https://twitter.com/asyncsaves
-  - name: PetsCam IO
-    label: PetsCam IO
-    description: 
-    website_url: https://petscam.io
-    domain: github.com
-    url: https://github.com/petscamio
-    logo_url: /images/logos/greenthumbio.jpeg
-    github_url: https://github.com/petscamio
-    instagram_url: https://instagram.com/petscamio
-    twitter_url: https://twitter.com/petscamio
+  # - name: PetsCam IO
+  #   label: PetsCam IO
+  #   description: 
+  #   website_url: https://petscam.io
+  #   domain: github.com
+  #   url: https://github.com/petscamio
+  #   logo_url: /images/logos/greenthumbio.jpeg
+  #   github_url: https://github.com/petscamio
+  #   instagram_url: https://instagram.com/petscamio
+  #   twitter_url: https://twitter.com/petscamio
 volunteer:
   - name: GhamPower
     label: GhamPower

@@ -4,16 +4,15 @@ published: false
 title: Silicon Valley Software Group
 date: 2021-11-01
 datetime: November 1, 2021
-categories:
-    career
+categories: career
 tags:
-    - leadership
-    - advisorship
-    - business
-    - startups
-    - acquisition
-    - invesment
-    - dilligence
+  - Starups
+  - acquisition
+  - advisorship
+  - business
+  - dilligence
+  - invesment
+  - leadership
 ---
 Introduction:
 I'm a CTO consultant at Silicon Valley Software Group. In this role, I lead tech due diligence for $100M+ venture capital and private equity fundraising rounds and acquisitions. I audit businesses, teams, processes, and technology. I provide comprehensive reports to stakeholders to assess and mitigate risks while managing technical expectations. I also advise and lead on the integration of business and products post-acquisition.

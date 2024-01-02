@@ -10,6 +10,7 @@
     "alpine.js"
   ],
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
     "cssnano": "^5.1.13",
     "esbuild": "^0.14.39",
     "glob": "^8.0.1",

@@ -4,14 +4,13 @@ published: false
 title: PINSTOP JP
 date: 2016-12-01
 datetime: December 1, 2016
-categories:
-    career
+categories: career
 tags:
-    - startups
-    - ruby
-    - rails
-    - sidekiq
-    - mongodb
+  - Rails
+  - Ruby
+  - Starups
+  - mongodb
+  - sidekiq
 ---
 
 Pinstop is a startup that develops custom itinerary mapping platforms for concierge teams at luxury hotels. Our platform helps concierges create personalized itineraries for their guests based on their interests and preferences. We also developed a recommendation engine for travel experiences, which helps guests discover new and exciting things to do in their destination.

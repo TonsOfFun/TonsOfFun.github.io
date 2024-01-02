@@ -17,11 +17,7 @@ layout: default
                                     <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                                     <span class="ml-3"><%= resource.data.datetime %></span>
                                 </time>
-                                <div>
-                                    <% resource.data.tags.each do |tag, color| %>
-                                        <%= link_to(tag, "/tags/#{tag}", {class: "inline-flex items-center px-2 py-1 text-xs font-medium #{site.data.tags['default'] } rounded-full"}) %>
-                                    <% end %> 
-                                </div>
+                                <%= render TagList.new(tags: resource.data.tags, tag_styles: site.data.tag_styles) %>
                             </header>
                             
                             <div class="mt-8 prose dark:prose-invert">

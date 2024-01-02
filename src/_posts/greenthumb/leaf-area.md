@@ -6,13 +6,15 @@ description: In this blog post, we'll dive into a fascinating application of com
 image_url: https://miro.medium.com/v2/resize:fit:720/format:webp/1*IjHOnf9J_k7-kbel4AXEKA.jpeg
 date: 2018-05-22
 datetime: March 1, 2015
-categories:
-    greenthumb
+categories: greenthumb
 tags:
-- python
-- opencv
-- matplotlib
-- greenthumb
+  - OpenCV
+  - Python
+  - greenthumb 
+  - GoogleColab
+  - Docker
+  - iPythonNotebook
+  - matplotlib
 ---
 > This blog was originally published on [Medium](https://medium.com/greenthumbio/cannabis-leaf-area-analysis-d6449dbda07f).
 

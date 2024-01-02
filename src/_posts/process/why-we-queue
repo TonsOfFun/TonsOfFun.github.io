@@ -1,0 +1,78 @@
+---
+layout: post
+published: false
+title: Why we queue
+date: 2022-05-01
+datetime: May 1, 2022
+categories: scaling
+tags:
+  - speaking
+  - presenting
+  - queuing
+  - scaling
+---
+
+# Scaling systems requires queues
+Queuing enables us to scale systems in life and in sfotware. Diving deep into the concepts of gueuing theory that enables us to scale our systems from human interactions to software systems and infrastructure architectures.
+
+## What is a queue?
+Queues provide a mechanism which allows us to scale systems. The simplest example of queues in line at store checkout registers with separate customer service registers or security lines at an airport with jobs designated for each step of a workflow. Each of these queues starts as a mass of traffic that is arraged in order of arrival then divided between service stations designated for their purpose. 
+
+The queue is data structure that allows us to store data in a first in first out (FIFO) manner. This means that the first item that is added to the queue is the first item that is removed from the queue.
+
+# How do queues serve us?
+By providing this interface to take a mass of traffic and divide it into smaller chunks that can be processed concurrently or in parallel. This allows us to scale our systems to handle more traffic than a single service station could handle. A grocery store with one register can only handle so many customers per hour. By adding more registers we can handle more customers per hour. This is the same for software systems. By adding more servers we can handle more requests per hour.
+
+## Applied queuing concepts
+### Little's Law: Offered traffic
+Another queuing system to consider in analogy is a restaurant. The offered traffic is the number of customers that enter the restaurant and their orders taken by front of house servers are turned into tickets that are processed by the back of house cooking staff. If more customers arrive than is staffed for then the offered traffic to the establishment is greater than the capacity of the establishment. This results in a queue of customers waiting to be seated and a queue of tickets waiting to be served. This is a measure of the demand for the service.
+
+[Little's Law](https://en.wikipedia.org/wiki/Little%27s_law) is a theorem that states that the average number of items in a queuing system is equal to the average rate at which items arrive multiplied by the average time that an item spends in the system. This is a measure of the number of items in the system that allows us to avoid situations where the system is over utilized or under utilized.
+#### Service time * rate of jobs
+Service time is the amount of time it takes to process a job. The rate of jobs is the number of jobs that are processed per unit of time. This is a measure of the capacity of the service.
+### USE Method - Utilization, Saturation, Errors
+The USE Method was coined by Brendan Gregg as a methodology for analyzing the performance of a system. It breaks down the system into three components: utilization (U), saturation (S), and errors (E). This allows us to analyze the performance of a system and identify bottlenecks.
+#### Utilization
+Utilization represents the amount of services or resources (CPU, RAM, IO) that are being used. This is a measure of how busy the system is. If the system is not busy then it is not being utilized where in contrast if the system is busy then it is being utilized. This is a measure of how busy the system is that allows us to avoid situations where the system is over utilized or under utilized.
+#### Saturation
+Saturation is a measure that indicates the maximum ultilization of a system service or resource that usually will coinside with queuing for that resource. We want to balance our utilization and saturation to avoid over utilization and under utilization. Over utilization will result in queuing or errors where as under utilization will result in uncessesary cost of hosting services.
+#### Errors
+Errors are a measure of the number of errors that are occuring in the system an can be magnified by the time spent on each erorr. This is a measure of the quality and stability of the system. We want to minimize the number of errors that are occuring in the system. This is a measure of the quality of the system that allows us to avoid situations where the system is failing to meet the needs of the users.
+### Amdhal's Law: Concurrency in term of parallelism
+[Amdhal's Law](https://en.wikipedia) is a theorem that states that the maximum speedup of a system is limited by the amount of work that can be done in parallel. This is a measure of the amount of work that can be done in parallel that allows us to avoid situations where the system is over utilized or under utilized.
+
+#### Parallelism vs Concurrency
+Parallelism is the ability to do more work by doing more things at the same time. The analogy is rather straight forward when considering opening an additional checkout register should double the checkout capcity of the store. It is especially significant insight to consider when deciding to scale the concurrency of a system. 
+
+Concurrency is the ability to do more work by doing things as resources become available. You could think about a restaurant where servers take order that are usually expected to wait on the kitchen to prepare the food. Drinks are typically serviced as the server is able to prcoess them, water as the default, soft drinks, and then drinks that require addtional preparation. The queues apply to the back of the house as well. The cooks preparing the food in the order that the tickets are received can process some parts of jobs at the same time whether that is the preparation or in executing a dish on the stove burners. 
+
+#### Calculate value concurrency in units of paralellism
+1 / (1 - p) where p is the percentage of the job that can be done in parallel. This is a measure of the amount of work that can be done in parallel that allows us to avoid situations where the system is over utilized or under utilized.
+
+#### Consider the cost of concurrency
+
+### Web application architecture
+Web applications are typically scaled using a combination of web servers, load balancers, and application servers. 
+
+#### Web servers, load balancers, and application servers
+Web servers are responsible for serving static assets and routing requests to the application servers and subsequent response content. 
+
+Routing from the web server to the application servers is typically handled by a load balancer. The load balancer can be configured to route requests to the application servers in a variety of ways. The most common is round robin where each request is routed to the next application server in the list. 
+
+Application servers receive requests from the load balancer and process the requests in the order they were delivered in a First In First Out (FIFO) queue. This is where the application logic is executed and the response is generated. The response is then returned to the web server which then returns the response to the client. If the offered traffic exceeds the capacity of the application servers then the application servers will become saturated and the requests will queue up. 
+
+### Rails applications
+Using nginx as a web server with Puma as an application server has become the standard for Rails application deployments. 
+
+#### Puma web application server
+Puma is a threaded application server that is designed to handle multiple requests concurrently. Puma is configured with a number of threads per process with `RAILS_MAX_THREADS` and a number of processes with `WEB_CONCURRENCY` environment variable.
+
+Each process run with `puma -C config/puma.rb` will create the specified number of processes and threads.
+
+Puma pods should have between 4 and 32 child processes `WEB_CONCURRENCY` and usually no more than 5 threads per process `RAILS_MAX_THREADS`. It is important to consider the memory requirements of each process and thread when configuring the number of processes and threads as well as the value of concurrency in terms of parallelism given the IO bound nature the service.
+
+#### Sidekiq background jobs processor
+Sidekiq is a threaded background job processor that is designed to handle multiple jobs concurrently. Sidekiq is configured with a number of threads per process and a number of processes. The number of threads per process is configured with the `RAILS_MAX_THREADS` environment variable. 
+
+Each `sidekiq -C config/sidekiq.yml` process
+

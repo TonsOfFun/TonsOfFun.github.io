@@ -1,0 +1,42 @@
+grey: "inline-flex items-center rounded-full bg-gray-400/10 px-1.5 py-0.5 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+orange: "inline-flex items-center rounded-full bg-orange-500/10 px-1.5 py-0.5 text-xs font-medium text-orange-600 ring-1 ring-inset ring-orange-500/10"
+aws: "inline-flex items-center rounded-full bg-orange-500/10 px-1.5 py-0.5 text-xs font-medium text-orange-600 ring-1 ring-inset ring-orange-500/10"
+slate: "inline-flex items-center rounded-full bg-slate-500/10 px-1.5 py-0.5 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10"
+red: inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10
+ruby: "inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+rails: "inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+redis: "inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+actioncable: "inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+anycalble: "inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+sidekiq: "inline-flex items-center rounded-full bg-red-500/10 px-1.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+yellow: "inline-flex items-center rounded-full bg-yellow-500/10 px-1.5 py-0.5 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+faktory: "inline-flex items-center rounded-full bg-yellow-500/10 px-1.5 py-0.5 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+pytorch: "inline-flex items-center rounded-full bg-yellow-500/10 px-1.5 py-0.5 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+tensorflow: "inline-flex items-center rounded-full bg-yellow-500/10 px-1.5 py-0.5 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+green: "inline-flex items-center rounded-full bg-green-500/10 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+celery: "inline-flex items-center rounded-full bg-green-500/10 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+django: "inline-flex items-center rounded-full bg-green-500/10 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+mongodb: "inline-flex items-center rounded-full bg-green-500/10 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+blue: "inline-flex items-center rounded-full bg-blue-400/10 px-1.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+gcp: "inline-flex items-center rounded-full bg-blue-400/10 px-1.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+postgresql: "inline-flex items-center rounded-full bg-blue-400/10 px-1.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+python: "inline-flex items-center rounded-full bg-blue-400/10 px-1.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+teal: "inline-flex items-center rounded-full bg-teal-400/10 px-1.5 py-0.5 text-xs font-medium text-teal-700 ring-1 ring-inset ring-teal-700/10"
+default: "inline-flex items-center rounded-full bg-gray-400/10 px-1.5 py-0.5 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+indigo: "inline-flex items-center rounded-full bg-indigo-500/10 px-1.5 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10"
+mysql: "inline-flex items-center rounded-full bg-indigo-500/10 px-1.5 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10"
+websockets: "inline-flex items-center rounded-full bg-indigo-500/10 px-1.5 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10"
+webrtc: "inline-flex items-center rounded-full bg-indigo-50 px-1.5 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10"
+purple: "inline-flex items-center rounded-full bg-purple-50 px-1.5 py-0.5 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10"
+heroku: "inline-flex items-center rounded-full bg-purple-50 px-1.5 py-0.5 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10"
+pink: "inline-flex items-center rounded-full bg-pink-50 px-1.5 py-0.5 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10"
+
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-400 rounded-md bg-gray-400/10 ring-1 ring-inset ring-gray-400/20">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-red-400 rounded-md bg-red-400/10 ring-1 ring-inset ring-red-400/20">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-yellow-500 rounded-md bg-yellow-400/10 ring-1 ring-inset ring-yellow-400/20">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-400 rounded-md bg-green-500/10 ring-1 ring-inset ring-green-500/20">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-400 rounded-md bg-blue-400/10 ring-1 ring-inset ring-blue-400/30">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-indigo-400 rounded-md bg-indigo-400/10 ring-1 ring-inset ring-indigo-400/30">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-400 rounded-md bg-purple-400/10 ring-1 ring-inset ring-purple-400/30">Badge</span>
+# <span class="inline-flex items-center px-2 py-1 text-xs font-medium text-pink-400 rounded-md bg-pink-400/10 ring-1 ring-inset ring-pink-400/20">Badge</span>
+

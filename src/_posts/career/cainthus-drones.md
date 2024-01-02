@@ -5,21 +5,21 @@ title: Cainthus Drone Mapping and Analytics
 date: 2016-03-01
 datetime: March 1, 2016
 categories:
-    - career
+  - career
 tags:
-    - agtech
-    - startups
-    - python
-    - celery
-    - flask
-    - django
-    - mongodb
-    - reactjs
-    - redis
-    - leaflet
-    - gdal2tiles
-    - gdal
-    - gis
+  - Python
+  - Starups
+  - agtech
+  - celery
+  - django
+  - flask
+  - gdal
+  - gdal2tiles
+  - gis
+  - leaflet
+  - mongodb
+  - reactjs
+  - redis
 ---
 
 ## Early days of AgTech

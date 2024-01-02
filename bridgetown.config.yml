@@ -31,6 +31,8 @@ cloudinary:
     large: "w_1800,c_limit,q_80"
     xlarge: "w_2048,c_limit,q_75"
 collections:
+  posts:
+    permalink: simple
   reverse_ordered:
     output: true
     sort_by: order

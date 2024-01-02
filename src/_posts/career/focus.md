@@ -5,15 +5,15 @@ title: Focus Testing Services, inc - Father & Son Startup
 date: 2010-01-01
 datetime: January 1, 2010
 categories:
-    - career
+  - career
 tags:
-    - startups
-    - ruby
-    - rails
-    - php
-    - cakephp
-    - flash
-    - flex
+  - PHP
+  - Rails
+  - Ruby
+  - Starups
+  - cakephp
+  - flash
+  - flex
 ---
 
 In 2010 after losing our house and moving to a new city my dad and I set out to change our fortune. Founding Focus Testing Services we planned to establish our new business as a third option in the space for providing certificaiton exams to individuals seeking FAA credentials as pilots, mechanics, instructors, and more. This was my first and most personal startup experience.

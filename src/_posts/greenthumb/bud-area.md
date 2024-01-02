@@ -6,18 +6,20 @@ description: In this blog post, we'll delve back into into the fascinating world
 image_url: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*XnISCjeCHef6koxRWiykOg.jpeg
 date: 2018-05-22
 datetime: May 22, 2018
-categories:
-    greenthumb
+categories: greenthumb
 tags:
-- python
-- opencv
-- matplotlib
-- greenthumb
+  - OpenCV
+  - Python
+  - greenthumb
+  - GoogleColab
+  - Docker
+  - iPythonNotebook
+  - matplotlib
 ---
 > This blog was originally published on the [GreenThumb IO Medium](https://medium.com/greenthumbio) [Leaf Area Analysis](https://medium.com/greenthumbio/cannabis-bud-area-5ef7433e6f45).
 
 ## Intro
-I gleamed my inspiration from [PyImageSearch.com](https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/) yet again. I'm basically counting bright green spots, by combining some of the tricks from the last post on <%= link_to('Leaf Area Analysis', '_posts/greenthumb/greenthumb-leaf-area.md') %>.
+I gleamed my inspiration from [PyImageSearch.com](https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/) yet again. I'm basically counting bright green spots, by combining some of the tricks from the last post on [Leaf Area Analysis](/greenthumb/leaf-area).
 
 
 > [Detecting multiple bright spots in an image with Python and OpenCV - PyImageSearch](https://www.pyimagesearch.com/2016/10/31/detecting-multiple-bright-spots-in-an-image-with-python-and-opencv/)

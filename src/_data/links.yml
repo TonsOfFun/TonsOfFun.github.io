@@ -2,21 +2,19 @@ navbar:
   - title: Home
     url: /
   - title: About
-    url: /about/
+    url: /about
   - title: Blog
-    url: /blog/
+    url: /blog
   - title: Career
     url: /career/
-  - title: Consulting
-    url: /consulting/
   - title: Life
-    url: /life/
+    url: /life
   - title: Projects
-    url: /projects/
+    url: /projects
   - title: Skills
-    url: /skills/
+    url: /skills
   - title: Speaking
-    url: /speaking/
+    url: /speaking
 footer:
   - title: Home
     url: /

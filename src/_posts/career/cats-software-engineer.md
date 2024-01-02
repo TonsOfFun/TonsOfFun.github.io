@@ -5,12 +5,12 @@ title: CATS - Tech Support
 date: 2008-05-01
 datetime: May 1, 2008
 categories:
-    - career
+  - career
 tags:
-    - windows
-    - support
-    - java
-    - ruby
+  - Ruby
+  - java
+  - support
+  - windows
 ---
 
 

@@ -5,13 +5,13 @@ title: CATS - Tech Support
 date: 2005-06-01
 datetime: June 1, 2005
 categories:
-    - career
+  - career
 tags:
-    - windows
-    - support
-    - java
-    - sqlserver
-    - ruby
+  - Ruby
+  - java
+  - sqlserver
+  - support
+  - windows
 ---
 
 ## Early in my career

@@ -3,21 +3,20 @@ layout: post
 published: true
 title: GreenThumb IO
 date: 2015-03-01
-datetime: March 1, 2015 dd
-categories:
-    career
+datetime: March 1, 2015
+categories: career
 tags:
-- startups
-- hackathons
-- ruby-on-rails
-- python
-- actioncable
-- postgis
-- raspberrypi
-- websockets
-- postgres
-- opencv
-- sidekiq
+  - ActionCable
+  - OpenCV
+  - PostGIS
+  - PostgreSQL
+  - Python
+  - Starups
+  - WebSockets
+  - hackathons
+  - raspberrypi
+  - ruby-on-rails
+  - sidekiq
 ---
 
 ## Intro to AgTech through a series of hacakthons
@@ -27,7 +26,7 @@ I founded GreenThumb.io after participating in a series of hackathons called App
 Initially GreenThumb IO was designed in collaboration with agronomists to track records of consumables used by storing details in a geo-spatial index. This provided agronomists and farmers with location based feeds of notes and accumulated fertilizer and pestiside applications to ensure targets were met, tracked, and archived for reference.
 
 ### Cannabis computer vision application
-GreenThumb became a computer vision product that was purpose built for monitoring cannabis plant health through [leaf area](leaf area) and [bud area](bud area) analysis. 
+GreenThumb became a computer vision product that was purpose built for monitoring cannabis plant health through [leaf area](/greenthumb/leaf-area) and [bud area](/greenthumb/bud-area/) analysis. 
 
 ![GreenThumb IO](https://res.cloudinary.com/tonsoffun/image/upload/v1697299678/greenthumb-graph_pc5wfd.gif)
 

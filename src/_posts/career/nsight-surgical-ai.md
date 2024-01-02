@@ -4,19 +4,21 @@ published: false
 title: nSight Surgical AI
 date: 2021-12-01
 datetime: December 1, 2021
+permalink: simple
+slug: nsight-surgical-ai
 categories:
-    - career
+  - career
 tags:
-    - startups
-    - ruby
-    - rails
-    - postgres
-    - python
-    - faktory
-    - redis
-    - opencv
-    - pytorch
-    - tensorflow
+  - OpenCV
+  - PostgreSQL
+  - PyTorch
+  - Python
+  - Rails
+  - Ruby
+  - Starups
+  - TensorFlow
+  - faktory
+  - redis
 ---
 
 ## Developing AI for Healthcare

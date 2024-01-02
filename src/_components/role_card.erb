@@ -32,11 +32,4 @@
         </svg>
     </div>
 </article>
-<div class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-    <% tags = ['Python', 'Faktory', 'Ruby', 'Rails', 'PostgreSQL', 'Redis', 'OpenCV', 'PyTorch', 'CUDA', 'Docker', 'React', 'ONNXRuntime'] %>
-    <% for tag in tags %>
-        <%= tag %>
-        <%= '•' unless tags[-1] == tag %>
-    <% end %>
-
-</div>
+<%= render TagList.new(tags: @role.tags || []) %>
