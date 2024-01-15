@@ -8,7 +8,7 @@ categories:
   - career
 tags:
   - Python
-  - Starups
+  - startups
   - celery
   - django
   - mongodb
@@ -35,11 +35,22 @@ I led the team develop our dairy barn AI analytics platform using realtime compu
 
 We were tasked with building a system that could monitor 100s of cows through networks of dozens of PoE cameras to detect, identify, and observe the eating and drinking behavior of the dairy cows.
 
-# The computer vision application
-Having had experience with large scale image processing in the past, including <%= link_to('the cainthus drone platform', '_posts/career/cainthus-drones.md') %> and <%= link_to('greenthumb', '_posts/career/greenthumb.md') %>, I started designing the software architecture and infrastructure required to achieve our goals. I was able to leverage my experience with distributed systems and computer vision to design a system that could process the video streams from the cameras in real-time. Power over Ethernet (PoE) cameras provide RTSP streams that we could process with OpenCV and Tensorflow to detect and identify the cows. We used MongoDB for interprocess communication (IPC) and to store the results of the computer vision processing. We used Celerywith Redis as a message broker backend to distribute the processing across multiple CPU processes and GPUs. 
+# The computer vision platform
+## The algorithm
+### Cow Face Detector: HAAR Classifier
+### Cow Hustle: Eigenfaces for cow face recognition
+Principal Component Analysis (PCA) was used to generate eignenvectors for cow faces. The eigenfaces were used to train a Support Vector Machine (SVM) classifier to identify individual cows by their faces. This was a very challenging problem because the cows were often in motion and the lighting conditions were not ideal. We were able to overcome these challenges by using a combination of image processing techniques and machine learning algorithms.
 
-# The web application
-We used Django to build a web application to serve an API for a ReactJS frontend designed report the results of the computer vision processing.
+
+### Cow Eating and Drinking: Optical flow
+### 
+
+
+## The Python OpenCV application
+Having had experience with large scale image processing in the past, including <%= link_to('the cainthus drone platform', '_posts/career/cainthus-drones.md') %> and <%= link_to('greenthumb', '_posts/career/greenthumb.md') %>, I started designing the software architecture and infrastructure required to achieve our goals. I was able to leverage my experience with distributed systems and computer vision to design a system that could process the video streams from the cameras in real-time. Power over Ethernet (PoE) cameras provide RTSP streams that we could process with OpenCV and Tensorflow to detect and identify the cows. We used MongoDB for interprocess communication (IPC) and to store the results of the computer vision processing. We used Celery with Redis as a message broker backend to distribute the processing across multiple CPU processes and GPUs. 
+
+## The web application
+We used Rails to build a web application to serve an API for a ReactJS frontend designed report the results of the computer vision processing.
 
 I am proud of the work I did at Cainthus, and I am grateful for the opportunity to have worked with such a talented team. I learned a lot during my time there, and I am excited to use my skills and experience to make a positive impact in the world.
 

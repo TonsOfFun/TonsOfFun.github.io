@@ -15,7 +15,7 @@ tags:
   - Python
   - Rails
   - Ruby
-  - Starups
+  - startups
   - TensorFlow
   - faktory
   - redis

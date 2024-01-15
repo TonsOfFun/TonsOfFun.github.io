@@ -8,7 +8,7 @@ categories: career
 tags:
   - Rails
   - Ruby
-  - Starups
+  - startups
   - WebRTC
   - sidekiq
 ---

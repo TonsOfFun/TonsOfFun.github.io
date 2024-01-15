@@ -9,7 +9,7 @@ tags:
   - Python
   - Rails
   - Ruby
-  - Starups
+  - startups
   - celery
   - django
   - mongodb

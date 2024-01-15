@@ -17,6 +17,7 @@ tags:
   - redis
   - sidekiq
   - sinatra
+  - AI
 ---
 
 From 2012 to 2013, I held the position of Lead Senior Ruby Software Engineer at Banjo. I built the platform, algorithms, and geo indexes that formed the foundation of the Banjo event detection platform - social media feeds indexed by location, specifically public spaces like event centers, restaurants, and bars.

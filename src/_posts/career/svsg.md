@@ -6,7 +6,7 @@ date: 2021-11-01
 datetime: November 1, 2021
 categories: career
 tags:
-  - Starups
+  - startups
   - acquisition
   - advisorship
   - business

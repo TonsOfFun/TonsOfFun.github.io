@@ -9,7 +9,7 @@ categories:
 tags:
   - Rails
   - Ruby
-  - Starups
+  - Startups
   - android
   - expressjs
   - ios

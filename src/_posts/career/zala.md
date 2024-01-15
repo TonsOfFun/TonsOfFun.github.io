@@ -11,7 +11,7 @@ tags:
   - PostGIS
   - Rails
   - Ruby
-  - Starups
+  - startups
   - iOS
 ---
 

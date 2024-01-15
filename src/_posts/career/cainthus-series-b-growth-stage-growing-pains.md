@@ -8,7 +8,7 @@ categories:
   - career
 tags:
   - Python
-  - Starups
+  - startups
   - celery
   - django
   - mongodb

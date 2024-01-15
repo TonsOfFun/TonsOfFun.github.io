@@ -11,7 +11,7 @@ tags:
   - PostGIS
   - PostgreSQL
   - Python
-  - Starups
+  - startups
   - WebSockets
   - hackathons
   - raspberrypi

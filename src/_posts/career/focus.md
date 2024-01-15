@@ -10,7 +10,7 @@ tags:
   - PHP
   - Rails
   - Ruby
-  - Starups
+  - startups
   - cakephp
   - flash
   - flex
