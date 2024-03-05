@@ -1,4 +1,4 @@
-<div>
+<div class='relative z-20'>
   <% @tags.each do |object_tag| %>
     <%= link_to(object_tag, "/tags/#{object_tag.downcase}", {class: (@tag_styles[object_tag.downcase] ? @tag_styles[object_tag.downcase] : @tag_styles['default'])}) %>
   <% end %> 
