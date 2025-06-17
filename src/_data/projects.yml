@@ -9,6 +9,13 @@ opensource:
     github_url: https://github.com/tonsoffun/
     instagram_url: https://instagram.com/tonsoffun111
     twitter_url: https://twitter.com/tonsoffun111
+  - name: Active Agent
+    label: ActiveAgent
+    website_url: https://activeagents.ai
+    url: https://activeagents.ai
+    github_url: https://github.com/activeagents/activeagent
+    domain: activeagents.ai
+    logo_url: https://docs.activeagents.ai/activeagent.png
   - name: VisorML
     label: VisorCV
     description: |
@@ -25,7 +32,7 @@ opensource:
     description: After winning a hackathon, I built GreenThumb.io to help agronomists and farmers optimize their costs to yields throughout harvest cycles. Developed computer vision system to monitor plant growth. Integrated automated fertigation systems using Arduinos and Raspberry Pis to apply and track fertilizer based on visual inputs. I have shared my work as an open source project.
     old_description: GreenThumb IO is an OSS organization that came out of a series of AgTech hackathons in the central valley California.
     url: /categories/greenthumb/
-    domain: greenthumb.io
+    domain: github.com
     logo_url: /images/logos/greenthumbio.jpeg
     github_url: https://github.com/greenthumbio
     instagram_url: https://instagram.com/greenthumbio
