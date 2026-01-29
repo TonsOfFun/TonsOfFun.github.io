@@ -10,20 +10,19 @@
     "alpine.js"
   ],
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.6",
-    "cssnano": "^5.1.13",
-    "esbuild": "^0.14.39",
-    "glob": "^8.0.1",
-    "postcss": "^8.4.12",
-    "postcss-color-mod-function": "^3.0.3",
+    "@tailwindcss/forms": "^0.5.9",
+    "cssnano": "^7.0.0",
+    "esbuild": "^0.25.0",
+    "glob": "^11.0.0",
+    "postcss": "^8.4.49",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^14.1.0",
-    "postcss-load-config": "^3.1.4",
-    "postcss-mixins": "^9.0.4",
-    "postcss-preset-env": "^7.4.3",
-    "tailwindcss": "^3.1.8"
+    "postcss-import": "^16.1.0",
+    "postcss-load-config": "^6.0.0",
+    "postcss-mixins": "^11.0.0",
+    "postcss-preset-env": "^10.0.0",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.7"
+    "@tailwindcss/typography": "^0.5.15"
   }
 }

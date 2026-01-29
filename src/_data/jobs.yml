@@ -1,8 +1,43 @@
 companies:
-  - name: 'nSight Surgical AI'
+  - name: 'ActiveAgents.ai'
+    roles:
+      - title: 'Creator'
+        description: 'Created Active Agent, the open-source AI framework for Ruby on Rails with Rails-native infrastructure and standardized conventions. Enables developers to deploy AI features quickly and easily with familiar Rails patterns. Provide AI product development and consulting services to startups integrating AI into their products.'
+        tags:
+          - Ruby
+          - Rails
+          - AI Agents
+          - LLMs
+          - Open Source
+        start: '2024'
+        end: 'present'
+        url: https://activeagents.ai
+    logo_url: /images/logos/activeagents.png
+    website_url: 'https://activeagents.ai/'
+    location: 'Remote from San Francisco Bay Area'
+    description: 'Active Agent is an open source framework with Rails-native infrastructure & standardized conventions, helping developers deploy AI features quickly & easily.'
+  - name: 'Fountain'
+    roles:
+      - title: 'Staff AI Engineer'
+        description: 'Built real-time conversational AI agents with generative UI elements to streamline hiring workflows. Developed tools guiding hiring managers through requisition creation and applicants from resume building to job application. Architected Ruby on Rails backend integrated with LLM services and Next.js/Vercel frontend.'
+        tags:
+          - Ruby
+          - Rails
+          - Next.js
+          - Vercel
+          - LLMs
+          - AI Agents
+        start: '2023'
+        end: '2024'
+        url:
+    logo_url: /images/logos/fountain.png
+    website_url: 'https://fountain.com/'
+    location: 'Remote from San Francisco'
+    description: 'Fountain is the leading applicant tracking system built for high volume hiring, helping companies streamline their hiring process with AI-powered tools.'
+  - name: 'nSight Surgical'
     roles:
       - title: 'Director of Engineering'
-        description: 'Leading team developing CPU-accelerated ML/DL/AI computer vision systems for hospitals across the US, with research in partnership with Stanford Healthcare. Ensuring real-time data processing on-premise at hospitals and in the cloud. Built data processing pipeline used for cloud training and real-time inference.'
+        description: 'Performed R&D in partnership with Stanford Healthcare. Led development of GPU-accelerated ML/DL/AI computer vision systems deployed on-premise at hospitals across the US and in the cloud. Built data processing pipeline for cloud training data and real-time inference. Led user-facing product development with a global remote team of engineers, data scientists, and designers.'
         old_description: 'Leading the design and development of a cutting edge GPU accelerated ML/DL/AI computer vision systems for medical industry applications on-premise and in the cloud.'
         tags:
           - Python
@@ -17,13 +52,13 @@ companies:
           - Docker
           - React
           - ONNXRuntime
-        start: '2022'
-        end: 'present'
-        url: 
+        start: '2021'
+        end: '2023'
+        url:
     logo_url: /images/logos/nsightsurgical.jpeg
     website_url: 'https://nsightsurgical.ai/'
-    location: 'Remote'
-    description: 'nSightSurgical AI provides intellegent insights and tracking of surgical objects in context.'
+    location: 'Remote from San Francisco Bay Area'
+    description: 'nSight Surgical provides intelligent insights and tracking of surgical objects in context.'
   - name: 'Silicon Valley Software Group'
     roles: 
       - title: 'CTO Consultant'

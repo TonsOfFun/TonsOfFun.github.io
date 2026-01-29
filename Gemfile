@@ -16,7 +16,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #
 # This will help ensure the proper Bridgetown version is running.
 ####
-
+gem 'ruby-lsp'
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
 gem "bridgetown", "~> 1.3.1"
@@ -30,14 +30,18 @@ gem "bridgetown", "~> 1.3.1"
 
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma", "~> 5.6"
+gem "puma", "~> 6.4"
 
 gem "bridgetown-cloudinary", "~> 2.1"
 gem 'bridgetown-seo-tag', '~> 3.0'
 gem "bridgetown-svg-inliner", "~> 1.0"
 gem "bridgetown-view-component", "~> 1.0"
+gem "view_component", "~> 2.72.0"  # Pin to 2.72.x for bridgetown compatibility
 
 group :development do
     gem 'standard'
     gem 'solargraph'
 end
+
+# PDF generation with headless Chrome
+gem 'ferrum', '~> 0.15'

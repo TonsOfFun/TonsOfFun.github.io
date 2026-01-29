@@ -6,14 +6,25 @@ title: Career Experiences
 <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">Tech leader solving real-world problems with AI/ML, computer vision, and spatial computing. Scaling tech products and teams for over a decade. </h2>
 <p class="mt-6 text-base print:mt-0 text-zinc-600 dark:text-zinc-400">Justin Bowen is a software and business leader with over a decade of experience helping startups turn their dreams into reality and building open source R&D projects. Technical specializations include machine learning, software architecture, database scaling, and scaling Ruby on Rails, Python, and computer vision applications. Business specializations include global remote team leadership, mentorship, aligning product with business goals, fundraising, and technical due diligence (for $100M+ investment rounds and acquisitions). 
     Justin is also a regular speaker at RailsConf, RubyConf, and other technical conferences and events.</p>
-<button id="download_cv"
-    class="inline-flex items-center justify-center w-full gap-2 px-3 py-2 mt-6 text-sm font-medium transition rounded-md print:hidden outline-offset-2 active:transition-none bg-zinc-50 text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group"
-    href="#">Download CV<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
-        class="w-4 h-4 transition stroke-zinc-400 group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50">
-        <path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-    </svg>
-</button>
+<div class="flex gap-3 mt-6 print:hidden">
+    <a href="/resume/"
+        class="inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium transition rounded-md outline-offset-2 active:transition-none bg-teal-500 text-white hover:bg-teal-600 active:bg-teal-700 group">
+        View Resume
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-4 h-4 stroke-current">
+            <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+    </a>
+    <a href="/resume.pdf"
+        download="Justin_Bowen_Resume.pdf"
+        class="inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium transition rounded-md outline-offset-2 active:transition-none bg-zinc-50 text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group">
+        Download PDF
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+            class="w-4 h-4 transition stroke-zinc-400 group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50">
+            <path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </svg>
+    </a>
+</div>
 <% site.data.jobs.companies.each do |company| %>
     <section aria-label="<%= company.name %>" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div class="grid items-baseline max-w-3xl grid-cols-1 gap-y-8 md:grid-cols-4 print:max-w-full">

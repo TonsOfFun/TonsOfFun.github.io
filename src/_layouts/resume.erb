@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<div class="resume-container mt-8 sm:px-8 sm:mt-16 print:!mt-0 print:px-0">
+    <div class="mx-auto max-w-4xl lg:px-8 print:max-w-full print:px-0">
+        <div class="relative px-4 sm:px-8 lg:px-12 print:px-0">
+            <div class="mx-auto print:mx-0">
+                <%= yield %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+@media print {
+    /* Hide non-essential elements when printing */
+    header, nav, footer, .print\\:hidden, #download_cv {
+        display: none !important;
+    }
+
+    /* Hide the site header component */
+    .relative > header:first-child,
+    [class*="Header"],
+    .fixed.inset-0 {
+        display: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Reset backgrounds and shadows for print */
+    body {
+        background: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .dark\\:bg-zinc-900, .dark\\:bg-black, .bg-zinc-50 {
+        background: white !important;
+    }
+
+    /* Remove fixed positioning and collapse */
+    .fixed {
+        position: absolute !important;
+        display: none !important;
+    }
+
+    /* Optimize page breaks - only avoid breaking roles, not entire sections */
+    .resume-role {
+        page-break-inside: avoid;
+    }
+
+    /* Compact spacing for print */
+    .resume-container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Remove all top margins on main content */
+    main {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    #__next > .relative {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* Ensure text is black for printing */
+    * {
+        color: black !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    /* Page margins */
+    @page {
+        margin: 0.5in;
+        size: letter;
+    }
+}
+</style>
