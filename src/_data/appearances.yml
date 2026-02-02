@@ -1,50 +1,92 @@
 conferences:
-  - event: 
+  - event:
+      name: "San Francisco Ruby Conference 2025"
+      date: "November"
+      location: "Fort Mason, San Francisco, California, USA"
+    title: "Agents Are Controllers — Agent-oriented programming conventions for Rails with Active Agent"
+    description: Active Agent is the first truly Rails-native AI framework, where Agents are Controllers. Learn about agent-oriented programming conventions for Rails and how to build AI features with less complexity using the MVC conventions you love. This talk covers how Active Agent treats every agent like a controller and every prompt like a view, letting you weave LLMs, vector search, and business logic straight into MVC.
+    url: https://www.rubyevents.org/talks/agents-are-controllers-agent-oriented-programming-conventions-for-rails-with-active-agent
+    embed_url: ""
+    thumbnail_url: ""
+    action: Watch the video
+  - event:
+      name: "RailsConf 2025"
+      date: "July"
+      location: "Philadelphia, Pennsylvania, USA"
+    title: "Lightning Talk: Build AI in Rails: Now Agents are Controller; Makes Code Tons of Fun!"
+    description: A lightning talk introducing Active Agent, a Rails-native AI framework where Agents are Controllers. Learn how to ship AI-powered features in less than 10 lines of code using the MVC conventions Rails developers already know and love.
+    url: https://www.rubyevents.org/talks/lightning-talk-build-ai-in-rails-now-agents-are-controller-makes-code-tons-of-fun
+    embed_url: ""
+    thumbnail_url: ""
+    action: Watch the video
+  - event:
+      name: "RubyConf 2024"
+      date: "November"
+      location: "Chicago, Illinois, USA"
+    title: "Lightning Talk: Active Agents"
+    description: Introducing Active Agent, the AI framework built specifically for Ruby on Rails. With Active Agent, you can ship AI-powered features in less than 10 lines of code. This lightning talk demonstrates how to bring your favorite language and framework into the future of AI development.
+    url: https://www.rubyevents.org/talks/lightning-talk-active-agents
+    embed_url: ""
+    thumbnail_url: ""
+    action: Watch the video
+  - event:
       name: "RubyConf 2022"
       date: "November"
       location: "Houston, Texas, USA"
     title: "Discover Machine Learning in Ruby"
-    description: We can use Ruby to do anything we as a community want. Today we’ll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn’t accessible until the last decade or so.
-    url: https://www.youtube.com/watch?v=XXtqUptI_oQ&t
-    embed_url: https://www.youtube.com/embed/XXtqUptI_oQ?si=8pTtxNP4bkX0L4Dc
+    description: We can use Ruby to do anything we as a community want. Today we'll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn't accessible until the last decade or so.
+    url: https://www.youtube.com/watch?v=XXtqUptI_oQ
+    embed_url: https://www.youtube.com/embed/XXtqUptI_oQ
     thumbnail_url: https://i.ytimg.com/vi/XXtqUptI_oQ/maxresdefault.jpg
-    action: Check the schedule
-  - event: 
+    action: Watch the video
+  - event:
       name: "RailsConf 2022"
       date: "May"
       location: "Portland, Oregon, USA"
-    title: "Applied Queueing Theory"
-    description: We can use Ruby to do anything we as a community want. Today we’ll explore the work of a hidden gem of a contributor in our community, Andrew Kane, and their Ruby gems for Machine Learning. We will see how contemporary computer vision neural networks can run with Ruby. Ruby is all about developer happiness. Computer Vision is something that brings me great joy as it delivers satisfying visual feedback and connects our code with the real world through images and videos in a way that wasn’t accessible until the last decade or so.
+    title: "The Queue Continuum: Applied Queueing Theory"
+    description: A Star Trek themed exploration of queuing theory and scaling applications with parallelism and concurrency. This talk provides a general overview of the differences between parallelism and concurrency as well as when to apply more threads or more processes, with examples of Sidekiq and Puma with different concurrency settings in various IO scenarios.
     url: https://www.youtube.com/watch?v=GY4AT2z7mcI
     embed_url: https://www.youtube.com/embed/GY4AT2z7mcI
     thumbnail_url: https://i.ytimg.com/vi/GY4AT2z7mcI/maxresdefault.jpg
     action: Watch the video
-  - event: 
+  - event:
       name: "Remote Connect 2022"
       date: "April"
       location: "Virtual"
     title: "Top 5 tips for hiring abroad from the United States"
-    description:  San Francisco-based host Rhiannon Payne invites us to hear from industry-leaders Sean Page and Justin Bowen. They will discuss where to hire the best talent in the world, how to manage benefits and salaries on a global scale, and navigating cultural differences. You’ll leave with a foundation of how to scale your business through hiring remotely from the United States.
+    description: San Francisco-based host Rhiannon Payne invites us to hear from industry-leaders Sean Page and Justin Bowen. They will discuss where to hire the best talent in the world, how to manage benefits and salaries on a global scale, and navigating cultural differences. You'll leave with a foundation of how to scale your business through hiring remotely from the United States.
     url: https://remote.com/events/on-demand/top-5-tips-for-hiring-abroad-from-the-united-states
-    embed_url: https://storage.googleapis.com/dex-remote-977794-p.appspot.com/assets/dex365/vod/thumb/CH-CNT-1-V1_9f70.png
+    embed_url: ""
+    thumbnail_url: ""
     action: Watch the video
-  - event: 
+  - event:
       name: "RailsConf 2021"
       date: "April"
       location: "Virtual"
-    title: "Computer Vision on Rails"
-    description:  Learn about combining Rails and Python for Computer Vision. We'll be analyzing images of cannabis plants in real-time and deriving insights from changes in leaf area & bud site areas. We'll explore when to use traditional statistical analysis versus ML approaches, as well as other ways CV has been deployed. We’ll cover integrating OpenCV with ActionCable & Sidekiq for broadcasting camera analysis to Rails and creating time-lapse style renderings with graphs. You will gain an understanding of what tools to use and where to start if you’re interested in using ML or CV with your Rails project!
+    title: "Exploring Real-time Computer Vision Using ActionCable"
+    description: Learn about combining Rails and Python for real-time computer vision applications. We'll be analyzing images of cannabis plants in real-time and deriving insights from changes in leaf area & bud site areas. We'll explore when to use traditional statistical analysis versus ML approaches, as well as other ways CV has been deployed. We'll cover integrating OpenCV with ActionCable & Sidekiq for broadcasting camera analysis to Rails and creating time-lapse style renderings with graphs. You will gain an understanding of what tools to use and where to start if you're interested in using ML or CV with your Rails project!
     url: https://www.youtube.com/watch?v=eG9_ngMwYGk
     embed_url: https://www.youtube.com/embed/eG9_ngMwYGk
-    thumbnail_url: https://i.ytimg.com/vi/eG9_ngMwYGk/hqdefault.jpg
+    thumbnail_url: https://i.ytimg.com/vi/eG9_ngMwYGk/maxresdefault.jpg
     action: Watch the video
 podcasts:
-  - event: 
-      name: 'Your Podcast'
-      date: 'coming soon'
-      location: 'whereever you get your podcasts'
-    title: "I haven't been on a podcast yet!"
-    description: "Connect with me on twitter and DM me if you're interested in having me on your show!"
-    url: /connect/
+  - event:
+      name: "The Ruby AI Podcast"
+      date: "July 2025"
+      location: "Wherever you get your podcasts"
+    title: "Active Agent with Justin Bowen"
+    description: "Seventeen-year Ruby veteran Justin Bowen joins hosts Valentino Stoll and Joe Leo to unveil Active Agent—a Rails-native framework that treats every agent like a controller and every prompt like a view, letting you weave LLMs, vector search, and business logic straight into MVC. The discussion covers the real-world mechanics of shipping AI, including defining ground-truth datasets, replay-ready evaluation harnesses, and tight retry logic that keeps hallucinations out of production."
+    url: https://www.therubyaipodcast.com/2388930/episodes/17399743-active-agent-with-justin-bowen
     embed_url: ""
+    thumbnail_url: ""
+    action: Listen to the podcast
+  - event:
+      name: "IndieRails"
+      date: "2024"
+      location: "Wherever you get your podcasts"
+    title: "Rhiannon Payne & Justin Bowen - Agents of Change"
+    description: "Rhiannon Payne and Justin Bowen are one of the very few couples working together in the Ruby and Rails ecosystem. Justin is a long-time Rails developer, consultant, and AI and computer vision specialist. Rhiannon runs Sea Foam Media and is the Marketing Director for Ruby Central. Together they are building Active Agents, an AI framework for Rails. The episode covers their professional backgrounds, how they collaborate as a couple, the birth of Active Agents, and AI in the Ruby/Rails landscape."
+    url: https://www.indierails.com/60
+    embed_url: ""
+    thumbnail_url: ""
     action: Listen to the podcast
