@@ -1,18 +1,76 @@
 # skills:
-#   - name: 
-#     label: 
+#   - name:
+#     label:
 #     description:
 #     color:
 #     experience:
-#     years: 
+#     years:
 #     url:
 #     website_url:
+dx:
+  label: Developer Experience
+  description: |
+    Building tools and workflows that enhance developer productivity through AI-assisted development and agentic automation.
+  skills:
+  - name: claudecode
+    label: Claude Code
+    logo_url: /images/icons/skill/claude.png
+    description: |
+      Using Claude Code CLI for agentic developer workflows. Building with AI-assisted coding, code review,
+      refactoring, and automated documentation. Leveraging agentic patterns for complex multi-step development tasks.
+    color: "#D97706"
+    experience: Expert
+    years:
+    url:
+    website_url: https://claude.ai/code
+  - name: activeagent
+    label: Active Agent
+    logo_url: /images/logos/activeagents.png
+    description: |
+      Creator of Active Agent, the model-agnostic open-source AI framework for Ruby on Rails. Enables developers to build
+      AI-powered features with familiar Rails patterns. Supports OpenAI, Anthropic, Google, and other LLM providers.
+    color: "#CC0000"
+    experience: Expert
+    years:
+    url: https://github.com/activeagents/activeagent
+    website_url: https://activeagents.ai
+  - name: cursorso
+    label: Cursor
+    logo_url: /images/icons/skill/cursor.png
+    description: |
+      AI-powered code editor for pair programming with LLMs. Using Cursor for rapid prototyping,
+      code generation, and intelligent autocomplete across multiple languages and frameworks.
+    color: "#000000"
+    experience: Advanced
+    years:
+    url:
+    website_url: https://cursor.so
+  - name: githubcopilot
+    label: GitHub Copilot
+    description: |
+      Using GitHub Copilot for AI-assisted code completion and generation. Integrating Copilot into
+      development workflows for faster iteration and improved code quality.
+    color: "#000000"
+    experience: Advanced
+    years:
+    url:
+    website_url: https://github.com/features/copilot
+  - name: mcpservers
+    label: MCP Servers
+    description: |
+      Building and integrating Model Context Protocol (MCP) servers to extend AI agent capabilities.
+      Creating custom tool integrations for agentic workflows.
+    color: "#6366F1"
+    experience: Advanced
+    years:
+    url:
+    website_url:
 development:
   label: Development
   description: |
     I've been developing software for over a decade. I've used a lot of tools and technologies over the years. 
     Here are some of the tools I currently use daily.
-  tools:
+  skills:
   - name: visualstudiocode
     label: VSCode
     description: These days I'm using VSCode for my development environments with remote containers. VSCode has a great marketplace of extensions and supports things like remote port forwarding and other automations with ease.
@@ -83,7 +141,7 @@ development:
 collaboration: 
   label: Collaboration
   description:
-  tools:
+  skills:
   - name: markdown
     label: Markdown
     description: I love writing content with markdown. Most of this website is markdown files or markdown in YAML files
@@ -136,7 +194,7 @@ collaboration:
 deploy:
   label: Deployment
   description:
-  tools:
+  skills:
   - name: terraform
     label: Terraform
     description: |
@@ -171,7 +229,7 @@ deploy:
 design:
   label: Design
   description:
-  tools:
+  skills:
   - name: figma
     label: Figma
     description: I enjoy the async collaborative approach design, feedback, and interating with Figma on product design.
@@ -199,7 +257,7 @@ design:
 datastore:
   label: Data Stores
   description:
-  tools:
+  skills:
   - name: redis
     label: Redis
     description: |
@@ -223,7 +281,7 @@ datastore:
 background:
   label: Background Jobs
   description:
-  tools:
+  skills:
   - name: celery
     label: Celery
     description: | 
@@ -256,7 +314,7 @@ background:
 payment:
   label: Payment Integrations
   description:
-  tools:
+  skills:
   - name: stripe
     label: Stripe
     description: I've built out payments for a handful of products using Stripe, including subscribptions.
@@ -269,7 +327,7 @@ payment:
 messaging:
   label: Messaging Integrations
   description:
-  tools:
+  skills:
   - name: twilio
     label: Twilio
     description: I've used Twilio for sending email, chat, video, and voice integrations.
@@ -331,46 +389,89 @@ messaging:
     website_url:
 ai:
   label: Artificial Intelligence
-  description: Artificial Intelligence > Machine Learning > Deep Learning 
-  tools:
+  description: |
+    10+ years of AI product development experience spanning computer vision, machine learning, and generative AI.
+    Building production AI systems from R&D through deployment at scale.
+  skills:
+  - name: llms
+    label: Large Language Models
+    description: |
+      Building production AI products with LLMs since GPT-3. Experience with OpenAI, Anthropic Claude, Google Gemini,
+      and open-source models. Expertise in prompt engineering, RAG architectures, and fine-tuning.
+    color: "#10A37F"
+    experience: Expert
+    years:
+    url:
+    website_url:
+  - name: aiagents
+    label: AI Agents
+    description: |
+      Designing and building autonomous AI agents for real-world applications. Built conversational AI agents at Fountain
+      for hiring workflows. Created Active Agent framework for building AI agents in Rails.
+    color: "#6366F1"
+    experience: Expert
+    years:
+    url:
+    website_url:
+  - name: rag
+    label: RAG & Embeddings
+    description: |
+      Implementing Retrieval-Augmented Generation systems with vector databases. Experience with embeddings,
+      semantic search, and knowledge base integration for AI applications.
+    color: "#8B5CF6"
+    experience: Advanced
+    years:
+    url:
+    website_url:
   - name: onnx
     label: ONNX Runtime
     description: |
-      I've used ONNX Runtime for deploying computer vision models to edge compute devices using CUDA and CoreML Execution Providers. 
+      I've used ONNX Runtime for deploying computer vision models to edge compute devices using CUDA and CoreML Execution Providers.
       I've also used ONNX Runtime for multitarget inference with multiple models loaded on CPU, GPU, and Edge TPU devices.
     color: "#005CED"
-    experience:
-    years: 
+    experience: Advanced
+    years:
     url:
     website_url:
   - name: pytorch
     label: PyTorch
     description: I've used PyTorch for training and deploying neural networks, mostly for computer vision.
     color: "#EE4C2C"
-    experience:
-    years: 
+    experience: Advanced
+    years:
     url:
     website_url:
   - name: pytorchlightning
     label: PyTorch Lightning
     description: Recently I've used PyTorch Lighting for more performant inference at nSightSurgical AI
     color: "#792EE5"
-    experience:
-    years: 
+    experience: Advanced
+    years:
     url:
     website_url:
   - name: tensorflow
     label: Tensor Flow
     description: I've deployed ML pipelines that train and use nueral networks for computer vision inference on image data.
     color: "#FF6F00"
-    experience:
-    years: 
+    experience: Advanced
+    years:
+    url:
+    website_url:
+  - name: computervision
+    label: Computer Vision
+    description: |
+      Nearly a decade of computer vision experience. Built production CV systems at Cainthus (dairy/agriculture),
+      GreenThumb IO (plant analysis), and nSight Surgical (medical imaging). Expert with OpenCV, object detection,
+      segmentation, and real-time video processing.
+    color: "#5C3EE8"
+    experience: Expert
+    years:
     url:
     website_url:
 languages:
   label: Languages
   description: Programming Languages
-  tools:
+  skills:
   - name: ruby
     label: Ruby
     description: I've been using Ruby for over a decade. I still learn new things and find joy writing Ruby.
@@ -430,7 +531,7 @@ languages:
 frontend:
   label: Frontend
   description: Frontend frameworks
-  tools:
+  skills:
   - name: electron
     label: Electron
     description: I've used electron to deliver react apps to desktop
@@ -487,7 +588,7 @@ frontend:
 web:
   label: Web
   description: Web Application Frameworks
-  tools:
+  skills:
   - name: rubyonrails
     label: Rails
     description: | 
@@ -582,7 +683,7 @@ web:
 database:
   label: Databases
   description:
-  tools:
+  skills:
   - name: postgresql
     label: PostgreSQL
     description: I've built dozens of web applications backed by PostgreSQL databases. The first production service I deployed with postgres was in 2013 using the PostGIS extention to leverage powerful geo indexing and querying to deliver a high throughput (tens of millions of requests per day) reverse geocoding service for Banjo.
@@ -623,7 +724,7 @@ database:
 mapping:
   label: Mapping - GIS
   description: Geo Information Systems and mapping tools for location based applications
-  tools:
+  skills:
   - name: googlemaps
     label: Google Maps
     description: I've used Google Maps for a number of projects. PINSTOP was one of the more comprehensive mapping projects built with a Google Map interface that supported place search with eh Google Places API along with custom pindrops and place details.
@@ -663,7 +764,7 @@ mapping:
 meida:
   label: Media processing
   description: Media processing tools for manipulating and analyzing audio, video, and image data
-  tools:
+  skills:
   - name: ffmpeg
     label: FFmpeg
     description: I've developed a few computer vision pipelines with FFMPEG decoding inputs that splits into two outputs for computer vision processing and encoding outputs for demos.
@@ -684,7 +785,7 @@ meida:
 cloud:
   label: Cloud hosting providers
   description: I've used a number of cloud hosting providers over the years.
-  tools:
+  skills:
   - name: amazonaws
     label: Amazon AWS
     description: I've managed classic EC2 instances, but typically will automate a VPC with ASG policies for ECS instances.
@@ -728,7 +829,7 @@ cloud:
 hardware:
   label: Hardware
   description: I've used a number of hardware devices for prototyping and production deployments.
-  tools:
+  skills:
   - name: arduino
     label: Arduino
     description: I've been tinkering with Arduinos building sensors with ESPs or that talk to Raspberry Pis over serial.
@@ -770,7 +871,7 @@ hardware:
 os:
   label: Operating Systems
   description:  I've used a number of operating systems over the years to develop and deploy software.
-  tools:
+  skills:
   - name: windows95
     label: Windows 95
     description: My first operating system as a kid. We soon upgraded to Windows 98 and Windows 98 Plus. Good times.

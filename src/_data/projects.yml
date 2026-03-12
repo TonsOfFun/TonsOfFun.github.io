@@ -11,6 +11,9 @@ opensource:
     twitter_url: https://twitter.com/tonsoffun111
   - name: Active Agent
     label: ActiveAgent
+    description: |
+      Model-agnostic open-source AI framework for Ruby on Rails. Supports OpenAI, Anthropic Claude, Google Gemini,
+      and other LLM providers. Rails-native infrastructure with standardized conventions for building AI features.
     website_url: https://activeagents.ai
     url: https://activeagents.ai
     github_url: https://github.com/activeagents/activeagent

@@ -2,7 +2,7 @@ companies:
   - name: 'ActiveAgents.ai'
     roles:
       - title: 'Creator'
-        description: 'Created Active Agent, the open-source AI framework for Ruby on Rails with Rails-native infrastructure and standardized conventions. Enables developers to deploy AI features quickly and easily with familiar Rails patterns. Provide AI product development and consulting services to startups integrating AI into their products.'
+        description: 'Created Active Agent, a model-agnostic open-source AI framework for Ruby on Rails with Rails-native infrastructure and standardized conventions. Supports OpenAI, Anthropic, Google, and other LLM providers. Enables developers to deploy AI features quickly and easily with familiar Rails patterns. Provide AI product development and consulting services to startups integrating AI into their products.'
         tags:
           - Ruby
           - Rails
@@ -15,7 +15,7 @@ companies:
     logo_url: /images/logos/activeagents.png
     website_url: 'https://activeagents.ai/'
     location: 'Remote from San Francisco Bay Area'
-    description: 'Active Agent is an open source framework with Rails-native infrastructure & standardized conventions, helping developers deploy AI features quickly & easily.'
+    description: 'Active Agent is a model-agnostic open source AI framework with Rails-native infrastructure & standardized conventions, helping developers deploy AI features quickly & easily with any LLM provider.'
   - name: 'Fountain'
     roles:
       - title: 'Staff AI Engineer'

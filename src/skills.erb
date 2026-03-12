@@ -5,23 +5,23 @@ description: |
     I have been developing software products specializing in Geographic Information System, Computer Vision, and Spatial Computing. 
     Here are some of the tools, operating systems, languages, frameworks, and libraries I have used to deliver these products.
 ---
-<% site.data.tools.each do |tool_type_key, tool_type| %>
-    <section id="tools_section_<%= tool_type_key %>"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="<%= tool_type_key %>" 
+<% site.data.skills.each do |skill_type_key, skill_type| %>
+    <section id="skills_section_<%= skill_type_key %>"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="<%= skill_type_key %>"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
                 <button
-                    id="<%= tool_type_key %>"
+                    id="<%= skill_type_key %>"
                     type="button"
                     @click="isOpen = !isOpen; window.location.hash = $el.id"
                     class="inline-flex items-center font-semibold leading-6 text-zinc-800 dark:text-zinc-100 gap-x-1"
                     :aria-expanded="isOpen ? 'true' : 'false'"
                 >
-                    <%= tool_type.label %>
+                    <%= skill_type.label %>
                     <svg
                         class="w-5 h-5"
                         viewBox="0 0 20 20"
@@ -40,14 +40,14 @@ description: |
         </div>
             <div class="grid items-baseline max-w-3xl grid-cols-1 gap-y-8 md:grid-cols-1">
                 <h2 class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-                    <%= tool_type.description %>
+                    <%= skill_type.description %>
                 </h2>
             </div>
 
             <div class="mt-16 sm:mt-20">
                 <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-                    <% tool_type.tools[0..2].each do |tool| %>
-                        <%= render ProjectCard.new(project: tool, project_type: 'skill') if !tool.hidden%>
+                    <% skill_type.skills[0..2].each do |skill| %>
+                        <%= render ProjectCard.new(project: skill, project_type: 'skill') if !skill.hidden%>
                     <% end %>
                 </ul>
             </div>
@@ -62,8 +62,8 @@ description: |
             x-transition:leave-end="opacity-0 -translate-y-1">
             <div class="mt-16 sm:mt-20">
                 <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-                    <% (tool_type.tools - tool_type.tools[0..2]).each do |tool| %>
-                        <%= render ProjectCard.new(project: tool, project_type: 'skill') if !tool.hidden%>
+                    <% (skill_type.skills - skill_type.skills[0..2]).each do |skill| %>
+                        <%= render ProjectCard.new(project: skill, project_type: 'skill') if !skill.hidden%>
                     <% end %>
                 </ul>
             </div>
