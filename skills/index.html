@@ -485,11 +485,185 @@ Here are some of the tools, operating systems, languages, frameworks, and librar
                 </header>
                 <div class="mt-16 sm:mt-20 print:sm:mt-0">
                     <div id="" class="space-y-20 print:space-y-0">
-                            <section id="tools_section_development"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="development" 
+                            <section id="skills_section_dx"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="dx"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
+
+        <!-- Button to toggle the dropdown -->
+        <div class="py-5">
+            <div class="px-6 mx-auto max-w-7xl lg:px-8">
+                <button
+                    id="dx"
+                    type="button"
+                    @click="isOpen = !isOpen; window.location.hash = $el.id"
+                    class="inline-flex items-center font-semibold leading-6 text-zinc-800 dark:text-zinc-100 gap-x-1"
+                    :aria-expanded="isOpen ? 'true' : 'false'"
+                >
+                    Developer Experience
+                    <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        :class="{ 'transform rotate-180': isOpen }"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </div>
+            <div class="grid items-baseline max-w-3xl grid-cols-1 gap-y-8 md:grid-cols-1">
+                <h2 class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+                    Building tools and workflows that enhance developer productivity through AI-assisted development and agentic automation.
+
+                </h2>
+            </div>
+
+            <div class="mt-16 sm:mt-20">
+                <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="Claude Code" src="/images/icons/skill/claude.png" width="32" height="32" decoding="async" data-nimg="future" class="w-10 h-10 rounded-full" loading="lazy" style="color: transparent;">
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/claudecode" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">Claude Code</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Using Claude Code CLI for agentic developer workflows. Building with AI-assisted coding, code review,
+refactoring, and automated documentation. Leveraging agentic patterns for complex multi-step development tasks.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
         
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="Active Agent" src="/images/logos/activeagents.png" width="32" height="32" decoding="async" data-nimg="future" class="w-10 h-10 rounded-full" loading="lazy" style="color: transparent;">
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="https://github.com/activeagents/activeagent" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">Active Agent</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Creator of Active Agent, the model-agnostic open-source AI framework for Ruby on Rails. Enables developers to build
+AI-powered features with familiar Rails patterns. Supports OpenAI, Anthropic, Google, and other LLM providers.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="Cursor" src="/images/icons/skill/cursor.png" width="32" height="32" decoding="async" data-nimg="future" class="w-10 h-10 rounded-full" loading="lazy" style="color: transparent;">
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/cursorso" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">Cursor</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">AI-powered code editor for pair programming with LLMs. Using Cursor for rapid prototyping,
+code generation, and intelligent autocomplete across multiple languages and frameworks.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                </ul>
+            </div>
+        <!-- Dropdown menu with animation -->
+        <div
+            x-show="isOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-1"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-1">
+            <div class="mt-16 sm:mt-20">
+                <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="GitHub Copilot" src="https://cdn.simpleicons.org/githubcopilot/#000000.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/githubcopilot" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">GitHub Copilot</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Using GitHub Copilot for AI-assisted code completion and generation. Integrating Copilot into
+development workflows for faster iteration and improved code quality.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="MCP Servers" src="https://cdn.simpleicons.org/mcpservers/#6366F1.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/mcpservers" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">MCP Servers</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Building and integrating Model Context Protocol (MCP) servers to extend AI agent capabilities.
+Creating custom tool integrations for agentic workflows.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills_section_development"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="development"
+        class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -673,11 +847,11 @@ Here are some of the tools I currently use daily.
         </div>
     </section>
 
-    <section id="tools_section_collaboration"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="collaboration" 
+    <section id="skills_section_collaboration"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="collaboration"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -845,11 +1019,11 @@ searchable for posterity. You can easily use integrations to take a message and 
         </div>
     </section>
 
-    <section id="tools_section_deploy"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="deploy" 
+    <section id="skills_section_deploy"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="deploy"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -973,11 +1147,11 @@ on the project.
         </div>
     </section>
 
-    <section id="tools_section_design"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="design" 
+    <section id="skills_section_design"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="design"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1094,11 +1268,11 @@ on the project.
         </div>
     </section>
 
-    <section id="tools_section_datastore"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="datastore" 
+    <section id="skills_section_datastore"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="datastore"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1196,11 +1370,11 @@ It&#39;s also a powerful PubSub message broker that is used for things like WebS
         </div>
     </section>
 
-    <section id="tools_section_background"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="background" 
+    <section id="skills_section_background"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="background"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1319,11 +1493,11 @@ on-demand as users interacted with the map interface. For the dairy cow monitori
         </div>
     </section>
 
-    <section id="tools_section_payment"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="payment" 
+    <section id="skills_section_payment"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="payment"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1398,11 +1572,11 @@ on-demand as users interacted with the map interface. For the dairy cow monitori
         </div>
     </section>
 
-    <section id="tools_section_messaging"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="messaging" 
+    <section id="skills_section_messaging"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="messaging"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1587,11 +1761,11 @@ machines.
         </div>
     </section>
 
-    <section id="tools_section_ai"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="ai" 
+    <section id="skills_section_ai"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="ai"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1621,10 +1795,94 @@ machines.
         </div>
             <div class="grid items-baseline max-w-3xl grid-cols-1 gap-y-8 md:grid-cols-1">
                 <h2 class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-                    Artificial Intelligence &gt; Machine Learning &gt; Deep Learning
+                    10+ years of AI product development experience spanning computer vision, machine learning, and generative AI.
+Building production AI systems from R&amp;D through deployment at scale.
+
                 </h2>
             </div>
 
+            <div class="mt-16 sm:mt-20">
+                <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="Large Language Models" src="https://cdn.simpleicons.org/llms/#10A37F.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/llms" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">Large Language Models</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Building production AI products with LLMs since GPT-3. Experience with OpenAI, Anthropic Claude, Google Gemini,
+and open-source models. Expertise in prompt engineering, RAG architectures, and fine-tuning.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="AI Agents" src="https://cdn.simpleicons.org/aiagents/#6366F1.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/aiagents" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">AI Agents</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Designing and building autonomous AI agents for real-world applications. Built conversational AI agents at Fountain
+for hiring workflows. Created Active Agent framework for building AI agents in Rails.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="RAG &amp; Embeddings" src="https://cdn.simpleicons.org/rag/#8B5CF6.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/rag" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">RAG &amp; Embeddings</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Implementing Retrieval-Augmented Generation systems with vector databases. Experience with embeddings,
+semantic search, and knowledge base integration for AI applications.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
+                </ul>
+            </div>
+        <!-- Dropdown menu with animation -->
+        <div
+            x-show="isOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-1"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-1">
             <div class="mt-16 sm:mt-20">
                 <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
                         <li class="relative flex flex-col items-start group">
@@ -1639,7 +1897,7 @@ machines.
             <span class="relative z-10">ONNX Runtime</span>
         </a>
     </h3>
-    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I&#39;ve used ONNX Runtime for deploying computer vision models to edge compute devices using CUDA and CoreML Execution Providers. 
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I&#39;ve used ONNX Runtime for deploying computer vision models to edge compute devices using CUDA and CoreML Execution Providers.
 I&#39;ve also used ONNX Runtime for multitarget inference with multiple models loaded on CPU, GPU, and Edge TPU devices.
 </p>
     <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
@@ -1692,19 +1950,6 @@ I&#39;ve also used ONNX Runtime for multitarget inference with multiple models l
         <span class="ml-2"></span>
     </p>        
 </li>
-                </ul>
-            </div>
-        <!-- Dropdown menu with animation -->
-        <div
-            x-show="isOpen"
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 -translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 -translate-y-1">
-            <div class="mt-16 sm:mt-20">
-                <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
                         <li class="relative flex flex-col items-start group">
     <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
             <img alt="Tensor Flow" src="https://cdn.simpleicons.org/tensorflow/#FF6F00.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
@@ -1726,16 +1971,40 @@ I&#39;ve also used ONNX Runtime for multitarget inference with multiple models l
         <span class="ml-2"></span>
     </p>        
 </li>
+                        <li class="relative flex flex-col items-start group">
+    <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-600 dark:ring-0">
+            <img alt="Computer Vision" src="https://cdn.simpleicons.org/computervision/#5C3EE8.svg" height="32" width="32" class="flex-none w-8 h-8" "aria-hidden"=true } %>
+    </div>
+    <h3 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl">
+        </div>
+        <a href="/tags/computervision" target="_blank">
+            <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl"></span>
+            <span class="relative z-10">Computer Vision</span>
+        </a>
+    </h3>
+    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Nearly a decade of computer vision experience. Built production CV systems at Cainthus (dairy/agriculture),
+GreenThumb IO (plant analysis), and nSight Surgical (medical imaging). Expert with OpenCV, object detection,
+segmentation, and real-time video processing.
+</p>
+    <p class="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="flex-none w-6 h-6">
+            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+        </svg>
+        
+        <span class="ml-2"></span>
+    </p>        
+</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="tools_section_languages"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="languages" 
+    <section id="skills_section_languages"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="languages"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -1936,11 +2205,11 @@ I&#39;ve also used ONNX Runtime for multitarget inference with multiple models l
         </div>
     </section>
 
-    <section id="tools_section_frontend"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="frontend" 
+    <section id="skills_section_frontend"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="frontend"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -2143,11 +2412,11 @@ This site uses the Tailwind UI Spotlight template as a base with minor customiza
         </div>
     </section>
 
-    <section id="tools_section_web"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="web" 
+    <section id="skills_section_web"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="web"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -2435,11 +2704,11 @@ tooling like Turdbo Reflex.
         </div>
     </section>
 
-    <section id="tools_section_database"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="database" 
+    <section id="skills_section_database"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="database"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -2582,11 +2851,11 @@ Coincidentally it was my first time using SQL and last time using Microsoft SQL 
         </div>
     </section>
 
-    <section id="tools_section_mapping"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="mapping" 
+    <section id="skills_section_mapping"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="mapping"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -2728,11 +2997,11 @@ These polygon area&#39;s were then used as the query parameter for a computer vi
         </div>
     </section>
 
-    <section id="tools_section_meida"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="meida" 
+    <section id="skills_section_meida"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="meida"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -2829,11 +3098,11 @@ These polygon area&#39;s were then used as the query parameter for a computer vi
         </div>
     </section>
 
-    <section id="tools_section_cloud"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="cloud" 
+    <section id="skills_section_cloud"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="cloud"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -2992,11 +3261,11 @@ These polygon area&#39;s were then used as the query parameter for a computer vi
         </div>
     </section>
 
-    <section id="tools_section_hardware"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="hardware" 
+    <section id="skills_section_hardware"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="hardware"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -3162,11 +3431,11 @@ to monitoring plants with computer vision to water them
         </div>
     </section>
 
-    <section id="tools_section_os"
-        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('tools_section_', '')) }"  
-        aria-label="os" 
+    <section id="skills_section_os"
+        x-data="{ isOpen: (window.location.hash.replace('#','')  === $el.id.replace('skills_section_', '')) }"
+        aria-label="os"
         class="relative md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 isolate">
-        
+
         <!-- Button to toggle the dropdown -->
         <div class="py-5">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
